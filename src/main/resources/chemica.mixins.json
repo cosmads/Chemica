@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "priority": 1100,
+  "package": "io.github.cosmads.chemica.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "chemica.refmap.json",
+  "plugin": "io.github.cosmads.chemica.mixin.plugin.ChemicaMixinsPlugin",
+  "mixins": [
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "minVersion": "0.8"
+}

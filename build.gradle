@@ -1,0 +1,264 @@
+plugins {
+    id "idea"
+    id "net.neoforged.moddev.legacyforge" version "2.0.74"
+    id "dev.ithundxr.silk" version "0.11.15"
+    id "net.kyori.blossom" version "2.1.0" // https://github.com/KyoriPowered/blossom
+    id "io.freefair.lombok" version "8.11"
+
+}
+
+apply from: "./gradle/java.gradle"
+apply from: "gradle/property_loader.gradle"
+
+String gitHash = "${calculateGitHash() + (hasUnstaged() ? "-modified" : "")}"
+
+version = project.mod_version + "-neoforge-mc" + project.minecraft_version
+group = project.maven_group
+archivesBaseName = project.mod_id
+
+java.toolchain.languageVersion = JavaLanguageVersion.of(17)
+
+def refmap
+mixin {
+    refmap = add sourceSets.main, 'chemica.refmap.json'
+    config 'chemica.mixins.json'
+}
+
+println('Java: ' + System.getProperty('java.version') + ' JVM: ' + System.getProperty('java.vm.version') + '(' + System.getProperty('java.vendor') + ') Arch: ' + System.getProperty('os.arch'))
+
+idea {
+    module {
+        downloadJavadoc = true
+        downloadSources = true
+    }
+}
+
+legacyForge {
+    version = "$minecraft_version-$forge_version"
+
+
+    validateAccessTransformers = false
+
+    if (file('src/main/resources/META-INF/accesstransformer.cfg').exists()) {
+        accessTransformers.from "src/main/resources/META-INF/accesstransformer.cfg"
+    }
+
+    parchment {
+        minecraftVersion = minecraft_version
+        mappingsVersion = parchment_version
+    }
+    mods {
+        chemica {
+            sourceSet sourceSets.main
+        }
+    }
+
+    runs {
+        configureEach {
+            systemProperty 'forge.logging.markers', ''
+            systemProperty 'forge.logging.console.level', 'info'
+            jvmArguments = ["-XX:+IgnoreUnrecognizedVMOptions", "-XX:+AllowEnhancedClassRedefinition"]
+
+            systemProperty 'mixin.debug.export', 'true'
+            systemProperty 'mixin.debug.verbose', 'true'
+            programArgument '-mixin.config=chemica.mixins.json'
+
+        }
+        client {
+            client()
+            ideName = "Client"
+
+            //Uncomment when you want to use your username
+            //programArguments.addAll('--username', project.file('username.txt').readLines()[0])
+
+            gameDirectory = project.file('run')
+            systemProperty('forge.enabledGameTestNamespaces', "chemica")
+        }
+
+        server {
+            server()
+            //sourceSet = sourceSets.main
+            ideName = "Server"
+
+            gameDirectory.set(file('run/server'))
+            //programArgument '--nogui'
+            //systemProperty('forge.enabledGameTestNamespaces', "chemica")
+        }
+
+        gameTestServer {
+            type = "gameTestServer"
+            sourceSet = sourceSets.test
+            ideName = "Game Tests"
+
+            gameDirectory.set(file('run/gametest'))
+            systemProperty('forge.enabledGameTestNamespaces', "chemica")
+        }
+
+        data {
+            data()
+            sourceSet = sourceSets.main
+            ideName = "Data Generation"
+
+            gameDirectory.set(file('run/data'))
+
+            systemProperty 'forge.logging.markers', 'REGISTRIES,REGISTRYDUMP'
+            systemProperty 'forge.logging.console.level', 'debug'
+            programArguments.addAll("--mod", mod_id as String, "--all", "--output", file("src/generated/resources/").getAbsolutePath(), "--existing", file("src/main/resources").getAbsolutePath())
+        }
+    }
+}
+
+sourceSets.main {
+    resources {
+        srcDir 'src/generated/resources'
+        exclude '.cache/'
+    }
+
+    blossom.javaSources {
+        property("version", mod_version)
+        property("gitCommit", gitHash.toString())
+    }
+}
+
+repositories {
+    maven { url = "https://maven.createmod.net" } // Create, Ponder, Flywheel
+    maven { url = "https://raw.githubusercontent.com/Fuzss/modresources/main/maven/" } // ForgeConfigAPIPort
+    maven { url = "https://maven.tterrag.com" } // Registrate
+    maven { url = "https://maven.blamejared.com" } // JEI, Vazkii's Mods
+    maven {
+        name = "Modrinth"
+        url = "https://api.modrinth.com/maven"
+        content {
+            includeGroup "maven.modrinth"
+        }
+    }
+    maven {
+        name = "TerraformersMC"
+        url = "https://maven.terraformersmc.com/"
+    }
+    mavenLocal()
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    implementation 'org.jetbrains:annotations:22.0.0'
+
+    modImplementation("com.tterrag.registrate:Registrate:${registrate_version}")
+
+    implementation(jarJar("io.github.llamalad7:mixinextras-forge:${mixin_extras_version}"))
+
+    modImplementation("com.simibubi.create:create-${minecraft_version}:${create_version}:slim") { transitive = false }
+    modCompileOnly("dev.engine-room.flywheel:flywheel-forge-api-${minecraft_version}:${flywheel_version}")
+    modRuntimeOnly(jarJar("dev.engine-room.flywheel:flywheel-forge-${minecraft_version}:${flywheel_version}") {
+        version {
+            strictly "[1.0,2.0)"
+            prefer flywheel_version
+        }
+    })
+    modImplementation("net.createmod.ponder:Ponder-Forge-${minecraft_version}:${ponder_version}")
+
+    compileOnly(annotationProcessor("io.github.llamalad7:mixinextras-common:${mixin_extras_version}"))
+    
+    modCompileOnly("mezz.jei:jei-${minecraft_version}-common-api:${jei_version}") { transitive = false }
+    modCompileOnly("mezz.jei:jei-${minecraft_version}-forge-api:${jei_version}") { transitive = false }
+    modCompileOnly("mezz.jei:jei-${minecraft_version}-forge:${jei_version}") { transitive = false }
+    modRuntimeOnly("mezz.jei:jei-${minecraft_version}-forge:${jei_version}") { transitive = false }
+
+    modCompileOnly("maven.modrinth:emi:${emi_version}")
+
+    modImplementation("maven.modrinth:create-tfmg:${tfmg_version}")
+
+    //modCompileOnly("maven.modrinth:create-big-cannons:${cbc_version}") { transitive = false }
+    //modCompileOnly("maven.modrinth:rpl:${rpl_version}") { transitive = false }
+    //modRuntimeOnly("maven.modrinth:create-big-cannons:${cbc_version}") { transitive = false }
+    //modRuntimeOnly("maven.modrinth:rpl:${rpl_version}") { transitive = false }
+
+    modApi("org.apfloat:apfloat:1.11.0")
+    modApi("org.jgrapht:jgrapht:1.5.2")
+    modApi("org.jgrapht:jgrapht-core:1.5.2")
+
+    if (System.getProperty('idea.sync.active') != 'true') {
+        annotationProcessor "org.spongepowered:mixin:${mixin_version}:processor"
+    }
+}
+
+compileJava.options.encoding = 'UTF-8'
+
+
+
+processResources {
+    def buildProps = project.properties.clone()
+
+    buildProps.put('file', [jarVersion: project.version])
+
+    filesMatching(['META-INF/mods.toml', 'pack.mcmeta']) {
+        expand buildProps
+    }
+}
+
+compileJava {
+    options.compilerArgs = ['-Xdiags:verbose']
+}
+
+jar {
+    //from('LICENSE') {
+    //    rename { "${it}_${archivesBaseName}" }
+    //}
+
+    manifest.attributes([
+            "MixinConfigs": "chemica.mixins.json",
+            "Git-Hash"    : gitHash
+    ])
+}
+
+tasks.named("sourcesJar") {
+    manifest.attributes([
+            "Git-Hash": gitHash
+    ])
+}
+
+final slimJar = tasks.register("slimJar", Jar) {
+    archiveClassifier = "slim"
+    from(sourceSets.main.output)
+    from(refmap)
+    manifest.attributes([
+            "MixinConfigs": "chemica.mixins.json",
+            "Git-Hash"    : gitHash
+    ])
+}
+obfuscation.reobfuscate(slimJar, sourceSets.main)
+
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8' // Use the UTF-8 charset for Java compilation
+}
+compileJava {
+    options.compilerArgs = ['-Xdiags:verbose']
+}
+
+String calculateGitHash() {
+    try {
+        def output = providers.exec {
+            commandLine("git", "rev-parse", "HEAD")
+        }
+        return output.standardOutput.asText.get().trim()
+    } catch (Throwable ignored) {
+        return "unknown"
+    }
+}
+
+boolean hasUnstaged() {
+    try {
+        def output = providers.exec {
+            commandLine("git", "status", "--porcelain")
+        }
+        String result = output.standardOutput.asText.get().replace("/M gradlew(\\.bat)?/", "").trim()
+        if (!result.isEmpty())
+            println("Found stageable results:\n ${result}\n")
+        return !result.isEmpty()
+    } catch (Throwable ignored) {
+        return false
+    }
+}
