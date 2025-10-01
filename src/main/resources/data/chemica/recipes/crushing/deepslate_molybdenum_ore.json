@@ -1,0 +1,19 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "chemica:molybdenum_ore"
+    }
+  ],
+  "processingTime": 250,
+  "results": [
+    {
+      "count": 2,
+      "item": "chemica:crushed_raw_molybdenum"
+    },
+    {
+      "chance": 0.04,
+      "item": "chemica:rhenium_dust"
+    }
+  ]
+}

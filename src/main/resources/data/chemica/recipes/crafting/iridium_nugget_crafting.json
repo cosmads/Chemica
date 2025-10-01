@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a"
+  ],
+  "key": {
+    "a": {
+      "item": "chemica:iridium_ingot"
+    }
+  },
+  "result": {
+    "item": "chemica:iridium_nugget",
+    "count": 9
+  }
+}

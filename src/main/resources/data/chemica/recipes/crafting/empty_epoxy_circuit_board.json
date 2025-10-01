@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bbb"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:gray_dye"
+    },
+    "b": {
+      "item": "chemica:cured_epoxy_sheet"
+    }
+  },
+  "result": {
+    "item": "chemica:empty_epoxy_circuit_board",
+    "count": 1
+  }
+}

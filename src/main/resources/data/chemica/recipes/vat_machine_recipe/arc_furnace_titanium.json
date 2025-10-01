@@ -1,0 +1,30 @@
+{
+  "type": "tfmg:vat_machine_recipe",
+  "allowedVatTypes": [
+    "tfmg:firebrick_lined_vat"
+  ],
+  "ingredients": [
+    {
+      "item": "chemica:titanium_dust"
+    },
+    {
+      "amount": 250,
+      "fluid": "chemica:argon",
+      "nbt": {}
+    }
+  ],
+  "machines": [
+    "tfmg:graphite_electrode",
+    "tfmg:graphite_electrode",
+    "tfmg:graphite_electrode"
+  ],
+  "minSize": 6,
+  "processingTime": 30,
+  "results": [
+    {
+      "amount": 144,
+      "fluid": "chemica:molten_titanium",
+      "nbt": {}
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "type": "tfmg:hot_blast",
+  "ingredients": [
+    {
+      "amount": 100,
+      "fluid": "chemica:nitrogen",
+      "nbt": {}
+    },
+    {
+      "amount": 100,
+      "fluid": "tfmg:hydrogen",
+      "nbt": {}
+    }
+  ],
+  "processingTime": 200,
+  "results": [
+    {
+      "amount": 180,
+      "fluid": "chemica:ammonia",
+      "nbt": {}
+    },
+    {
+      "amount": 20,
+      "fluid": "tfmg:hot_air",
+      "nbt": {}
+    }
+  ]
+}

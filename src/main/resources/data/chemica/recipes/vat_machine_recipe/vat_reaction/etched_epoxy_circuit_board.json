@@ -1,0 +1,26 @@
+{
+  "type": "tfmg:vat_machine_recipe",
+  "allowedVatTypes": [
+    "tfmg:steel_vat",
+    "tfmg:cast_iron_vat",
+    "tfmg:firebrick_lined_vat"
+  ],
+  "ingredients": [
+    {
+      "item": "chemica:coated_epoxy_circuit_board"
+    },
+    {
+      "amount": 250,
+      "fluid": "tfmg:sulfuric_acid",
+      "nbt": {}
+    }
+  ],
+  "machines": [],
+  "minSize": 1,
+  "processingTime": 100,
+  "results": [
+    {
+      "item": "chemica:etched_epoxy_circuit_board"
+    }
+  ]
+}

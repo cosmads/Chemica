@@ -1,0 +1,18 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "tag": "minecraft:sand"
+    },
+    {
+      "item": "chemica:soda_ash"
+    }
+  ],
+  "results": [
+    {
+      "amount": 100,
+      "fluid": "chemica:molten_glass",
+      "nbt": {}
+    }
+  ]
+}

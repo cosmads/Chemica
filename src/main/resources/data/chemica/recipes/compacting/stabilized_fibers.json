@@ -1,0 +1,21 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "item": "chemica:pan_fibers"
+    },
+    {
+      "item": "chemica:pan_fibers"
+    },
+    {
+      "amount": 500,
+      "fluid": "chemica:oxygen",
+      "nbt": {}
+    }
+  ],
+  "results": [
+    {
+      "item": "chemica:stabilized_fibers"
+    }
+  ]
+}

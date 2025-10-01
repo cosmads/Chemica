@@ -1,0 +1,17 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "minecraft:quartz"
+    }
+  ],
+  "results": [
+    {
+      "item": "chemica:quartz_dust"
+    },
+    {
+      "chance": 0.25,
+      "item": "chemica:quartz_dust"
+    }
+  ]
+}

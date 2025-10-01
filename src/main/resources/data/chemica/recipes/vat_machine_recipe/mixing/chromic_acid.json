@@ -1,0 +1,35 @@
+{
+  "type": "tfmg:vat_machine_recipe",
+  "allowedVatTypes": [
+  	"tfmg:cast_iron_vat",
+    "tfmg:steel_vat",
+    "tfmg:firebrick_lined_vat"
+  ],
+  "ingredients": [
+    {
+      "amount": 1000,
+      "fluid": "chemica:nitric_acid",
+      "nbt": {}
+    },
+    {
+      "amount": 1000,
+      "fluid": "tfmg:sulfuric_acid",
+      "nbt": {}
+    },
+    {
+      "item": "chemica:chromium_dust"
+    }
+  ],
+  "machines": [
+    "tfmg:mixing"
+  ],
+  "minSize": 1,
+  "processingTime": 300,
+  "results": [
+    {
+      "amount": 1000,
+      "fluid": "chemica:chromic_acid",
+      "nbt": {}
+    }
+  ]
+}

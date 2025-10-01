@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "chemica:silver_nugget"
+    }
+  },
+  "result": {
+    "item": "chemica:silver_ingot",
+    "count": 1
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "amount": 1000,
+      "fluid": "chemica:ammonia",
+      "nbt": {}
+    },
+    {
+      "amount": 500,
+      "fluid": "chemica:platinum_catalyst_carrier",
+      "nbt": {}
+    }
+  ],
+  "results": [
+    {
+      "amount": 500,
+      "fluid": "chemica:nitrogen_dioxide",
+      "nbt": {}
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "type": "tfmg:casting",
+  "ingredients": [
+    {
+      "amount": 200,
+      "fluid": "chemica:epoxy_resin",
+      "nbt": {}
+    }
+  ],
+  "processingTime": 100,
+  "results": [
+    {
+      "item": "chemica:cured_epoxy_sheet"
+    }
+  ]
+}

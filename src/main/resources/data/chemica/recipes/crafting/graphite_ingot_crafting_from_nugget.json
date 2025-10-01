@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "chemica:graphite_nugget"
+    }
+  },
+  "result": {
+    "item": "chemica:graphite_ingot",
+    "count": 1
+  }
+}

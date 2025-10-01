@@ -1,0 +1,30 @@
+{
+  "type": "tfmg:vat_machine_recipe",
+  "allowedVatTypes": [
+    "tfmg:cast_iron_vat",
+    "tfmg:steel_vat"
+  ],
+  "ingredients": [
+    {
+      "amount": 1000,
+      "fluid": "chemica:phenol",
+      "nbt": {}
+    },
+    {
+      "item": "create:zinc_ingot"
+    }
+  ],
+  "machines": [],
+  "minSize": 1,
+  "processingTime": 200,
+  "results": [
+    {
+      "amount": 1000,
+      "fluid": "chemica:benzene",
+      "nbt": {}
+    },
+    {
+        "item": "chemica:zinc_dust"
+    }
+  ]
+}

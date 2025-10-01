@@ -1,0 +1,19 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "chemica:deepslate_cobalt_ore"
+    }
+  ],
+  "processingTime": 250,
+  "results": [
+    {
+      "count": 2,
+      "item": "chemica:crushed_raw_cobalt"
+    },
+    {
+      "chance": 0.11,
+      "item": "chemica:nickel_dust"
+    }
+  ]
+}

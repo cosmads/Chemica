@@ -1,0 +1,46 @@
+{
+  "type": "tfmg:vat_machine_recipe",
+  "allowedVatTypes": [
+    "tfmg:steel_vat",
+    "tfmg:firebrick_lined_vat"
+  ],
+  "ingredients": [
+    {
+      "amount": 1000,
+      "fluid": "chemica:epichlorohydrin",
+      "nbt": {}
+    },
+    {
+      "amount": 250,
+      "fluid": "chemica:caustic_soda",
+      "nbt": {}
+    },
+    {
+      "amount": 250,
+      "fluid": "chemica:phenol",
+      "nbt": {}
+    },
+    {
+      "amount": 250,
+      "fluid": "chemica:acetone",
+      "nbt": {}
+    }
+  ],
+  "machines": [
+    "tfmg:mixing"
+  ],
+  "minSize": 3,
+  "processingTime": 300,
+  "results": [
+    {
+      "amount": 1000,
+      "fluid": "chemica:epoxy_resin",
+      "nbt": {}
+    },
+    {
+      "amount": 150,
+      "fluid": "chemica:brine",
+      "nbt": {}
+    }
+  ]
+}

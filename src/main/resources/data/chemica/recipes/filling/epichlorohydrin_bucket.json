@@ -1,0 +1,18 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "minecraft:bucket"
+    },
+    {
+      "amount": 1000,
+      "fluid": "chemica:epichlorohydrin",
+      "nbt": {}
+    }
+  ],
+  "results": [
+    {
+      "item": "chemica:epichlorohydrin_bucket"
+    }
+  ]
+}

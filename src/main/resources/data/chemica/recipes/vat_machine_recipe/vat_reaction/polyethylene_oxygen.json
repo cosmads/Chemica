@@ -1,0 +1,41 @@
+{
+  "type": "tfmg:vat_machine_recipe",
+  "heatRequirement": "heated",
+  "allowedVatTypes": [
+    "tfmg:steel_vat",
+    "tfmg:firebrick_lined_vat"
+  ],
+  
+  "ingredients": [
+    {
+      "amount": 250,
+      "fluid": "chemica:titanium_tetrachloride",
+      "nbt": {}
+    },
+    {
+      "amount": 3500,
+      "fluid": "tfmg:ethylene",
+      "nbt": {}
+    },
+    {
+      "amount": 1500,
+      "fluid": "chemica:oxygen",
+      "nbt": {}
+    }
+  ],
+  "machines": [],
+  "minSize": 1,
+  "processingTime": 400,
+  "results": [
+    {
+      "amount": 1000,
+      "fluid": "chemica:polyethylene",
+      "nbt": {}
+    },
+    {
+      "amount": 100,
+      "fluid": "chemica:waste_slurry",
+      "nbt": {}
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a"
+  ],
+  "key": {
+    "a": {
+      "item": "chemica:vanadium_ingot"
+    }
+  },
+  "result": {
+    "item": "chemica:vanadium_nugget",
+    "count": 9
+  }
+}

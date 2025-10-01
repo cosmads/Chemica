@@ -1,0 +1,19 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "chemica:tin_ore"
+    }
+  ],
+  "processingTime": 250,
+  "results": [
+    {
+      "count": 2,
+      "item": "create:crushed_raw_tin"
+    },
+    {
+      "chance": 0.02,
+      "item": "chemica:arsenic_dust"
+    }
+  ]
+}

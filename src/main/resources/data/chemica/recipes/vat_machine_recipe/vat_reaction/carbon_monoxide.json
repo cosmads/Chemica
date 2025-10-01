@@ -1,0 +1,32 @@
+{
+  "type": "tfmg:vat_machine_recipe",
+  "allowedVatTypes": [
+    "tfmg:cast_iron_vat",
+    "tfmg:steel_vat",
+    "tfmg:firebrick_lined_vat"
+  ],
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "amount": 250,
+      "fluid": "chemica:carbon_dioxide",
+      "nbt": {}
+    },
+    {
+      "amount": "chemica:coal_dust"
+    }
+  ],
+  "machines": [],
+  "minSize": 1,
+  "processingTime": 400,
+  "results": [
+    {
+      "amount": 250,
+      "fluid": "chemica:carbon_monoxide",
+      "nbt": {}
+    },
+    {
+      "item": "chemica:ash"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "type": "create:mixing",
+  "heatRequirement": "superheated",
+  "ingredients": [
+    {
+      "amount": 500,
+      "fluid": "minecraft:water",
+      "nbt": {}
+    },
+    {
+      "item": "chemica:salt"
+    },
+    {
+      "item": "chemica:salt"
+    },
+    {
+      "item": "chemica:salt"
+    },
+    {
+      "item": "chemica:salt"
+    },
+    {
+      "item": "chemica:vanadium_dust"
+    }
+  ],
+  "results": [
+    {
+      "item": "chemica:vanadium_catalyst"
+    }
+  ]
+}

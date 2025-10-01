@@ -1,0 +1,22 @@
+{
+  "type": "tfmg:distillation",
+  "ingredients": [
+    {
+      "amount": 500,
+      "fluid": "chemica:reformate",
+      "nbt": {}
+    }
+  ],
+  "results": [
+    {
+      "amount": 300,
+      "fluid": "chemica:aromatic_mix",
+      "nbt": {}
+    },
+    {
+      "amount": 200,
+      "fluid": "chemica:light_hydrocarbons",
+      "nbt": {}
+    }
+  ]
+}

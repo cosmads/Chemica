@@ -1,0 +1,47 @@
+{
+  "type": "tfmg:vat_machine_recipe",
+  "allowedVatTypes": [
+    "tfmg:steel_vat",
+    "tfmg:firebrick_lined_vat"
+  ],
+  "ingredients": [
+    {
+      "item": "chemica:caustic_soda_dust"
+    },
+    {
+      "amount": 1000,
+      "fluid": "chemica:chlorine",
+      "nbt": {}
+    },
+    {
+      "amount": 250,
+      "fluid": "minecraft:water",
+      "nbt": {}
+    },
+    {
+      "amount": 250,
+      "fluid": "chemica:propene",
+      "nbt": {}
+    }
+  ],
+  "machines": [],
+  "minSize": 1,
+  "processingTime": 350,
+  "results": [
+    {
+      "amount": 1000,
+      "fluid": "chemica:epichlorohydrin",
+      "nbt": {}
+    },
+    {
+      "amount": 500,
+      "fluid": "chemica:hydrochloric_acid",
+      "nbt": {}
+    },
+    {
+      "amount": 250,
+      "fluid": "chemica:brine",
+      "nbt": {}
+    }
+  ]
+}

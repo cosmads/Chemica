@@ -1,0 +1,32 @@
+{
+  "type": "tfmg:distillation",
+  "ingredients": [
+    {
+      "amount": 500,
+      "fluid": "chemica:aromatic_mix",
+      "nbt": {}
+    }
+  ],
+  "results": [
+    {
+      "amount": 100,
+      "fluid": "chemica:xylene",
+      "nbt": {}
+    },
+    {
+      "amount": 150,
+      "fluid": "chemica:toluene",
+      "nbt": {}
+    },
+    {
+      "amount": 100,
+      "fluid": "chemica:ethylbenzene",
+      "nbt": {}
+    },
+    {
+      "amount": 150,
+      "fluid": "chemica:benzene",
+      "nbt": {}
+    }
+  ]
+}

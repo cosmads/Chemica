@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "chemica:item/polyvinyl_chloride_sheet"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "type": "tfmg:vat_machine_recipe",
+  "allowedVatTypes": [
+    "tfmg:firebrick_lined_vat"
+  ],
+  "ingredients": [
+    {
+      "item": "chemica:raw_tungsten"
+    },
+    {
+      "tag": "tfmg:flux"
+    },
+    {
+      "amount": 250,
+      "fluid": "chemica:helium",
+      "nbt": {}
+    }
+  ],
+  "machines": [
+    "tfmg:graphite_electrode",
+    "tfmg:graphite_electrode",
+    "tfmg:graphite_electrode"
+  ],
+  "minSize": 6,
+  "processingTime": 30,
+  "results": [
+    {
+      "item": "chemica:tungsten_dust"
+    }
+  ]
+}

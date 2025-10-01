@@ -1,0 +1,36 @@
+{
+  "type": "tfmg:vat_machine_recipe",
+  "allowedVatTypes": [
+    "tfmg:cast_iron_vat",
+    "tfmg:steel_vat",
+    "tfmg:firebrick_lined_vat"
+  ],
+  "ingredients": [
+    {
+      "amount": 1000,
+      "fluid": "chemica:cyclohexane",
+      "nbt": {}
+    },
+    {
+      "amount": 1000,
+      "fluid": "chemica:oxygen",
+      "nbt": {}
+    },
+    {
+      "item": "chemica:cobalt_catalyst"
+    }
+  ],
+  "machines": [],
+  "minSize": 1,
+  "processingTime": 350,
+  "results": [
+    {
+      "amount": 1000,
+      "fluid": "chemica:cyclohexanol",
+      "nbt": {}
+    },
+    {
+      "item": "chemica:cobalt_catalyst"
+    }
+  ]
+}

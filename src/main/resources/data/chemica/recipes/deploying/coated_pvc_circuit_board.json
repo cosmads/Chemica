@@ -1,0 +1,16 @@
+{
+  "type": "create:deploying",
+  "ingredients": [
+    {
+      "item": "chemica:empty_pvc_circuit_board"
+    },
+    {
+      "tag": "forge:plates/silver"
+    }
+  ],
+  "results": [
+    {
+      "item": "chemica:coated_pvc_circuit_board"
+    }
+  ]
+}

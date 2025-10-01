@@ -1,0 +1,36 @@
+{
+  "type": "tfmg:vat_machine_recipe",
+  "allowedVatTypes": [
+    "tfmg:steel_vat",
+    "tfmg:firebrick_lined_vat"
+  ],
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "item": "create:powdered_obsidian"
+    }
+  ],
+  "machines": [
+    "chemica:platinum_electrode",
+    "chemica:platinum_electrode"
+  ],
+  "minSize": 1,
+  "processingTime": 100,
+  "results": [
+    {
+      "item": "chemica:iron_dust"
+    },
+    {
+      "item": "chemica:silicon_dust"
+    },
+    {
+      "item": "tfmg:nitrate_dust"
+    },
+    {
+      "item": "tfmg:sulfur_dust"
+    },
+    {
+      "item": "chemica:charcoal_dust"
+    }
+  ]
+}

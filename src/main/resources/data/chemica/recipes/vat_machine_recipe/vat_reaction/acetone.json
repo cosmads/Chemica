@@ -1,0 +1,44 @@
+{
+  "type": "tfmg:vat_machine_recipe",
+  "allowedVatTypes": [
+    "tfmg:steel_vat",
+    "tfmg:firebrick_lined_vat"
+  ],
+  "ingredients": [
+    {
+      "amount": 250,
+      "fluid": "chemica:benzene",
+      "nbt": {}
+    },
+    {
+      "amount": 250,
+      "fluid": "tfmg:propylene",
+      "nbt": {}
+    },
+    {
+      "amount": 250,
+      "fluid": "tfmg:air",
+      "nbt": {}
+    },
+    {
+      "amount": 50,
+      "fluid": "tfmg:sulfuric_acid",
+      "nbt": {}
+    }
+  ],
+  "machines": [],
+  "minSize": 1,
+  "processingTime": 300,
+  "results": [
+    {
+      "amount": 250,
+      "fluid": "chemica:acetone",
+      "nbt": {}
+    },
+    {
+      "amount": 250,
+      "fluid": "chemica:phenol",
+      "nbt": {}
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "values": [
+    "chemica:flowing_ammonia",
+    "chemica:ammonia",
+    "chemica:flowing_argon",
+    "chemica:argon",
+    "chemica:flowing_chlorine",
+    "chemica:chlorine",
+    "chemica:flowing_fluorine",
+    "chemica:fluorine",
+    "chemica:flowing_light_hydrocarbons",
+    "chemica:light_hydrocarbons",
+    "chemica:flowing_nitrogen",
+    "chemica:nitrogen",
+    "chemica:flowing_nitrogen_dioxide",
+    "chemica:nitrogen_dioxide",
+    "chemica:flowing_oxygen",
+    "chemica:oxygen",
+    "chemica:flowing_reformate",
+    "chemica:reformate",
+    "chemica:flowing_vinyl_chloride_monomer",
+    "chemica:vinyl_chloride_monomer"
+  ]
+}

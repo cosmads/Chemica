@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a"
+  ],
+  "key": {
+    "a": {
+      "item": "chemica:antimony_ingot"
+    }
+  },
+  "result": {
+    "item": "chemica:antimony_nugget",
+    "count": 9
+  }
+}

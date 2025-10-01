@@ -1,0 +1,18 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "minecraft:bucket"
+    },
+    {
+      "amount": 1000,
+      "fluid": "chemica:propene",
+      "nbt": {}
+    }
+  ],
+  "results": [
+    {
+      "item": "chemica:propene_bucket"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "type": "tfmg:vat_machine_recipe",
+  "allowedVatTypes": [
+    "tfmg:steel_vat",
+    "tfmg:firebrick_lined_vat"
+  ],
+  "ingredients": [
+    {
+      "amount": 400,
+      "fluid": "chemica:aromatic_mix",
+      "nbt": {}
+    },
+    {
+      "amount": 150,
+      "fluid": "chemica:chlorine",
+      "nbt": {}
+    }
+  ],
+  "machines": [
+    "tfmg:mixing"
+  ],
+  "minSize": 1,
+  "results": [
+    {
+      "amount": 500,
+      "fluid": "chemica:epoxy_precursor",
+      "nbt": {}
+    }
+  ]
+}

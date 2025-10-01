@@ -1,0 +1,14 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "minecraft:iron_ingot"
+    }
+  ],
+  "processingTime": 100,
+  "results": [
+    {
+      "item": "chemica:iron_dust"
+    }
+  ]
+}

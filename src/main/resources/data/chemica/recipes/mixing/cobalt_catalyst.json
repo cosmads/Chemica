@@ -1,0 +1,22 @@
+{
+  "type": "create:mixing",
+  "heatRequirement": "superheated",
+  "ingredients": [
+    {
+      "amount": 500,
+      "fluid": "tfmg:sulfuric_acid",
+      "nbt": {}
+    },
+    {
+      "item": "chemica:cobalt_dust"
+    },
+    {
+      "item": "chemica:caustic_soda_dust"
+    }
+  ],
+  "results": [
+    {
+      "item": "chemica:cobalt_catalyst"
+    }
+  ]
+}

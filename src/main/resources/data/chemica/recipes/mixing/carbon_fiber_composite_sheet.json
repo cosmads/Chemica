@@ -1,0 +1,19 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "chemica:carbon_fiber_strands"
+    },
+    {
+      "amount": 250,
+      "fluid": "chemica:epoxy_resin",
+      "nbt": {}
+    }
+  ],
+  "processingTime": 300,
+  "results": [
+    {
+      "item": "chemica:carbon_fiber_composite_sheet"
+    }
+  ]
+}

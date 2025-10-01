@@ -1,0 +1,14 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "minecraft:copper_ingot"
+    }
+  ],
+  "processingTime": 100,
+  "results": [
+    {
+      "item": "chemica:copper_dust"
+    }
+  ]
+}

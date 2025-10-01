@@ -1,0 +1,35 @@
+{
+  "type": "tfmg:vat_machine_recipe",
+  "allowedVatTypes": [
+    "tfmg:firebrick_lined_vat"
+  ],
+  "ingredients": [
+    {
+      "item": "chemica:tungsten_carbide_dust"
+    },
+    {
+      "amount": 250,
+      "fluid": "chemica:helium",
+      "nbt": {}
+    }
+  ],
+  "machines": [
+    "tfmg:graphite_electrode",
+    "tfmg:graphite_electrode",
+    "tfmg:graphite_electrode"
+  ],
+  "minSize": 6,
+  "processingTime": 20,
+  "results": [
+    {
+      "amount": 144,
+      "fluid": "chemica:molten_tungsten_carbide",
+      "nbt": {}
+    },
+    {
+      "amount": 144,
+      "fluid": "tfmg:molten_slag",
+      "nbt": {}
+    }
+  ]
+}

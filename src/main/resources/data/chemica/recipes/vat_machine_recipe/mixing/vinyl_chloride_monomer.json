@@ -1,0 +1,32 @@
+{
+  "type": "tfmg:vat_machine_recipe",
+  "allowedVatTypes": [
+  	"tfmg:cast_iron_vat",
+    "tfmg:steel_vat",
+    "tfmg:firebrick_lined_vat"
+  ],
+  "ingredients": [
+    {
+      "amount": 1000,
+      "fluid": "tfmg:ethylene",
+      "nbt": {}
+    },
+    {
+      "amount": 1000,
+      "fluid": "chemica:chlorine",
+      "nbt": {}
+    }
+  ],
+  "machines": [
+    "tfmg:mixing"
+  ],
+  "minSize": 1,
+  "processingTime": 300,
+  "results": [
+    {
+      "amount": 1000,
+      "fluid": "chemica:vinyl_chloride_monomer",
+      "nbt": {}
+    }
+  ]
+}

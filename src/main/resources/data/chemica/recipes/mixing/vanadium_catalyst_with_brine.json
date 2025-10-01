@@ -1,0 +1,19 @@
+{
+  "type": "create:mixing",
+  "heatRequirement": "superheated",
+  "ingredients": [
+    {
+      "amount": 500,
+      "fluid": "chemica:brine",
+      "nbt": {}
+    },
+    {
+      "item": "chemica:vanadium_dust"
+    }
+  ],
+  "results": [
+    {
+      "item": "chemica:vanadium_catalyst"
+    }
+  ]
+}

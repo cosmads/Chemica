@@ -1,0 +1,31 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "minecraft:deepslate_redstone_ore"
+    }
+  ],
+  "processingTime": 250,
+  "results": [
+    {
+      "count": 6,
+      "item": "minecraft:redstone"
+    },
+    {
+      "chance": 0.50,
+      "item": "minecraft:redstone"
+    },
+    {
+      "chance": 0.75,
+      "item": "create:experience_nugget"
+    },
+    {
+      "chance": 0.125,
+      "item": "minecraft:cobbled_deepslate"
+    },
+    {
+      "chance": 0.5,
+      "item": "chemica:sulfur_dust"
+    }
+  ]
+}

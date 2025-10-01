@@ -1,0 +1,16 @@
+{
+  "type": "create:compacting",
+  "heatRequirement": "superheated",
+  "ingredients": [
+    {
+      "item": "chemica:nylon_salt"
+    }
+  ],
+  "results": [
+    {
+      "amount": 100,
+      "fluid": "chemica:molten_nylon",
+      "nbt": {}
+    }
+  ]
+}

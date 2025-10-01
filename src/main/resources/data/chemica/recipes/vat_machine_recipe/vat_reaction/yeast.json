@@ -1,0 +1,49 @@
+{
+  "type": "tfmg:vat_machine_recipe",
+  "allowedVatTypes": [
+    "tfmg:steel_vat",
+    "tfmg:firebrick_lined_vat"
+  ],
+  "ingredients": [
+    {
+      "amount": 1000,
+      "fluid": "minecraft:water",
+      "nbt": {}
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "create:dough"
+    },
+    {
+      "item": "create:dough"
+    }
+  ],
+  "machines": [],
+  "minSize": 1,
+  "processingTime": 1800,
+  "results": [
+    {
+      "count": 4,
+      "item": "chemica:yeast"
+    },
+    {
+      "chance": 0.3,
+      "item": "chemica:yeast"
+    },
+    {
+      "chance": 0.1,
+      "item": "chemica:yeast"
+    }
+  ]
+}

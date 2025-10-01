@@ -1,0 +1,21 @@
+{
+  "type": "create:mixing",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "item": "chemica:platinum_catalyst"
+    },
+    {
+      "amount": 100,
+      "fluid": "chemica:ethanol",
+      "nbt": {}
+    }
+  ],
+  "results": [
+    {
+      "amount": 100,
+      "fluid": "chemica:platinum_catalyst_carrier",
+      "nbt": {}
+    }
+  ]
+}

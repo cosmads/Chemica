@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "chemica:platinum_ingot"
+    }
+  },
+  "result": {
+    "item": "chemica:platinum_block",
+    "count": 1
+  }
+}

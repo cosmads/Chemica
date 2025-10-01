@@ -1,0 +1,16 @@
+{
+  "type": "tfmg:casting",
+  "ingredients": [
+    {
+      "amount": 144,
+      "fluid": "chemica:molten_tungsten_carbide",
+      "nbt": {}
+    }
+  ],
+  "processingTime": 100,
+  "results": [
+    {
+      "item": "chemica:tungsten_carbide_ingot"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "chemica:deepslate_fluorite_ore"
+    }
+  ],
+  "results": [
+    {
+      "count": 4,
+      "item": "chemica:fluorite_dust"
+    },
+    {
+      "chance": 0.25,
+      "item": "chemica:fluorite_dust"
+    },
+    {
+      "chance": 0.10,
+      "item": "create:crushed_raw_lead"
+    }
+  ]
+}

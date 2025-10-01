@@ -1,0 +1,32 @@
+{
+  "type": "tfmg:vat_machine_recipe",
+  "allowedVatTypes": [
+    "tfmg:steel_vat",
+    "tfmg:firebrick_lined_vat"
+  ],
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "amount": "chemica:sodium_persulfate"
+    }
+  ],
+  "machines": [
+    "tfmg:electrode",
+    "tfmg:electrode"
+  ],
+  "minSize": 1,
+  "processingTime": 100,
+  "results": [
+    {
+      "amount": 150,
+      "fluid": "chemica:oxygen",
+      "nbt": {}
+    },
+    {
+      "item": "chemica:sodium_dust"
+    },
+    {
+      "item": "tfmg:sulfur_dust"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "chemica:deepslate_vanadium_ore"
+    }
+  ],
+  "processingTime": 250,
+  "results": [
+    {
+      "count": 1,
+      "item": "chemica:crushed_raw_vanadium"
+    },
+    {
+      "chance": 0.2,
+      "item": "create:crushed_raw_iron"
+    }
+  ]
+}

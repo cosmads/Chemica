@@ -1,0 +1,13 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "chemica:cobalt_ingot"
+    }
+  ],
+  "results": [
+    {
+      "item": "chemica:cobalt_dust"
+    }
+  ]
+}

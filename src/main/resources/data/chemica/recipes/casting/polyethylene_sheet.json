@@ -1,0 +1,16 @@
+{
+  "type": "tfmg:casting",
+  "ingredients": [
+    {
+      "amount": 200,
+      "fluid": "chemica:polyethylene",
+      "nbt": {}
+    }
+  ],
+  "processingTime": 100,
+  "results": [
+    {
+      "item": "chemica:polyethylene_sheet"
+    }
+  ]
+}

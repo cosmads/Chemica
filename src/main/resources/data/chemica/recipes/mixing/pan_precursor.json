@@ -1,0 +1,23 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "chemica:cobalt_catalyst"
+    },
+    {
+      "amount": 1000,
+      "fluid": "chemica:acrylonitrile",
+      "nbt": {}
+    }
+  ],
+  "results": [
+    {
+      "amount": 1000,
+      "fluid": "chemica:pan_precursor",
+      "nbt": {}
+    },
+    {
+      "item": "chemica:cobalt_catalyst"
+    }
+  ]
+}

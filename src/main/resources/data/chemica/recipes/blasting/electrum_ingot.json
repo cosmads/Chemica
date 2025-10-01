@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "experience": 1,
+  "cookingtime": 100,
+  "ingredient": {
+    "item": "chemica:electrum_grit"
+  },
+  "result": [{
+    "tag": "forge:ingots/electrum"
+  }]
+}

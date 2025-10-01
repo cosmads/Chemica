@@ -1,0 +1,32 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "amount": 1500,
+      "fluid": "chemica:nitric_acid",
+      "nbt": {}
+    },
+    {
+      "amount": 500,
+      "fluid": "chemica:glycerin",
+      "nbt": {}
+    },
+    {
+      "amount": 500,
+      "fluid": "tfmg:sulfuric_acid",
+      "nbt": {}
+    }
+  ],
+  "results": [
+    {
+      "amount": 1000,
+      "fluid": "chemica:nitroglycerin",
+      "nbt": {}
+    },
+    {
+      "amount": 500,
+      "fluid": "tfmg:sulfuric_acid",
+      "nbt": {}
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "type": "tfmg:vat_machine_recipe",
+  "allowedVatTypes": [
+    "tfmg:steel_vat",
+    "tfmg:firebrick_lined_vat"
+  ],
+  "ingredients": [
+    {
+      "item": "minecraft:sugar",
+      "count": 8
+    },
+    {
+      "item": "chemica:yeast"
+    }
+  ],
+  "machines": [],
+  "minSize": 1,
+  "processingTime": 1200,
+  "results": [
+    {
+      "amount": 1000,
+      "fluid": "chemica:ethanol",
+      "nbt": {}
+    }
+  ]
+}

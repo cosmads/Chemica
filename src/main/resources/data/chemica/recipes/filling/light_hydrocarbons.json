@@ -1,0 +1,18 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "minecraft:bucket"
+    },
+    {
+      "amount": 1000,
+      "fluid": "chemica:light_hydrocarbons",
+      "nbt": {}
+    }
+  ],
+  "results": [
+    {
+      "item": "chemica:light_hydrocarbons_bucket"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "minecraft:gold_ingot"
+    }
+  ],
+  "processingTime": 100,
+  "results": [
+    {
+      "item": "chemica:gold_dust"
+    }
+  ]
+}

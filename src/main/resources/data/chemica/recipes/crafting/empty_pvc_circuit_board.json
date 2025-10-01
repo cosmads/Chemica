@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bbb"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:light_gray_dye"
+    },
+    "b": {
+      "item": "chemica:polyvinyl_chloride_sheet"
+    }
+  },
+  "result": {
+    "item": "chemica:empty_pvc_circuit_board",
+    "count": 1
+  }
+}

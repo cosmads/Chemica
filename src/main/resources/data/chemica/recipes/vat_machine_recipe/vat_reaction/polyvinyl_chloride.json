@@ -1,0 +1,31 @@
+{
+  "type": "tfmg:vat_machine_recipe",
+  "allowedVatTypes": [
+    "tfmg:cast_iron_vat",
+    "tfmg:steel_vat",
+    "tfmg:firebrick_lined_vat"
+  ],
+  "ingredients": [
+    {
+      "amount": 1000,
+      "fluid": "chemica:vinyl_chloride_monomer",
+      "nbt": {}
+    },
+    {
+        "item": "chemica:copper_catalyst"
+    }
+  ],
+  "machines": [],
+  "minSize": 1,
+  "processingTime": 400,
+  "results": [
+    {
+      "amount": 1000,
+      "fluid": "chemica:polyvinyl_chloride",
+      "nbt": {}
+    },
+    {
+        "item": "chemica:copper_catalyst"
+    }
+  ]
+}

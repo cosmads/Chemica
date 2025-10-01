@@ -1,0 +1,97 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "chemica:etched_pvc_circuit_board"
+  },
+  "loops": 4,
+  "results": [
+    {
+      "item": "chemica:electronic_circuit"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "chemica:unfinished_electronic_circuit_board"
+        },
+        {
+          "item": "chemica:tantalum_capacitor_item"
+        }
+      ],
+      "results": [
+        {
+          "item": "chemica:unfinished_electronic_circuit_board"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "chemica:unfinished_electronic_circuit_board"
+        },
+        {
+          "item": "tfmg:resistor"
+        }
+      ],
+      "results": [
+        {
+          "item": "chemica:unfinished_electronic_circuit_board"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "chemica:unfinished_electronic_circuit_board"
+        },
+        {
+          "item": "tfmg:transistor_item"
+        }
+      ],
+      "results": [
+        {
+          "item": "chemica:unfinished_electronic_circuit_board"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "chemica:unfinished_electronic_circuit_board"
+        },
+        {
+          "item": "tfmg:resistor"
+        }
+      ],
+      "results": [
+        {
+          "item": "chemica:unfinished_electronic_circuit_board"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "chemica:unfinished_electronic_circuit_board"
+        },
+        {
+          "item": "create:electron_tube"
+        }
+      ],
+      "results": [
+        {
+          "item": "chemica:unfinished_electronic_circuit_board"
+        }
+      ]
+    }
+  ],
+  "transitionalItem": {
+    "item": "chemica:unfinished_electronic_circuit_board"
+  }
+}

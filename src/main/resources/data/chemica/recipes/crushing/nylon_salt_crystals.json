@@ -1,0 +1,14 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "chemica:nylon_salt_crystals"
+    }
+  ],
+  "results": [
+    {
+      "count": 2,
+      "item": "chemica:nylon_salt"
+    }
+  ]
+}

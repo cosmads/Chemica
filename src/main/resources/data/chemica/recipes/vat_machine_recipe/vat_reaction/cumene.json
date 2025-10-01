@@ -1,0 +1,29 @@
+{
+  "type": "tfmg:vat_machine_recipe",
+  "allowedVatTypes": [
+    "tfmg:cast_iron_vat",
+    "tfmg:steel_vat"
+  ],
+  "ingredients": [
+    {
+      "amount": 500,
+      "fluid": "chemica:benzene",
+      "nbt": {}
+    },
+    {
+      "amount": 500,
+      "fluid": "tfmg:propylene",
+      "nbt": {}
+    }
+  ],
+  "machines": [],
+  "minSize": 1,
+  "processingTime": 300,
+  "results": [
+    {
+      "amount": 1000,
+      "fluid": "chemica:cumene",
+      "nbt": {}
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "item": "chemica:crushed_graphite"
+    }
+  ],
+  "results": [
+    {
+      "item": "chemica:purified_graphite_flakes"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "type": "create:compacting",
+  "heatRequirement": "superheated",
+  "ingredients": [
+    {
+      "item": "chemica:stabilized_fibers"
+    },
+    {
+      "item": "chemica:stabilized_fibers"
+    },
+    {
+      "amount": 250,
+      "fluid": "chemica:argon",
+      "nbt": {}
+    }
+  ],
+  "results": [
+    {
+      "item": "chemica:carbon_fiber_strands"
+    }
+  ]
+}

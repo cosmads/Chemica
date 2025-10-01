@@ -1,0 +1,23 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "chemica:phosphorus_ore"
+    }
+  ],
+  "processingTime": 250,
+  "results": [
+    {
+      "count": 2,
+      "item": "chemica:phosphorus_dust"
+    },
+    {
+      "chance": 0.1,
+      "item": "chemica:phosphorus_dust"
+    },
+    {
+      "chance": 0.03,
+      "item": "chemica:arsenic_dust"
+    }
+  ]
+}

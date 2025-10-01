@@ -1,0 +1,17 @@
+{
+  "type": "create:mixing",
+  "heatRequirement": "superheated",
+  "ingredients": [
+    {
+      "item": "chemica:nickel_dust"
+    },
+    {
+      "item": "chemica:copper_dust"
+    }
+  ],
+  "results": [
+    {
+      "item": "tfmg:constantan_ingot"
+    }
+  ]
+}

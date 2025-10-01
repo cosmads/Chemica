@@ -1,0 +1,28 @@
+{
+  "type": "tfmg:hot_blast",
+  "ingredients": [
+    {
+      "amount": 100,
+      "fluid": "tfmg:naphtha",
+      "nbt": {}
+    },
+    {
+      "amount": 5,
+      "fluid": "chemica:platinum_catalyst_carrier",
+      "nbt": {}
+    }
+  ],
+  "processingTime": 200,
+  "results": [
+    {
+      "amount": 70,
+      "fluid": "chemica:reformate",
+      "nbt": {}
+    },
+    {
+      "amount": 30,
+      "fluid": "tfmg:hydrogen",
+      "nbt": {}
+    }
+  ]
+}

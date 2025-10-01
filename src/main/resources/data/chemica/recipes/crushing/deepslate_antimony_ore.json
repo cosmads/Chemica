@@ -1,0 +1,19 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "chemica:deepslate_antimony_ore"
+    }
+  ],
+  "processingTime": 250,
+  "results": [
+    {
+      "count": 1,
+      "item": "chemica:crushed_raw_antimony"
+    },
+    {
+      "chance": 0.03,
+      "item": "chemica:arsenic_dust"
+    }
+  ]
+}

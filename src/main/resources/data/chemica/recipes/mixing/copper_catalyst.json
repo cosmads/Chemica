@@ -1,0 +1,17 @@
+{
+  "type": "create:mixing",
+  "heatRequirement": "superheated",
+  "ingredients": [
+    {
+      "item": "chemica:copper_dust"
+    },
+    {
+      "item": "tfmg:sulfur_dust"
+    }
+  ],
+  "results": [
+    {
+      "item": "chemica:copper_catalyst"
+    }
+  ]
+}

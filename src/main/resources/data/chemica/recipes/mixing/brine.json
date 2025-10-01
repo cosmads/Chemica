@@ -1,0 +1,22 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "tag": "forge:dusts/salt"
+    },
+    {
+      "tag": "forge:dusts/salt"
+    },
+    {
+      "amount": 250,
+      "fluid": "minecraft:water"
+    }
+  ],
+  "results": [
+    {
+      "amount": 250,
+      "fluid": "chemica:brine",
+      "nbt": {}
+    }
+  ]
+}

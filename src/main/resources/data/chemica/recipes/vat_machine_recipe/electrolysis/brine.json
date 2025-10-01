@@ -1,0 +1,44 @@
+{
+  "type": "tfmg:vat_machine_recipe",
+  "allowedVatTypes": [
+  	"tfmg:cast_iron_vat",
+    "tfmg:steel_vat",
+    "tfmg:firebrick_lined_vat"
+  ],
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "amount": 1000,
+      "fluid": "chemica:brine",
+      "nbt": {}
+    }
+  ],
+  "machines": [
+    "tfmg:electrode",
+    "tfmg:electrode"
+  ],
+  "minSize": 1,
+  "processingTime": 100,
+  "results": [
+    {
+      "amount": 180,
+      "fluid": "tfmg:hydrogen",
+      "nbt": {}
+    },
+    {
+      "amount": 100,
+      "fluid": "chemica:brine",
+      "nbt": {}
+    },
+    {
+      "amount": 360,
+      "fluid": "chemica:chlorine",
+      "nbt": {}
+    },
+    {
+      "amount": 360,
+      "fluid": "chemica:caustic_soda",
+      "nbt": {}
+    }
+  ]
+}

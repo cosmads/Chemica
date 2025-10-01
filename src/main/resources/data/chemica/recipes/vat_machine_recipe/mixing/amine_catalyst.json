@@ -1,0 +1,31 @@
+{
+  "type": "tfmg:vat_machine_recipe",
+  "allowedVatTypes": [
+  	"tfmg:cast_iron_vat",
+    "tfmg:steel_vat",
+    "tfmg:firebrick_lined_vat"
+  ],
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "item": "chemica:coal_dust"
+    },
+    {
+      "amount": 250,
+      "fluid": "chemica:ammonia",
+      "nbt": {}
+    }
+  ],
+  "machines": [
+    "tfmg:mixing"
+  ],
+  "minSize": 1,
+  "processingTime": 350,
+  "results": [
+    {
+      "amount": 250,
+      "fluid": "chemica:amine_catalyst",
+      "nbt": {}
+    }
+  ]
+}

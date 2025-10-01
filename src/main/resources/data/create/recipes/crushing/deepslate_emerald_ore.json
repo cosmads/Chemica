@@ -1,0 +1,31 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "minecraft:deepslate_emerald_ore"
+    }
+  ],
+  "processingTime": 250,
+  "results": [
+    {
+      "count": 1,
+      "item": "minecraft:emerald"
+    },
+    {
+      "chance": 0.75,
+      "item": "minecraft:emerald"
+    },
+    {
+      "chance": 0.75,
+      "item": "create:experience_nugget"
+    },
+    {
+      "chance": 0.125,
+      "item": "minecraft:cobbled_deepslate"
+    },
+    {
+      "chance": 0.2,
+      "item": "chemica:chromium_dust"
+    }
+  ]
+}

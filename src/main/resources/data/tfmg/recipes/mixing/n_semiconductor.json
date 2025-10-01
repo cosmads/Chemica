@@ -1,0 +1,23 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "amount": 250,
+      "fluid": "tfmg:liquid_silicon",
+      "nbt": {}
+    },
+    {
+      "amount": 250,
+      "fluid": "chemica:hydrofluoric_acid",
+      "nbt": {}
+    },
+    {
+      "item": "chemica:antimony_dust"
+    }
+  ],
+  "results": [
+    {
+      "item": "tfmg:n_semiconductor"
+    }
+  ]
+}

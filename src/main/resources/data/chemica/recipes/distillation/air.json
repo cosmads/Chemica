@@ -1,0 +1,27 @@
+{
+  "type": "tfmg:distillation",
+  "ingredients": [
+    {
+      "amount": 1000,
+      "fluid": "tfmg:air",
+      "nbt": {}
+    }
+  ],
+  "results": [
+    {
+      "amount": 780,
+      "fluid": "chemica:xylene",
+      "nbt": {}
+    },
+    {
+      "amount": 210,
+      "fluid": "chemica:toluene",
+      "nbt": {}
+    },
+    {
+      "amount": 10,
+      "fluid": "chemica:argon",
+      "nbt": {}
+    }
+  ]
+}

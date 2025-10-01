@@ -1,0 +1,48 @@
+{
+  "type": "tfmg:distillation",
+  "ingredients": [
+    {
+      "amount": 1000,
+      "fluid": "chemica:light_hydrocarbons",
+      "nbt": {}
+    }
+  ],
+  "results": [
+    {
+      "amount": 100,
+      "fluid": "tfmg:xylene",
+      "nbt": {}
+    },
+    {
+      "amount": 100,
+      "fluid": "tfmg:toluene",
+      "nbt": {}
+    },
+    {
+      "amount": 100,
+      "fluid": "tfmg:benzene",
+      "nbt": {}
+    },
+    {
+      "amount": 100,
+      "fluid": "tfmg:butene",
+      "nbt": {}
+    },
+    {
+      "amount": 150,
+      "fluid": "tfmg:propane",
+      "nbt": {}
+    },
+    {
+      "amount": 200,
+      "fluid": "tfmg:ethane",
+      "nbt": {}
+    },
+    {
+      "amount": 250,
+      "fluid": "tfmg:methane",
+      "nbt": {}
+    }
+    
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "chemica:rutile_ore"
+    }
+  ],
+  "processingTime": 250,
+  "results": [
+    {
+      "count": 1,
+      "item": "chemica:rutile_crystal"
+    },
+    {
+      "chance": 0.08,
+      "item": "chemica:iron_dust"
+    }
+  ]
+}

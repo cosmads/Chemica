@@ -1,0 +1,16 @@
+{
+  "type": "tfmg:casting",
+  "ingredients": [
+    {
+      "amount": 200,
+      "fluid": "chemica:polyvinyl_chloride",
+      "nbt": {}
+    }
+  ],
+  "processingTime": 100,
+  "results": [
+    {
+      "item": "chemica:polyvinyl_chloride_sheet"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "type": "tfmg:vat_machine_recipe",
+  "allowedVatTypes": [
+  	"tfmg:cast_iron_vat",
+    "tfmg:steel_vat",
+    "tfmg:firebrick_lined_vat"
+  ],
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "amount": 500,
+      "fluid": "chemica:reformate",
+      "nbt": {}
+    }
+  ],
+  "machines": [
+    "tfmg:centrifuge"
+  ],
+  "minSize": 1,
+  "results": [
+    {
+      "amount": 300,
+      "fluid": "chemica:aromatic_mix",
+      "nbt": {}
+    },
+    {
+      "amount": 200,
+      "fluid": "chemica:light_hydrocarbons",
+      "nbt": {}
+    }
+  ]
+}

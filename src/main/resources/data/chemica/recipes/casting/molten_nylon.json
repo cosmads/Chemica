@@ -1,0 +1,16 @@
+{
+  "type": "tfmg:casting",
+  "ingredients": [
+    {
+      "amount": 144,
+      "fluid": "chemica:molten_nylon",
+      "nbt": {}
+    }
+  ],
+  "processingTime": 100,
+  "results": [
+    {
+      "item": "chemica:nylon_ingot"
+    }
+  ]
+}

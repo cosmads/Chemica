@@ -1,0 +1,32 @@
+{
+  "type": "tfmg:vat_machine_recipe",
+  "allowedVatTypes": [
+  	"tfmg:cast_iron_vat",
+    "tfmg:steel_vat",
+    "tfmg:firebrick_lined_vat"
+  ],
+  "ingredients": [
+    {
+      "amount": 1000,
+      "fluid": "chemica:ammonia",
+      "nbt": {}
+    },
+    {
+      "amount": 500,
+      "fluid": "chemica:platinum_catalyst_carrier",
+      "nbt": {}
+    }
+  ],
+  "machines": [
+    "tfmg:mixing"
+  ],
+  "minSize": 1,
+  "processingTime": 300,
+  "results": [
+    {
+      "amount": 750,
+      "fluid": "chemica:nitrogen_dioxide",
+      "nbt": {}
+    }
+  ]
+}

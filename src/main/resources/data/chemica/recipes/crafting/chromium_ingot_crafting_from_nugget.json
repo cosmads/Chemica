@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "chemica:chromium_nugget"
+    }
+  },
+  "result": {
+    "item": "chemica:chromium_ingot",
+    "count": 1
+  }
+}

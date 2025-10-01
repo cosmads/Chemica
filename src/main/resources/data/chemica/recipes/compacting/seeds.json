@@ -1,0 +1,15 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "tag": "forge:seeds"
+    }
+  ],
+  "results": [
+    {
+      "amount": 200,
+      "fluid": "chemica:seed_oil",
+      "nbt": {}
+    }
+  ]
+}

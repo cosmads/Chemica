@@ -1,0 +1,15 @@
+{
+  "type": "create:cutting",
+  "ingredients": [
+    {
+      "item": "chemica:cured_epoxy_block"
+    }
+  ],
+  "processingTime": 200,
+  "results": [
+    {
+      "count": 9,
+      "item": "chemica:cured_epoxy_sheet"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "amount": 750,
+      "fluid": "chemica:epoxy_precursor",
+      "nbt": {}
+    },
+    {
+      "amount": 250,
+      "fluid": "chemica:amine_catalyst",
+      "nbt": {}
+    }
+  ],
+  "results": [
+    {
+      "amount": 1000,
+      "fluid": "chemica:epoxy_resin",
+      "nbt": {}
+    }
+  ]
+}

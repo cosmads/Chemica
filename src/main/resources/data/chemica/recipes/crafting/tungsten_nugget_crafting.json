@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a"
+  ],
+  "key": {
+    "a": {
+      "item": "chemica:tungsten_ingot"
+    }
+  },
+  "result": {
+    "item": "chemica:tungsten_nugget",
+    "count": 9
+  }
+}

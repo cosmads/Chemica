@@ -1,0 +1,35 @@
+{
+  "type": "tfmg:vat_machine_recipe",
+  "allowedVatTypes": [
+    "tfmg:firebrick_lined_vat"
+  ],
+  "ingredients": [
+    {
+      "amount": 500,
+      "fluid": "chemica:tungsten_hexafluoride",
+      "nbt": {}
+    },
+    {
+      "amount": 1000,
+      "fluid": "tfmg:hydrogen",
+      "nbt": {}
+    }
+  ],
+  "machines": [
+    "tfmg:graphite_electrode",
+    "tfmg:graphite_electrode",
+    "tfmg:graphite_electrode"
+  ],
+  "minSize": 6,
+  "processingTime": 20,
+  "results": [
+    {
+      "item": "chemica:tungsten_ingot"
+    },
+    {
+      "amount": 500,
+      "fluid": "chemica:hydrofluoric_acid",
+      "nbt": {}
+    }
+  ]
+}
