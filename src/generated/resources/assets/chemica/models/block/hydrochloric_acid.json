@@ -1,5 +1,5 @@
 {
   "textures": {
-    "particle": "chemica:block/fluid/hydrochloric_acid_still"
+    "particle": "chemica:block/fluid/base_still"
   }
 }

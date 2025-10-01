@@ -1,5 +1,5 @@
 {
   "textures": {
-    "particle": "chemica:block/fluid/cumene_still"
+    "particle": "chemica:block/fluid/base_still"
   }
 }

@@ -2,12 +2,13 @@
   "required": true,
   "priority": 1100,
   "package": "io.github.cosmads.chemica.mixin",
-  "compatibilityLevel": "JAVA_17",
+  "compatibilityLevel": "JAVA_17", 
   "refmap": "chemica.refmap.json",
   "plugin": "io.github.cosmads.chemica.mixin.plugin.ChemicaMixinsPlugin",
   "mixins": [
   ],
   "client": [
+    "ChemicalVatCategoryMixin , deobf = false"
   ],
   "injectors": {
     "defaultRequire": 1

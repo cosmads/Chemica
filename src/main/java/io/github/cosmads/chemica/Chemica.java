@@ -7,8 +7,13 @@ import io.github.cosmads.chemica.common.registrate.ChemicaRegistrate;
 import io.github.cosmads.chemica.registry.*;
 import net.createmod.catnip.lang.LangBuilder;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.server.packs.PackType;
+import net.minecraft.server.packs.PathPackResources;
+import net.minecraft.server.packs.repository.Pack;
+import net.minecraft.server.packs.repository.PackSource;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.event.AddPackFindersEvent;
 import net.minecraftforge.eventbus.api.EventPriority;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.DistExecutor;
@@ -16,6 +21,7 @@ import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.forgespi.locating.IModFile;
 import net.minecraftforge.registries.RegisterEvent;
 import org.slf4j.Logger;
 
@@ -53,10 +59,10 @@ public class Chemica {
         DistExecutor.unsafeRunWhenOn(Dist.CLIENT, () -> () -> ChemicaClient.onCtorClient(bus, forgeEventBus));
     }
 
+
     public static void init(final FMLCommonSetupEvent event) {
-
         event.enqueueWork(() -> {
-
+            // Initialization work
         });
     }
 

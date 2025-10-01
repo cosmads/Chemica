@@ -20,6 +20,7 @@ import net.createmod.catnip.lang.FontHelper;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraftforge.fluids.ForgeFlowingFluid;
 import net.minecraftforge.registries.ForgeRegistries;
 
 public class ChemicaRegistrate extends CreateRegistrate {
@@ -94,5 +95,33 @@ public class ChemicaRegistrate extends CreateRegistrate {
 
     public <T extends Electrode, P> ElectrodeBuilder<T, P> electrode(P parent, String name, NonNullFunction<Electrode.Properties, T> factory) {
         return this.entry(name, (callback) -> ElectrodeBuilder.create(this, parent, name, callback, factory));
+    }
+
+
+
+    // Add multiple tinted fluid methods for different base textures
+    public FluidBuilder<ForgeFlowingFluid.Flowing, CreateRegistrate> tintedFluid(String name, int color, String textureType) {
+        return this.fluid(name,
+                Chemica.asResource("block/fluid/" + textureType + "_still"),
+                Chemica.asResource("block/fluid/" + textureType + "_flow"),
+                TransparentTintedFluidType.create(color));
+    }
+
+    // Default to "base" texture if no type specified
+    public FluidBuilder<ForgeFlowingFluid.Flowing, CreateRegistrate> tintedFluid(String name, int color) {
+        return tintedFluid(name, color, "base");
+    }
+
+    // Special texture types
+    public FluidBuilder<ForgeFlowingFluid.Flowing, CreateRegistrate> oilyTintedFluid(String name, int color) {
+        return tintedFluid(name, color, "molten");
+    }
+
+    public FluidBuilder<ForgeFlowingFluid.Flowing, CreateRegistrate> wateryTintedFluid(String name, int color) {
+        return tintedFluid(name, color, "oily");
+    }
+
+    public FluidBuilder<ForgeFlowingFluid.Flowing, CreateRegistrate> viscousTintedFluid(String name, int color) {
+        return tintedFluid(name, color, "viscous");
     }
 }
