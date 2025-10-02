@@ -1,6 +1,6 @@
 <div align="center">
   <img src="https://cdn.modrinth.com/data/E6GusVzz/0824b655e62df52399d8584b6fd748e6a5e52d77_96.webp">
-  <h1>Create: The Factory Must Grow</h1>
+  <h1>Chemica</h1>
   <a href="https://www.curseforge.com/minecraft/mc-mods/chemica"><picture><source srcset="https://img.shields.io/badge/CurseForge-202830?style=for-the-badge&logo=curseforge" media="(prefers-color-scheme: dark)"><img src="https://img.shields.io/badge/CurseForge-white?style=for-the-badge&logo=curseforge" alt="CurseForge"></picture></a>
   <a href="https://modrinth.com/mod/chemica"><picture><source srcset="https://img.shields.io/badge/Modrinth-202830?style=for-the-badge&logo=modrinth" media="(prefers-color-scheme: dark)"><img src="https://img.shields.io/badge/Modrinth-white?style=for-the-badge&logo=modrinth" alt="Modrinth"></picture></a>
   <a href="https://discord.gg/mN3wrPxs3x"><picture><source srcset="https://img.shields.io/badge/Discord-202830?style=for-the-badge&logo=discord" media="(prefers-color-scheme: dark)"><img src="https://img.shields.io/badge/Discord-white?style=for-the-badge&logo=discord" alt="Discord"></picture></a>
