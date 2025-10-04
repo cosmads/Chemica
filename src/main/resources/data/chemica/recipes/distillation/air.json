@@ -9,18 +9,23 @@
   ],
   "results": [
     {
-      "amount": 780,
-      "fluid": "chemica:xylene",
+      "amount": 10,
+      "fluid": "chemica:helium",
+      "nbt": {}
+    },
+    {
+      "amount": 760,
+      "fluid": "chemica:nitrogen",
+      "nbt": {}
+    },
+    {
+      "amount": 20,
+      "fluid": "chemica:argon",
       "nbt": {}
     },
     {
       "amount": 210,
-      "fluid": "chemica:toluene",
-      "nbt": {}
-    },
-    {
-      "amount": 10,
-      "fluid": "chemica:argon",
+      "fluid": "chemica:oxygen",
       "nbt": {}
     }
   ]

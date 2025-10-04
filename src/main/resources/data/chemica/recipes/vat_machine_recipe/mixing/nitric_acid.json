@@ -1,5 +1,10 @@
 {
-  "type": "create:mixing",
+  "type": "tfmg:vat_machine_recipe",
+  "allowedVatTypes": [
+  	"tfmg:cast_iron_vat",
+    "tfmg:steel_vat",
+    "tfmg:firebrick_lined_vat"
+  ],
   "ingredients": [
     {
       "amount": 1000,
@@ -12,6 +17,10 @@
       "nbt": {}
     }
   ],
+  "machines": [
+    "tfmg:mixing"
+  ],
+  "minSize": 1,
   "results": [
     {
       "amount": 1000,

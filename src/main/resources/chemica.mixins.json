@@ -8,7 +8,7 @@
   "mixins": [
   ],
   "client": [
-    "ChemicalVatCategoryMixin , deobf = false"
+    "ChemicalVatCategoryMixin"
   ],
   "injectors": {
     "defaultRequire": 1

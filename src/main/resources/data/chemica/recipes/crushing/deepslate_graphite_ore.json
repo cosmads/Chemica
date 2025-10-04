@@ -2,7 +2,7 @@
   "type": "create:crushing",
   "ingredients": [
     {
-      "item": "chemica:graphite_ore"
+      "item": "chemica:deepslate_graphite_ore"
     }
   ],
   "processingTime": 250,

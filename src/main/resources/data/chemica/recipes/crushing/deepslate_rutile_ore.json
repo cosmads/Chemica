@@ -8,11 +8,24 @@
   "processingTime": 250,
   "results": [
     {
-      "count": 1,
+      "chance": 0.5,
+      "count": 2,
       "item": "chemica:rutile_crystal"
     },
     {
-      "chance": 0.08,
+      "chance": 0.3,
+      "item": "chemica:medium_grade_rutile_crystal"
+    },
+    {
+      "chance": 0.2,
+      "item": "chemica:high_grade_rutile_crystal"
+    },
+    {
+      "chance": 0.1,
+      "item": "chemica:rutile_dust"
+    },
+    {
+      "chance": 0.05,
       "item": "chemica:iron_dust"
     }
   ]

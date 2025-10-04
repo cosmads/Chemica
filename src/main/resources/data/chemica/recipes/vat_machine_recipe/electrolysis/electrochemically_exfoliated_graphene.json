@@ -21,11 +21,12 @@
     }
   ],
   "machines": [
-    "tfmg:electrode",
-    "tfmg:graphite_electrode"
+    "chemica:electrode",
+    "chemica:electrode",
+    "chemica:electrode"
   ],
   "minSize": 1,
-  "processingTime": 200,
+  "processingTime": 300,
   "results": [
     {
       "item": "chemica:electrochemically_exfoliated_graphene"

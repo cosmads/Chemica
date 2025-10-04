@@ -11,8 +11,9 @@
     }
   ],
   "machines": [
-    "chemica:platinum_electrode",
-    "chemica:platinum_electrode"
+    "chemica:electrode",
+    "chemica:electrode",
+    "chemica:electrode"
   ],
   "minSize": 1,
   "processingTime": 100,
@@ -28,9 +29,6 @@
     },
     {
       "item": "tfmg:sulfur_dust"
-    },
-    {
-      "item": "chemica:charcoal_dust"
     }
   ]
 }

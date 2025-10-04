@@ -12,11 +12,11 @@
       "item": "create:crushed_raw_platinum"
     },
     {
-      "chance": 0.05,
+      "chance": 0.08,
       "item": "chemica:platinum_dust"
     },
     {
-      "chance": 0.01,
+      "chance": 0.02,
       "item": "chemica:iridium_dust"
     }
   ]

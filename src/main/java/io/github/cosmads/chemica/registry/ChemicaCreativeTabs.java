@@ -122,6 +122,7 @@ public class ChemicaCreativeTabs {
         list.add(CItems.PAN_FIBERS.get().getDefaultInstance());
         list.add(CItems.PHOSPHORUS_DUST.get().getDefaultInstance());
         list.add(CItems.PETRI_DISH.get().getDefaultInstance());
+        list.add(CItems.PLATINUM_CATALYST.get().getDefaultInstance());
         list.add(CItems.PLATINUM_ELECTRODE.get().getDefaultInstance());
         list.add(CBlocks.PLATINUM_BLOCK.get().asItem().getDefaultInstance());
         list.add(CItems.PLATINUM_DUST.get().getDefaultInstance());
@@ -130,6 +131,7 @@ public class ChemicaCreativeTabs {
         list.add(CItems.POLYETHYLENE_SHEET.get().getDefaultInstance());
         list.add(CItems.POLYTETRAFLUOROETHYLENE_SHEET.get().getDefaultInstance());
         list.add(CItems.POLYVINYL_CHLORIDE_SHEET.get().getDefaultInstance());
+        list.add(CItems.PURIFIED_GRAPHITE_FLAKES.get().getDefaultInstance());
         list.add(CItems.QUARTZ_DUST.get().getDefaultInstance());
         list.add(CItems.RAW_ANTIMONY.get().getDefaultInstance());
         list.add(CItems.RAW_CHROMITE.get().getDefaultInstance());

@@ -9,7 +9,7 @@
   "ingredients": [
     {
       "amount": 250,
-      "fluid": "chemica:carbon_dioxide",
+      "fluid": "tfmg:carbon_dioxide",
       "nbt": {}
     },
     {

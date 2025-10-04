@@ -16,7 +16,7 @@ public class CElectrodes {
             .properties((p) -> p
                     .resistance(10)
                     .item(CItems.PLATINUM_ELECTRODE)
-                    .operationId("chemica:platinum_electrode")
+                    .operationId("chemica:electrode")
             )
             .register();
 

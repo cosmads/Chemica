@@ -10,37 +10,37 @@
   "results": [
     {
       "amount": 100,
-      "fluid": "tfmg:xylene",
+      "fluid": "chemica:xylene",
       "nbt": {}
     },
     {
       "amount": 100,
-      "fluid": "tfmg:toluene",
+      "fluid": "chemica:toluene",
       "nbt": {}
     },
     {
       "amount": 100,
-      "fluid": "tfmg:benzene",
+      "fluid": "chemica:benzene",
       "nbt": {}
     },
     {
       "amount": 100,
-      "fluid": "tfmg:butene",
+      "fluid": "chemica:butene",
       "nbt": {}
     },
     {
       "amount": 150,
-      "fluid": "tfmg:propane",
+      "fluid": "chemica:propene",
       "nbt": {}
     },
     {
       "amount": 200,
-      "fluid": "tfmg:ethane",
+      "fluid": "chemica:ethane",
       "nbt": {}
     },
     {
       "amount": 250,
-      "fluid": "tfmg:methane",
+      "fluid": "chemica:methane",
       "nbt": {}
     }
     

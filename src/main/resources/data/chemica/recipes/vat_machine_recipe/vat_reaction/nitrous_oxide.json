@@ -7,15 +7,17 @@
   ],
   "ingredients": [
     {
-        "item": "chemica:coal_dust"
-    },
-    {
-        "item": "chemica:fluorite_dust"
+      "amount": 500,
+      "fluid": "chemica:ammonia",
+      "nbt": {}
     },
     {
       "amount": 500,
-      "fluid": "tfmg:nitric_acid",
+      "fluid": "chemica:oxygen",
       "nbt": {}
+    },
+    {
+      "item": "chemica:platinum_catalyst"
     }
   ],
   "machines": [],

@@ -1,6 +1,6 @@
 {
   "type": "create:mixing",
-  "heatRequirement": "superheated",
+  "heatRequirement": "heated",
   "ingredients": [
     {
       "item": "chemica:silver_dust"
@@ -11,6 +11,7 @@
   ],
   "results": [
     {
+      "count": 2,
       "item": "chemica:electrum_grit"
     }
   ]
