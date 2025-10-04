@@ -1,5 +1,6 @@
 package io.github.cosmads.chemica.registry;
 
+import com.drmangotea.tfmg.content.engines.CylinderItem;
 import com.simibubi.create.AllTags;
 import com.tterrag.registrate.util.entry.ItemEntry;
 import com.tterrag.registrate.util.entry.RegistryEntry;
@@ -821,6 +822,40 @@ public class CItems {
             .lang("Platinum Electrode")
             .properties(p -> p.stacksTo(1))
             .model((ctx, prov) -> prov.withExistingParent(ctx.getName(), "chemica:block/platinum_electrode_model"))
+            .register();
+
+
+
+    public static final ItemEntry<CylinderItem> HIGH_OCTANE_CYLINDER = Chemica.registrate()
+            .item("high_octane_engine_cylinder", CylinderItem::new)
+            .lang("High Octane Engine Cylinder")
+            .properties(p -> p.stacksTo(1))
+            .model((ctx, prov) -> prov.withExistingParent(ctx.getName(), prov.mcLoc("item/generated"))
+                    .texture("layer0", prov.modLoc("item/high_octane_engine_cylinder")))
+            .register();
+
+    public static final ItemEntry<CylinderItem> HYDROGEN_CYLINDER = Chemica.registrate()
+            .item("hydrogen_engine_cylinder", CylinderItem::new)
+            .lang("Hydrogen Engine Cylinder")
+            .properties(p -> p.stacksTo(1))
+            .model((ctx, prov) -> prov.withExistingParent(ctx.getName(), prov.mcLoc("item/generated"))
+                    .texture("layer0", prov.modLoc("item/hydrogen_engine_cylinder")))
+            .register();
+
+    public static final ItemEntry<CylinderItem> ETHANOL_CYLINDER = Chemica.registrate()
+            .item("ethanol_engine_cylinder", CylinderItem::new)
+            .lang("Ethanol Engine Cylinder")
+            .properties(p -> p.stacksTo(1))
+            .model((ctx, prov) -> prov.withExistingParent(ctx.getName(), prov.mcLoc("item/generated"))
+                    .texture("layer0", prov.modLoc("item/ethanol_engine_cylinder")))
+            .register();
+
+    public static final ItemEntry<CylinderItem> BIODIESEL_CYLINDER = Chemica.registrate()
+            .item("biodiesel_engine_cylinder", CylinderItem::new)
+            .lang("Biodiesel Engine Cylinder")
+            .properties(p -> p.stacksTo(1))
+            .model((ctx, prov) -> prov.withExistingParent(ctx.getName(), prov.mcLoc("item/generated"))
+                    .texture("layer0", prov.modLoc("item/biodiesel_engine_cylinder")))
             .register();
 
     // Loaded

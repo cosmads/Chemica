@@ -1,4 +1,4 @@
-// 1.20.1	2025-10-04T07:24:58.9348095	Registrate Provider for chemica [Recipes, Advancements, Loot Tables, Tags (blocks), Tags (items), Tags (fluids), Tags (entity_types), Blockstates, Item models, Lang (en_us/en_ud)]
+// 1.20.1	2025-10-04T14:40:41.7909743	Registrate Provider for chemica [Recipes, Advancements, Loot Tables, Tags (blocks), Tags (items), Tags (fluids), Tags (entity_types), Blockstates, Item models, Lang (en_us/en_ud)]
 e114caca13677034675824c4bb1407b6946aa650 assets/chemica/blockstates/acetone.json
 d86e138faf60b10aff1605c553151dfd469f7d09 assets/chemica/blockstates/acrylonitrile.json
 a19f9b5d1996a4bb334ecc904d7e8b1c2e1f7031 assets/chemica/blockstates/adipic_acid_solution.json
@@ -62,8 +62,8 @@ a520cb3400e826c22452e78863bae0599ccc62ea assets/chemica/blockstates/tin_ore.json
 b6cab0a37d0f9df7bed9f72467aadb535041de02 assets/chemica/blockstates/toluene.json
 ee08ce217cc9da7d58969d5e7f206d7dbf1870ef assets/chemica/blockstates/waste_slurry.json
 c1893db89ca69d817d5490b3e6416207fed3703d assets/chemica/blockstates/xylene.json
-d952fe33785dae5f729c57175c2ecf2311d64ea6 assets/chemica/lang/en_ud.json
-f6be3aabc7ccf3674bf9dabe42eed8f395b49445 assets/chemica/lang/en_us.json
+0ef9a0ebe1543e1f85241688073ee35a87106578 assets/chemica/lang/en_ud.json
+72362d61aa76b355ee449f61a1e16e8b18cd16cc assets/chemica/lang/en_us.json
 1eb3c5a53e31c9050e57482541c8498331d6da72 assets/chemica/models/block/acetone.json
 1eb3c5a53e31c9050e57482541c8498331d6da72 assets/chemica/models/block/acrylonitrile.json
 1eb3c5a53e31c9050e57482541c8498331d6da72 assets/chemica/models/block/adipic_acid_solution.json
@@ -94,12 +94,12 @@ bead91d26eed52a32775af693c611a2205d8049b assets/chemica/models/block/deepslate_t
 1eb3c5a53e31c9050e57482541c8498331d6da72 assets/chemica/models/block/distilled_water.json
 1eb3c5a53e31c9050e57482541c8498331d6da72 assets/chemica/models/block/epoxy_precursor.json
 1eb3c5a53e31c9050e57482541c8498331d6da72 assets/chemica/models/block/epoxy_resin.json
-1eb3c5a53e31c9050e57482541c8498331d6da72 assets/chemica/models/block/ethanol.json
+1d1d7da55d4b04899128fbabe7e270eb481028f3 assets/chemica/models/block/ethanol.json
 1eb3c5a53e31c9050e57482541c8498331d6da72 assets/chemica/models/block/ethylbenzene.json
 1eb3c5a53e31c9050e57482541c8498331d6da72 assets/chemica/models/block/ethyl_tert_butyl_ether.json
 1eb3c5a53e31c9050e57482541c8498331d6da72 assets/chemica/models/block/glycerin.json
 1eb3c5a53e31c9050e57482541c8498331d6da72 assets/chemica/models/block/hexamethylenediamine_solution.json
-1eb3c5a53e31c9050e57482541c8498331d6da72 assets/chemica/models/block/high_octane_gasoline.json
+0a2e7da9ea50b9b69737fc58ed59b5b5ac2f2496 assets/chemica/models/block/high_octane_gasoline.json
 1eb3c5a53e31c9050e57482541c8498331d6da72 assets/chemica/models/block/hydrochloric_acid.json
 1eb3c5a53e31c9050e57482541c8498331d6da72 assets/chemica/models/block/hydrofluoric_acid.json
 1eb3c5a53e31c9050e57482541c8498331d6da72 assets/chemica/models/block/mercury.json
@@ -144,6 +144,7 @@ acb61c5d6c54c428f4a820bb70cc6dc0c7448b74 assets/chemica/models/item/aromatic_mix
 66274effff9c8707da658c12251e00ad2b068d32 assets/chemica/models/item/ash.json
 b077c630e93f7e3ea46be7923cdafef2d2f472a9 assets/chemica/models/item/benzene_bucket.json
 9a52eae217d2408f5bd9c3860aabde8aca5653bb assets/chemica/models/item/biodiesel_bucket.json
+77cdee7ac6276a5c4f37d6dde9b950a900b45760 assets/chemica/models/item/biodiesel_engine_cylinder.json
 e1c3478e653bf49acd4433eaa9861a776a07843c assets/chemica/models/item/brine_bucket.json
 fe39bdb8f979af3bc243d91615f886e175f238f4 assets/chemica/models/item/butene_bucket.json
 cb213e0856c2301a344deda2901615387785c1d3 assets/chemica/models/item/carbon_fiber_composite_sheet.json
@@ -206,6 +207,7 @@ a9b4cfdfda2d98d5827fa383a385987bd22f9d79 assets/chemica/models/item/electronic_c
 741cefc56d8ec561ca58096aa083d5a03adc0d3b assets/chemica/models/item/etched_pvc_circuit_board.json
 51d28f9be57f8edb7f5b1692cc31e5afafd66a8e assets/chemica/models/item/ethane_bucket.json
 d8b99f14d6f66965c9b3a3f69093427a304be324 assets/chemica/models/item/ethanol_bucket.json
+50190ecd8193d8dea76e3324644f36163ae51340 assets/chemica/models/item/ethanol_engine_cylinder.json
 ad3bc140aedd4c23f533d8141d6f4d31507ac2aa assets/chemica/models/item/ethylbenzene_bucket.json
 ec008e08ba18e33a3b921d33f660bc1097869dbf assets/chemica/models/item/ethyl_tert_butyl_ether_bucket.json
 ff4d709e7d9fd49631120feca32d7494ef29c18a assets/chemica/models/item/fluorine_bucket.json
@@ -221,9 +223,11 @@ ed454395c39576dd1e7c5cfe773eb24cf0ed90ad assets/chemica/models/item/heat_resista
 d87bb7fa8254924497f0d5d1581347f0f050d2e0 assets/chemica/models/item/helium_bucket.json
 28490ba0c03b36a9b394c4c9e90f6a39135fabd4 assets/chemica/models/item/hexamethylenediamine_solution_bucket.json
 965f6df6183ea6036f6f87ff8dea9c6b7a3ad1a7 assets/chemica/models/item/high_grade_rutile_crystal.json
+2ebf597cd1ea662113f3ddc24cbdabb83e9e1f45 assets/chemica/models/item/high_octane_engine_cylinder.json
 305389ab2d4d37e6f4b132e7bde083df10c00fe3 assets/chemica/models/item/high_octane_gasoline_bucket.json
 d3b5c951bb1c1042d60afad01ec509d18b1cf23a assets/chemica/models/item/hydrochloric_acid_bucket.json
 aab578155a5314be05e7612ad1125a9bcddcb199 assets/chemica/models/item/hydrofluoric_acid_bucket.json
+ec4cd5dc2a8891ccaf19aeb300f4702dfc85603d assets/chemica/models/item/hydrogen_engine_cylinder.json
 410ef6ef2de39a352b0628af7c5dd6b40bd26f4b assets/chemica/models/item/iridium_dust.json
 7ec921eaa83a322be4f3c71e053b253a71fb999a assets/chemica/models/item/iridium_ingot.json
 43bfe62bfa964533e8e955efdd030f8aec3f9ddc assets/chemica/models/item/iridium_nugget.json
@@ -362,6 +366,9 @@ d5ba104d1aade92f8aa8f977bf3c15f3764eb4f2 data/chemica/loot_tables/blocks/deepsla
 9983cdeee44b00d0bfbab4766a93f61e1140a587 data/chemica/loot_tables/blocks/platinum_block.json
 d188d886c5c0a966500157189a80739b3e2f5a9e data/chemica/loot_tables/blocks/raw_platinum_block.json
 bd6452ff8681eab02a9204dbd56691e8853afb0f data/chemica/loot_tables/blocks/tin_ore.json
+027f78c378257fa6c71b1db261f17c917b5df6f5 data/chemica/tags/fluids/biodiesel.json
+b7b20b114abfe5c6fe84f83c0643f5468a99a73c data/chemica/tags/fluids/ethanol.json
+9a29a3e7b4045b9d7e2226bc5632d822ba892cb1 data/chemica/tags/fluids/high_octane.json
 18069c94bd5cf5eb001041aa89e8ea5ccb3da1cb data/forge/tags/blocks/ores.json
 521ce6755c152a6d56291f1ed62bd81ed9bfbb20 data/forge/tags/blocks/ores/antimony.json
 b06fca1b85f583eed4977b6a8b3ab8befde179f7 data/forge/tags/blocks/ores/chromite.json
@@ -388,6 +395,7 @@ b9ab93609a315105b94b47ad76b7faab3d17f0f5 data/forge/tags/fluids/acids/hydrochlor
 f7c29eed63bad5718b52ca2d3e1798cef3b90792 data/forge/tags/fluids/acids/nitric.json
 0a9a17c126adf001bf55fd88109737081084c7b3 data/forge/tags/fluids/acids/phosphoric.json
 7fc5e9f28075bb083fe48ed13a0d44664c4f1d8e data/forge/tags/fluids/acids/sulfuric_nickel.json
+1110813836c788c63dfec4ac83a1d7bf93a4a853 data/forge/tags/fluids/fuel.json
 8817f6907383352c13a439494c1d930c62df63b2 data/forge/tags/items/buckets/ammonia.json
 9b0451a4d200ff7f1d7c49e6a9e4f56ea03f8f09 data/forge/tags/items/buckets/argon.json
 9f7dd1e7c8cb8d394cc36cda3cfb91df8f6e1890 data/forge/tags/items/buckets/butene.json
@@ -490,3 +498,4 @@ ff81e0060fabaa08a6cdb624f405932ff2b1354b data/forge/tags/items/plates/tin.json
 243160f51544813695048e7a5aa1440d5b4cecf4 data/minecraft/tags/blocks/needs_diamond_tool.json
 494de92141c060195721692a1f511fed9f477337 data/minecraft/tags/blocks/needs_iron_tool.json
 9bfe3e7eedf9dc8a0fb73d2868b0ab4e47be2496 data/minecraft/tags/blocks/needs_stone_tool.json
+1110813836c788c63dfec4ac83a1d7bf93a4a853 data/tfmg/tags/fluids/flammable.json

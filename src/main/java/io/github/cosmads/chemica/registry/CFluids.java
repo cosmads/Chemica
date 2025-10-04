@@ -11,6 +11,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.material.Fluid;
 import net.minecraftforge.fluids.ForgeFlowingFluid;
+import com.drmangotea.tfmg.registry.TFMGTags;
 import java.util.Map;
 import java.util.HashMap;
 
@@ -62,10 +63,15 @@ public class CFluids {
     // Helper method for gases
     @SafeVarargs
     private static FluidEntry<VirtualFluid> gas(String name, int color, TagKey<Fluid>... tags) {
-        FluidEntry<VirtualFluid> fluid = REGISTRATE.gasFluid(name, color)
-                .lang(toHumanReadable(name))
-                .tag(tags)
-                .register();
+        var builder = REGISTRATE.gasFluid(name, color)
+                .lang(toHumanReadable(name));
+
+        // Add all tags to the builder
+        for (TagKey<Fluid> tag : tags) {
+            builder = builder.tag(tag);
+        }
+
+        FluidEntry<VirtualFluid> fluid = builder.register();
 
         // Automatic bucket registration
         REGISTRATE.item(name + "_bucket",
@@ -105,7 +111,6 @@ public class CFluids {
             AMINE_CATALYST = fluid("amine_catalyst", 0x80716b61, 1200, 950),
             AROMATIC_MIX = fluid("aromatic_mix", 0x8055475f, 800, 870),
             BENZENE = fluid("benzene", 0x805a5164, 650, 876),
-            BIODIESEL = manualFluid("biodiesel", 1200, 1140),
             BRINE = fluid("brine", 0xE6005aff, 1100, 1200),
             CAUSTIC_SODA = fluid("caustic_soda", 0x8071847b, 1500, 1500),
             CHROMIC_ACID = fluid("chromic_acid", 0x80c8d4e4, 900, 1170, ACIDS, AllTags.forgeFluidTag("acids/chromic")),
@@ -115,12 +120,10 @@ public class CFluids {
             DISTILLED_WATER = fluid("distilled_water", 0xE6005aff, 1100, 1200),
             EPOXY_PRECURSOR = fluid("epoxy_precursor", 0xB3cbcbb8, 2000, 1100),
             EPOXY_RESIN = fluid("epoxy_resin", 0xFFc7c7b1, 3000, 1200),
-            ETHANOL = fluid("ethanol", 0x26c8f0f0, 1200, 789),
             ETHYLBENZENE = fluid("ethylbenzene", 0x809B8C6B, 650, 870),
             ETHYL_TERT_BUTYL_ETHER = fluid("ethyl_tert_butyl_ether", 0xB3E6E6C9, 450, 740),
             GLYCERIN = fluid("glycerin", 0xB3f0dcf0, 15000, 1260),
             HEXAMETHYLENEDIAMINE_SOLUTION = fluid("hexamethylenediamine_solution", 0x80a0c8e0, 1100, 1050),
-            HIGH_OCTANE_GASOLINE = fluid("high_octane_gasoline", 0x80a98a6a, 500, 720),
             HYDROCHLORIC_ACID = fluid("hydrochloric_acid", 0x80F0FFF0, 900, 1190, ACIDS, AllTags.forgeFluidTag("acids/hydrochloric")),
             HYDROFLUORIC_ACID = fluid("hydrofluoric_acid", 0x80f0f0ff, 900, 1150, ACIDS, AllTags.forgeFluidTag("acids/hydrofluoric")),
             MERCURY = fluid("mercury", 0xB3D5F2F2, 1500, 13500),
@@ -167,6 +170,50 @@ public class CFluids {
             STEAM = gas("steam", 0x33F0F0F0),
             TUNGSTEN_HEXAFLUORIDE = gas("tungsten_hexafluoride", 0x66D1B3B3),
             VINYL_CHLORIDE_MONOMER = gas("vinyl_chloride_monomer", 0x66efe0a0);
+
+
+    public static final FluidEntry<ForgeFlowingFluid.Flowing>
+            BIODIESEL = REGISTRATE.fluid("biodiesel",
+                    Chemica.asResource("block/fluid/biodiesel_still"),
+                    Chemica.asResource("block/fluid/biodiesel_flow"))
+            .lang("Biodiesel")
+            .properties(builder -> builder
+                    .viscosity(1200)
+                    .density(1140))
+            .tag(CFluidTags.BIODIESEL, TFMGTags.TFMGFluidTags.FUEL.tag, TFMGTags.TFMGFluidTags.FLAMMABLE.tag)
+            .source(ForgeFlowingFluid.Source::new)
+            .bucket()
+            .model((ctx, prov) -> prov.generated(ctx, prov.modLoc("item/biodiesel_bucket")))
+            .build()
+            .register(),
+
+            ETHANOL = REGISTRATE.fluid("ethanol",
+                            Chemica.asResource("block/fluid/ethanol_still"),
+                            Chemica.asResource("block/fluid/ethanol_flow"))
+                    .lang("Ethanol")
+                    .properties(builder -> builder
+                            .viscosity(600)
+                            .density(1140))
+                    .tag(CFluidTags.ETHANOL, TFMGTags.TFMGFluidTags.FUEL.tag, TFMGTags.TFMGFluidTags.FLAMMABLE.tag)
+                    .source(ForgeFlowingFluid.Source::new)
+                    .bucket()
+                    .model((ctx, prov) -> prov.generated(ctx, prov.modLoc("item/ethanol_bucket")))
+                    .build()
+                    .register(),
+
+            HIGH_OCTANE_GASOLINE = REGISTRATE.fluid("high_octane_gasoline",
+                            Chemica.asResource("block/fluid/high_octane_gasoline_still"),
+                            Chemica.asResource("block/fluid/high_octane_gasoline_flow"))
+                    .lang("High Octane Gasoline")
+                    .properties(builder -> builder
+                            .viscosity(600)
+                            .density(1140))
+                    .tag(CFluidTags.HIGH_OCTANE, TFMGTags.TFMGFluidTags.FUEL.tag, TFMGTags.TFMGFluidTags.FLAMMABLE.tag)
+                    .source(ForgeFlowingFluid.Source::new)
+                    .bucket()
+                    .model((ctx, prov) -> prov.generated(ctx, prov.modLoc("item/high_octane_gasoline_bucket")))
+                    .build()
+                    .register();
 
     public static void register() {
         Chemica.LOGGER.info("Registered fluids for Chemica");
