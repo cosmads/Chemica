@@ -48,7 +48,7 @@ public class ChemicaCreativeTabs {
         List<ItemStack> list = new ArrayList();
         // High Octane Engine Cylinder
         CompoundTag highOctaneTag = new CompoundTag();
-        highOctaneTag.putString("high_octane", "chemica:high_octane_gasoline");
+        highOctaneTag.putString("high_octane", "chemica:high_octane");
         CompoundTag highOctaneTagName = new CompoundTag();
         highOctaneTagName.putString("high_octane", "High Octane Gasoline");
         ItemStack gasoline = CItems.HIGH_OCTANE_CYLINDER.asStack();

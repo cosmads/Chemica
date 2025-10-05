@@ -21,7 +21,7 @@
     "item": "chemica:high_octane_engine_cylinder",
     "nbt": {
       "Fuels": {
-        "high_octane": "chemica:high_octane_gasoline"
+        "high_octane": "chemica:high_octane"
       },
       "FuelNames": {
         "high_octane": "High Octane Gasoline"
