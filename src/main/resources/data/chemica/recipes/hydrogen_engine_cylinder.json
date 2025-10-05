@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "tfmg:engine_cylinder_gas"
+    },
+    "S": {
+      "item": "create:nozzle"
+    },
+    "P": {
+      "item": "create:precision_mechanism"
+    }
+  },
+  "pattern": [
+    " S ",
+    " C ",
+    " P "
+  ],
+  "result": {
+    "item": "chemica:hydrogen_engine_cylinder",
+    "nbt": {
+      "Fuels": {
+        "hydrogen": "tfmg:hydrogen"
+      },
+      "FuelNames": {
+        "hydrogen": "Hydrogen"
+      }
+    }
+  }
+}

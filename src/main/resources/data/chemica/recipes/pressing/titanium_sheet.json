@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "chemica:titanium_ingot"
+    }
+  ],
+  "results": [
+    {
+      "item": "chemica:titanium_sheet"
+    }
+  ]
+}

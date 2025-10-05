@@ -1,0 +1,10 @@
+{
+  "values": [
+    "chemica:flowing_biodiesel",
+    "chemica:biodiesel",
+    "chemica:flowing_ethanol",
+    "chemica:ethanol",
+    "chemica:flowing_high_octane_gasoline",
+    "chemica:high_octane_gasoline"
+  ]
+}

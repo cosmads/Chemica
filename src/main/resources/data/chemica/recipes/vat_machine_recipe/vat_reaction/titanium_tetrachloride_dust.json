@@ -1,0 +1,37 @@
+{
+  "type": "tfmg:vat_machine_recipe",
+  "heatRequirement": "heated",
+  "allowedVatTypes": [
+    "tfmg:steel_vat",
+    "tfmg:firebrick_lined_vat"
+  ],
+  "ingredients": [
+    {
+      "item": "chemica:rutile_dust"
+    },
+    {
+      "amount": 500,
+      "fluid": "chemica:hydrochloric_acid",
+      "nbt": {}
+    },
+    {
+      "amount": 250,
+      "fluid": "chemica:chlorine",
+      "nbt": {}
+    }
+  ],
+  "machines": [],
+  "minSize": 1,
+  "processingTime": 300,
+  "results": [
+    {
+      "amount": 400,
+      "fluid": "chemica:titanium_tetrachloride",
+      "nbt": {}
+    },
+    {
+        "chance": 0.1,
+        "item": "chemica:iron_dust"
+    }
+  ]
+}

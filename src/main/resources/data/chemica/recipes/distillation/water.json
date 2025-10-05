@@ -1,0 +1,17 @@
+{
+  "type": "tfmg:distillation",
+  "ingredients": [
+    {
+      "amount": 1000,
+      "fluid": "minecraft:water",
+      "nbt": {}
+    }
+  ],
+  "results": [
+    {
+      "amount": 1000,
+      "fluid": "chemica:distilled_water",
+      "nbt": {}
+    }
+  ]
+}

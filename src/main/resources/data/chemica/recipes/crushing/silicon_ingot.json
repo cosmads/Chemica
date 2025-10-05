@@ -1,0 +1,14 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "tfmg:silicon_ingot"
+    }
+  ],
+  "processingTime": 100,
+  "results": [
+    {
+      "item": "chemica:silicon_dust"
+    }
+  ]
+}

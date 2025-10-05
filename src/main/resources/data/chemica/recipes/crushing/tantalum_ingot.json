@@ -1,0 +1,14 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "chemica:tantalum_ingot"
+    }
+  ],
+  "processingTime": 100,
+  "results": [
+    {
+      "item": "chemica:tantalum_dust"
+    }
+  ]
+}

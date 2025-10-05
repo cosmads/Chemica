@@ -1,0 +1,54 @@
+{
+  "type": "tfmg:vat_machine_recipe",
+  "allowedVatTypes": [
+  	"tfmg:cast_iron_vat",
+    "tfmg:steel_vat",
+    "tfmg:firebrick_lined_vat"
+  ],
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "amount": 1000,
+      "fluid": "minecraft:water",
+      "nbt": {}
+    },
+    {
+        "item": "chemica:salt"
+    },
+    {
+        "item": "chemica:salt"
+    },
+    {
+        "item": "chemica:salt"
+    },
+    {
+        "item": "chemica:salt"
+    }
+  ],
+  "machines": [
+    "tfmg:electrode",
+    "tfmg:electrode"
+  ],
+  "minSize": 1,
+  "processingTime": 100,
+  "results": [
+    {
+      "count": 3,
+      "item": "chemica:sodium_dust"
+    },
+    {
+      "chance": 0.3,
+      "item": "chemica:sodium_dust"
+    },
+    {
+      "amount": 100,
+      "fluid": "minecraft:water",
+      "nbt": {}
+    },
+    {
+      "amount": 350,
+      "fluid": "chemica:chlorine",
+      "nbt": {}
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "chemica:tantalum_nugget"
+    }
+  },
+  "result": {
+    "item": "chemica:tantalum_ingot",
+    "count": 1
+  }
+}

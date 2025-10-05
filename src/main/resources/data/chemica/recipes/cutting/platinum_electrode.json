@@ -1,0 +1,14 @@
+{
+  "type": "create:cutting",
+  "ingredients": [
+    {
+      "item": "chemica:platinum_block"
+    }
+  ],
+  "processingTime": 200,
+  "results": [
+    {
+      "item": "chemica:platinum_electrode"
+    }
+  ]
+}

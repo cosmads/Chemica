@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "chemica:iridium_ingot"
+    }
+  ],
+  "results": [
+    {
+      "item": "chemica:iridium_sheet"
+    }
+  ]
+}
