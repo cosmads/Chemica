@@ -1,0 +1,40 @@
+{
+  "type": "tfmg:vat_machine_recipe",
+  "allowedVatTypes": [
+    "tfmg:cast_iron_vat"
+  ],
+  "ingredients": [
+    {
+      "amount": 500,
+      "fluid": "tfmg:gasoline",
+      "nbt": {}
+    },
+    {
+      "amount": 150,
+      "fluid": "chemica:ethyl_tert_butyl_ether",
+      "nbt": {}
+    },
+    {
+      "amount": 300,
+      "fluid": "chemica:toluene",
+      "nbt": {}
+    },
+    {
+      "amount": 50,
+      "fluid": "chemica:nitrous_oxide",
+      "nbt": {}
+    }
+  ],
+  "machines": [
+    "tfmg:mixing"
+  ],
+  "minSize": 1,
+  "processingTime": 300,
+  "results": [
+    {
+      "amount": 1000,
+      "fluid": "chemica:high_octane_gasoline",
+      "nbt": {}
+    }
+  ]
+}

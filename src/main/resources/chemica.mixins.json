@@ -3,7 +3,7 @@
   "priority": 1100,
   "package": "io.github.cosmads.chemica.mixin",
   "compatibilityLevel": "JAVA_17", 
-  "refmap": "chemica.refmap.json",
+  "refmap": "mixin.refmap.json",
   "plugin": "io.github.cosmads.chemica.mixin.plugin.ChemicaMixinsPlugin",
   "mixins": [
   ],

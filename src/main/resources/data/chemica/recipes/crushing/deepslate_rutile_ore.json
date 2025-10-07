@@ -2,7 +2,7 @@
   "type": "create:crushing",
   "ingredients": [
     {
-      "item": "chemica:rutile_ore"
+      "item": "chemica:deepslate_rutile_ore"
     }
   ],
   "processingTime": 250,

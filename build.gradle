@@ -169,7 +169,6 @@ jar {
     manifest {
         attributes([
                 "MixinConfigs": "chemica.mixins.json",
-                "MixinConnector": "io.github.cosmads.chemica.core.ChemicaMixinConnector",
                 "Git-Hash": gitHash
         ])
     }

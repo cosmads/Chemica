@@ -1,28 +1,27 @@
 {
   "type": "tfmg:vat_machine_recipe",
   "allowedVatTypes": [
-    "tfmg:cast_iron_vat",
     "tfmg:steel_vat",
     "tfmg:firebrick_lined_vat"
   ],
   "ingredients": [
     {
-      "amount": 500,
+      "amount": 2000,
       "fluid": "tfmg:gasoline",
       "nbt": {}
     },
     {
-      "amount": 150,
+      "amount": 500,
       "fluid": "chemica:ethyl_tert_butyl_ether",
       "nbt": {}
     },
     {
-      "amount": 300,
+      "amount": 750,
       "fluid": "chemica:toluene",
       "nbt": {}
     },
     {
-      "amount": 50,
+      "amount": 250,
       "fluid": "chemica:nitrous_oxide",
       "nbt": {}
     }
@@ -30,11 +29,11 @@
   "machines": [
     "tfmg:mixing"
   ],
-  "minSize": 3,
-  "processingTime": 300,
+  "minSize": 2,
+  "processingTime": 120,
   "results": [
     {
-      "amount": 1000,
+      "amount": 3000,
       "fluid": "chemica:high_octane_gasoline",
       "nbt": {}
     }

@@ -1,0 +1,27 @@
+{
+  "feature": "chemica:ore_chromite",
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 5
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:uniform",
+        "max_inclusive": {
+          "absolute": -12
+        },
+        "min_inclusive": {
+          "absolute": -59
+        }
+      }
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

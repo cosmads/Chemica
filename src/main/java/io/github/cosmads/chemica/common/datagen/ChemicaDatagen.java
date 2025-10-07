@@ -14,11 +14,14 @@ import net.minecraft.data.CachedOutput;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.DataProvider;
 import net.minecraft.data.PackOutput;
+import net.minecraft.data.loot.LootTableProvider;
+import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
 import net.minecraftforge.data.event.GatherDataEvent;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 import java.util.concurrent.CompletableFuture;
 
 public class ChemicaDatagen {
@@ -30,14 +33,22 @@ public class ChemicaDatagen {
         CompletableFuture<HolderLookup.Provider> lookupProvider = event.getLookupProvider();
 
         if (event.includeServer()) {
-            ChemicaGeneratedEntriesProvider generatedEntriesProvider = new ChemicaGeneratedEntriesProvider(output, lookupProvider);
-            generator.addProvider(true, generatedEntriesProvider);
+            // Worldgen Data Generation
+            generator.addProvider(true, new ChemicaGeneratedEntriesProvider(output, lookupProvider));
+
+            // Loot Tables
+            generator.addProvider(true, new LootTableProvider(output, Set.of(),
+                    List.of(new LootTableProvider.SubProviderEntry(ChemicaBlockLootTables::new,
+                            LootContextParamSets.BLOCK))));
+
+            // Recipe Providers
             RECIPE_GENERATORS.add(new IndustrialBlastingRecipeGen(output));
             RECIPE_GENERATORS.add(new CastingRecipeGen(output));
             RECIPE_GENERATORS.add(new VatRecipeGen(output));
             RECIPE_GENERATORS.add(new ChemicaStandardRecipeGen(output));
             RECIPE_GENERATORS.add(new ChemicaMechanicalCraftingRecipeGen(output));
             generator.addProvider(true, new ChemicaSequencedAssemblyRecipeGen(output));
+
             generator.addProvider(true, new DataProvider() {
                 public @NotNull String getName() {
                     return "Chemica's Recipes";
@@ -47,6 +58,7 @@ public class ChemicaDatagen {
                     return CompletableFuture.allOf(ChemicaDatagen.RECIPE_GENERATORS.stream().map((gen) -> gen.run(dc)).toArray(CompletableFuture[]::new));
                 }
             });
+
             ChemicaProcessingRecipeGen.registerAll(generator, output);
         }
     }

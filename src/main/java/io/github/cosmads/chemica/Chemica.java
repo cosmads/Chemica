@@ -4,6 +4,7 @@ import com.mojang.logging.LogUtils;
 import com.simibubi.create.foundation.data.CreateRegistrate;
 import io.github.cosmads.chemica.common.datagen.ChemicaDatagen;
 import io.github.cosmads.chemica.common.registrate.ChemicaRegistrate;
+import io.github.cosmads.chemica.content.engines.fuels.ChemicaFuelTypes;
 import io.github.cosmads.chemica.registry.*;
 import net.createmod.catnip.lang.LangBuilder;
 import net.minecraft.resources.ResourceLocation;
@@ -23,7 +24,9 @@ import org.slf4j.Logger;
 public class Chemica {
 
     public static final String ID = "chemica";
+    public static final String MOD_ID = "chemica";
     public static final String DISPLAY_NAME = "Chemica";
+
 
     public static final Logger LOGGER = LogUtils.getLogger();
 
@@ -41,8 +44,8 @@ public class Chemica {
         CBlocks.register();
         CItems.register();
         CFluids.register();
-
         CElectrodes.register();
+        ChemicaFuelTypes.register();
 
         ChemicaCreativeTabs.register(bus);
         bus.addListener(ChemicaCreativeTabs::addCreative);

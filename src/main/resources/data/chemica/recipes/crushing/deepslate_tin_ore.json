@@ -2,7 +2,7 @@
   "type": "create:crushing",
   "ingredients": [
     {
-      "item": "chemica:tin_ore"
+      "item": "chemica:deepslate_tin_ore"
     }
   ],
   "processingTime": 250,

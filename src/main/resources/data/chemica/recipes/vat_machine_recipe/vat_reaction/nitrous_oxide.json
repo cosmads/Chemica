@@ -33,6 +33,9 @@
       "amount": 250,
       "fluid": "minecraft:water",
       "nbt": {}
+    },
+    {
+      "item": "chemica:platinum_catalyst"
     }
   ]
 }

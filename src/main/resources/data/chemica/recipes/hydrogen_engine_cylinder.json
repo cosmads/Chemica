@@ -3,19 +3,15 @@
   "category": "misc",
   "key": {
     "C": {
-      "item": "tfmg:engine_cylinder_gas"
+      "item": "tfmg:engine_cylinder"
     },
     "S": {
-      "item": "create:nozzle"
-    },
-    "P": {
-      "item": "create:precision_mechanism"
+      "item": "tfmg:plastic_pipe"
     }
   },
   "pattern": [
     " S ",
-    " C ",
-    " P "
+    " C "
   ],
   "result": {
     "item": "chemica:hydrogen_engine_cylinder",

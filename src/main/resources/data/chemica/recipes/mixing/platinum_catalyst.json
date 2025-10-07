@@ -1,0 +1,20 @@
+{
+  "type": "create:mixing",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "item": "chemica:platinum_dust"
+    },
+    {
+      "item": "minecraft:iron_nugget"
+    },
+    {
+      "item": "chemica:coal_dust"
+    }
+  ],
+  "results": [
+    {
+      "item": "chemica:platinum_catalyst"
+    }
+  ]
+}

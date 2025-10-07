@@ -1,0 +1,20 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#minecraft:is_overworld",
+  "features": [
+    "chemica:ore_tin",
+    "chemica:ore_phosphorus",
+    "chemica:ore_antimony",
+    "chemica:ore_chromite",
+    "chemica:ore_cobalt",
+    "chemica:ore_fluorite",
+    "chemica:ore_graphite",
+    "chemica:ore_molybdenum",
+    "chemica:ore_platinum",
+    "chemica:ore_rutile",
+    "chemica:ore_silver",
+    "chemica:ore_vanadium",
+    "chemica:ore_wolframite"
+  ],
+  "step": "underground_ores"
+}

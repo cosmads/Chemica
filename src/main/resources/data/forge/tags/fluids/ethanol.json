@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "chemica:ethanol", 
+    "chemica:flowing_ethanol"
+  ]
+}
