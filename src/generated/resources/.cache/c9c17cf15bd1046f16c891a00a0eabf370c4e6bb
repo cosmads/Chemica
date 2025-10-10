@@ -1,4 +1,4 @@
-// 1.20.1	2025-10-04T14:40:41.7909743	Registrate Provider for chemica [Recipes, Advancements, Loot Tables, Tags (blocks), Tags (items), Tags (fluids), Tags (entity_types), Blockstates, Item models, Lang (en_us/en_ud)]
+// 1.20.1	2025-10-09T13:11:57.1138149	Registrate Provider for chemica [Recipes, Advancements, Loot Tables, Tags (blocks), Tags (items), Tags (fluids), Tags (entity_types), Blockstates, Item models, Lang (en_us/en_ud)]
 e114caca13677034675824c4bb1407b6946aa650 assets/chemica/blockstates/acetone.json
 d86e138faf60b10aff1605c553151dfd469f7d09 assets/chemica/blockstates/acrylonitrile.json
 a19f9b5d1996a4bb334ecc904d7e8b1c2e1f7031 assets/chemica/blockstates/adipic_acid_solution.json
@@ -32,6 +32,7 @@ f737b048dc5d6d3312ef01c593295d73b5903bd8 assets/chemica/blockstates/epoxy_resin.
 f1c896a1c6c12db8b80cba9e80aedd53843a9324 assets/chemica/blockstates/ethanol.json
 0043379789c9ece6da93046d85cd1eafb14680e6 assets/chemica/blockstates/ethylbenzene.json
 c242e40df7afb5bf7716c08d0396f7f7464452b9 assets/chemica/blockstates/ethyl_tert_butyl_ether.json
+f47e4e399a0dd1e00a49886b0c56ce4dc61ef225 assets/chemica/blockstates/gasoline_additive_mix.json
 e21fae875dcbb4ac1cbf7e6ff4024f6dfd2b3f19 assets/chemica/blockstates/glycerin.json
 7b44d142dea94b6e842506879adcd2900a4350f7 assets/chemica/blockstates/hexamethylenediamine_solution.json
 2fd61af506a09d3556d304eb51749d2ef0e1ac7d assets/chemica/blockstates/high_octane_gasoline.json
@@ -62,8 +63,8 @@ a520cb3400e826c22452e78863bae0599ccc62ea assets/chemica/blockstates/tin_ore.json
 b6cab0a37d0f9df7bed9f72467aadb535041de02 assets/chemica/blockstates/toluene.json
 ee08ce217cc9da7d58969d5e7f206d7dbf1870ef assets/chemica/blockstates/waste_slurry.json
 c1893db89ca69d817d5490b3e6416207fed3703d assets/chemica/blockstates/xylene.json
-0ef9a0ebe1543e1f85241688073ee35a87106578 assets/chemica/lang/en_ud.json
-72362d61aa76b355ee449f61a1e16e8b18cd16cc assets/chemica/lang/en_us.json
+791a066636715de80e767f4a45ada5b6644b92e4 assets/chemica/lang/en_ud.json
+b94c01b2617635fbef1c77cf60773e7d3ce9312d assets/chemica/lang/en_us.json
 1eb3c5a53e31c9050e57482541c8498331d6da72 assets/chemica/models/block/acetone.json
 1eb3c5a53e31c9050e57482541c8498331d6da72 assets/chemica/models/block/acrylonitrile.json
 1eb3c5a53e31c9050e57482541c8498331d6da72 assets/chemica/models/block/adipic_acid_solution.json
@@ -97,6 +98,7 @@ bead91d26eed52a32775af693c611a2205d8049b assets/chemica/models/block/deepslate_t
 1d1d7da55d4b04899128fbabe7e270eb481028f3 assets/chemica/models/block/ethanol.json
 1eb3c5a53e31c9050e57482541c8498331d6da72 assets/chemica/models/block/ethylbenzene.json
 1eb3c5a53e31c9050e57482541c8498331d6da72 assets/chemica/models/block/ethyl_tert_butyl_ether.json
+1eb3c5a53e31c9050e57482541c8498331d6da72 assets/chemica/models/block/gasoline_additive_mix.json
 1eb3c5a53e31c9050e57482541c8498331d6da72 assets/chemica/models/block/glycerin.json
 1eb3c5a53e31c9050e57482541c8498331d6da72 assets/chemica/models/block/hexamethylenediamine_solution.json
 0a2e7da9ea50b9b69737fc58ed59b5b5ac2f2496 assets/chemica/models/block/high_octane_gasoline.json
@@ -212,6 +214,7 @@ ad3bc140aedd4c23f533d8141d6f4d31507ac2aa assets/chemica/models/item/ethylbenzene
 ec008e08ba18e33a3b921d33f660bc1097869dbf assets/chemica/models/item/ethyl_tert_butyl_ether_bucket.json
 ff4d709e7d9fd49631120feca32d7494ef29c18a assets/chemica/models/item/fluorine_bucket.json
 8812cb2589b7a6758aa1013cf08e11d40a002658 assets/chemica/models/item/fluorite_dust.json
+7fe19f28e2104193cbf2f69eabb4d1db16c8bd65 assets/chemica/models/item/gasoline_additive_mix_bucket.json
 33d491db09198411fe6446c140f8b48a25f704a8 assets/chemica/models/item/glass_vial.json
 3778149ce48b055889058c2c4bf54f9fd0ee8fc7 assets/chemica/models/item/glycerin_bucket.json
 90bd42bcd860948084edfe82cce390eb89ff898b assets/chemica/models/item/gold_dust.json

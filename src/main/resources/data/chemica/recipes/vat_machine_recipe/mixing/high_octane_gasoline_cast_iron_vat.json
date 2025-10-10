@@ -5,18 +5,13 @@
   ],
   "ingredients": [
     {
-      "amount": 500,
+      "amount": 800,
       "fluid": "tfmg:gasoline",
       "nbt": {}
     },
     {
-      "amount": 150,
-      "fluid": "chemica:ethyl_tert_butyl_ether",
-      "nbt": {}
-    },
-    {
-      "amount": 300,
-      "fluid": "chemica:toluene",
+      "amount": 200,
+      "fluid": "chemica:gasoline_additive_mix",
       "nbt": {}
     },
     {
@@ -29,7 +24,7 @@
     "tfmg:mixing"
   ],
   "minSize": 1,
-  "processingTime": 300,
+  "processingTime": 120,
   "results": [
     {
       "amount": 1000,

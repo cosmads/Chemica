@@ -1,0 +1,22 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "amount": 250,
+      "fluid": "chemica:ethyl_tert_butyl_ether",
+      "nbt": {}
+    },
+    {
+      "amount": 250,
+      "fluid": "chemica:toluene",
+      "nbt": {}
+    }
+  ],
+  "results": [
+    {
+      "amount": 500,
+      "fluid": "chemica:gasoline_additive_mix",
+      "nbt": {}
+    }
+  ]
+}

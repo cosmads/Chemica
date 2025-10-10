@@ -8,9 +8,9 @@ public class ChemicaFuelTypes {
 
     public static final FuelType
             HIGH_OCTANE = create("chemica_high_octane")
-                .speed(1.3f)
-                .efficiency(1.1f)
-                .stress(1.9f)
+                .speed(1.6f)
+                .efficiency(1.2f)
+                .stress(2.3f)
                 .registerAndAssign(CFluidTags.HIGH_OCTANE),
 
             HYDROGEN = create("chemica_hydrogen")
@@ -21,13 +21,13 @@ public class ChemicaFuelTypes {
 
             ETHANOL = create("chemica_ethanol")
                 .speed(0.6f)
-                .efficiency(0.6f)
-                .stress(0.5f)
+                .efficiency(0.8f)
+                .stress(0.6f)
                 .registerAndAssign(CFluidTags.ETHANOL),
 
             BIODIESEL = create("chemica_biodiesel")
-                .speed(0.8f)
-                .efficiency(0.8f)
+                .speed(1f)
+                .efficiency(0.9f)
                 .stress(0.8f)
                 .registerAndAssign(CFluidTags.BIODIESEL);
 

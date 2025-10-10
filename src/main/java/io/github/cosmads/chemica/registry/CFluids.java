@@ -73,10 +73,11 @@ public class CFluids {
 
         FluidEntry<VirtualFluid> fluid = builder.register();
 
-        // Automatic bucket registration
+        // Automatic bucket registration with "Tank" suffix
+        String readableName = toHumanReadable(name);
         REGISTRATE.item(name + "_bucket",
                         p -> new BucketItem(fluid.get()::getSource, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)))
-                .lang(toHumanReadable(name) + " Bucket")
+                .lang(readableName + " Tank")
                 .tag(AllTags.forgeItemTag("buckets/" + name))
                 .register();
 
@@ -122,6 +123,7 @@ public class CFluids {
             EPOXY_RESIN = fluid("epoxy_resin", 0xFFc7c7b1, 3000, 1200),
             ETHYLBENZENE = fluid("ethylbenzene", 0x809B8C6B, 650, 870),
             ETHYL_TERT_BUTYL_ETHER = fluid("ethyl_tert_butyl_ether", 0xB3E6E6C9, 450, 740),
+            GASOLINE_ADDITIVE_MIX = fluid("gasoline_additive_mix", 0xBFE6E6C9, 490, 860),
             GLYCERIN = fluid("glycerin", 0xB3f0dcf0, 15000, 1260),
             HEXAMETHYLENEDIAMINE_SOLUTION = fluid("hexamethylenediamine_solution", 0x80a0c8e0, 1100, 1050),
             HYDROCHLORIC_ACID = fluid("hydrochloric_acid", 0x80F0FFF0, 900, 1190, ACIDS, AllTags.forgeFluidTag("acids/hydrochloric")),
