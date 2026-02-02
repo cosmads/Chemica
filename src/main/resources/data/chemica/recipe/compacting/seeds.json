@@ -1,0 +1,14 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "tag": "c:seeds"
+    }
+  ],
+  "results": [
+    {
+      "amount": 150,
+      "id": "chemica:seed_oil"
+    }
+  ]
+}

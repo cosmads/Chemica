@@ -1,0 +1,19 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "chemica:deepslate_chromite_ore"
+    }
+  ],
+  "processingTime": 250,
+  "results": [
+    {
+      "count": 2,
+      "id": "chemica:crushed_raw_chromium"
+    },
+    {
+      "chance": 0.20,
+      "id": "create:crushed_raw_iron"
+    }
+  ]
+}

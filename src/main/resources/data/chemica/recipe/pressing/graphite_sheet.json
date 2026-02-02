@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "chemica:graphite_ingot"
+    }
+  ],
+  "results": [
+    {
+      "id": "chemica:graphite_sheet"
+    }
+  ]
+}

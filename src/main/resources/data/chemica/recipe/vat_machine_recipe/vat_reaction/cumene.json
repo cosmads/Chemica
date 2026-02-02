@@ -1,0 +1,28 @@
+{
+  "type": "tfmg:vat_machine_recipe",
+  "allowedVatTypes": [
+    "tfmg:cast_iron_vat",
+    "tfmg:steel_vat"
+  ],
+  "ingredients": [
+    {
+      "type": "neoforge:single",
+      "amount": 500,
+      "fluid": "chemica:benzene"
+    },
+    {
+      "type": "neoforge:single",
+      "amount": 500,
+      "fluid": "tfmg:propylene"
+    }
+  ],
+  "machines": [],
+  "minSize": 1,
+  "processingTime": 300,
+  "results": [
+    {
+      "amount": 1000,
+      "id": "chemica:cumene"
+    }
+  ]
+}

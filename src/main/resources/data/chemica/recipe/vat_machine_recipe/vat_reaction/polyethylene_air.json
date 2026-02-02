@@ -1,0 +1,38 @@
+{
+  "type": "tfmg:vat_machine_recipe",
+  "heat_requirement": "heated",
+  "allowedVatTypes": [
+    "tfmg:steel_vat",
+    "tfmg:firebrick_lined_vat"
+  ],
+  "ingredients": [
+    {
+      "type": "neoforge:single",
+      "amount": 250,
+      "fluid": "chemica:titanium_tetrachloride"
+    },
+    {
+      "type": "neoforge:single",
+      "amount": 250,
+      "fluid": "tfmg:ethylene"
+    },
+    {
+      "type": "neoforge:single",
+      "amount": 1000,
+      "fluid": "tfmg:air"
+    }
+  ],
+  "machines": [],
+  "minSize": 1,
+  "processingTime": 400,
+  "results": [
+    {
+      "amount": 1000,
+      "id": "chemica:polyethylene"
+    },
+    {
+      "amount": 100,
+      "id": "chemica:waste_slurry"
+    }
+  ]
+}

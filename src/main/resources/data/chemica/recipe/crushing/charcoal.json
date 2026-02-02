@@ -1,0 +1,21 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "minecraft:charcoal"
+    }
+  ],
+  "results": [
+    {
+      "id": "chemica:charcoal_dust"
+    },
+    {
+      "chance": 0.25,
+      "id": "chemica:charcoal_dust"
+    },
+    {
+      "chance": 0.05,
+      "id": "chemica:charcoal_dust"
+    }
+  ]
+}

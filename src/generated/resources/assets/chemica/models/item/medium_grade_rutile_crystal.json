@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "chemica:item/medium_grade_rutile_crystal"
+  }
+}

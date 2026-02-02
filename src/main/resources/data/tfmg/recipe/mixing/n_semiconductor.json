@@ -1,0 +1,16 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "tfmg:silicon_ingot"
+    },
+    {
+      "item": "chemica:antimony_dust"
+    }
+  ],
+  "results": [
+    {
+      "id": "tfmg:n_semiconductor"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "minecraft:bucket"
+    },
+    {
+      "type": "neoforge:single",
+      "amount": 1000,
+      "fluid": "chemica:nitrogen_dioxide"
+    }
+  ],
+  "results": [
+    {
+      "id": "chemica:nitrogen_dioxide_bucket"
+    }
+  ]
+}

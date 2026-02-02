@@ -1,0 +1,15 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "type": "neoforge:single",
+      "amount": 100,
+      "fluid": "chemica:caustic_soda"
+    }
+  ],
+  "results": [
+    {
+      "id": "chemica:caustic_soda_dust"
+    }
+  ]
+}

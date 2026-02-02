@@ -1,0 +1,21 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "type": "neoforge:single",
+      "amount": 750,
+      "fluid": "chemica:epoxy_precursor"
+    },
+    {
+      "type": "neoforge:single",
+      "amount": 250,
+      "fluid": "chemica:amine_catalyst"
+    }
+  ],
+  "results": [
+    {
+      "amount": 1000,
+      "id": "chemica:epoxy_resin"
+    }
+  ]
+}

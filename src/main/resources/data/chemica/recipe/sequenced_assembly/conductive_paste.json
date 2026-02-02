@@ -1,0 +1,61 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "chemica:polyethylene_sheet"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "id": "chemica:conductive_paste"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:cutting",
+      "ingredients": [
+        {
+          "item": "chemica:unfinished_conductive_paste"
+        }
+      ],
+      "results": [
+        {
+          "id": "chemica:unfinished_conductive_paste"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "chemica:unfinished_conductive_paste"
+        }
+      ],
+      "results": [
+        {
+          "id": "chemica:unfinished_conductive_paste"
+        }
+      ]
+    },
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "chemica:unfinished_conductive_paste"
+        },
+        {
+          "type": "neoforge:single",
+          "amount": 1000,
+          "fluid": "chemica:solder_solution"
+        }
+      ],
+      "results": [
+        {
+          "id": "chemica:unfinished_conductive_paste"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "chemica:unfinished_conductive_paste"
+  }
+}

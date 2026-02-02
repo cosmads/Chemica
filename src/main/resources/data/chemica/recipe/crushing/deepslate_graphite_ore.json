@@ -1,0 +1,15 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "chemica:deepslate_graphite_ore"
+    }
+  ],
+  "processingTime": 250,
+  "results": [
+    {
+      "count": 2,
+      "id": "chemica:crushed_graphite"
+    }
+  ]
+}

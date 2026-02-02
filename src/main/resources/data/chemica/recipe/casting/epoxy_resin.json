@@ -1,0 +1,16 @@
+{
+  "type": "tfmg:casting",
+  "ingredients": [
+    {
+      "type": "neoforge:single",
+      "amount": 200,
+      "fluid": "chemica:epoxy_resin"
+    }
+  ],
+  "processing_time": 100,
+  "results": [
+    {
+      "id": "chemica:cured_epoxy_sheet"
+    }
+  ]
+}

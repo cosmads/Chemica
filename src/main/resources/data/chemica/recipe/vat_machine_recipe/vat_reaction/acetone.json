@@ -1,0 +1,42 @@
+{
+  "type": "tfmg:vat_machine_recipe",
+  "allowedVatTypes": [
+    "tfmg:steel_vat",
+    "tfmg:firebrick_lined_vat"
+  ],
+  "ingredients": [
+    {
+      "type": "neoforge:single",
+      "amount": 250,
+      "fluid": "chemica:benzene"
+    },
+    {
+      "type": "neoforge:single",
+      "amount": 250,
+      "fluid": "tfmg:propylene"
+    },
+    {
+      "type": "neoforge:single",
+      "amount": 250,
+      "fluid": "tfmg:air"
+    },
+    {
+      "type": "neoforge:single",
+      "amount": 50,
+      "fluid": "tfmg:sulfuric_acid"
+    }
+  ],
+  "machines": [],
+  "minSize": 1,
+  "processingTime": 300,
+  "results": [
+    {
+      "amount": 250,
+      "id": "chemica:acetone"
+    },
+    {
+      "amount": 250,
+      "id": "chemica:phenol"
+    }
+  ]
+}

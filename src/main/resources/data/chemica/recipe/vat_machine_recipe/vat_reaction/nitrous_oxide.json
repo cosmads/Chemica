@@ -1,0 +1,41 @@
+{
+  "type": "tfmg:vat_machine_recipe",
+  "allowedVatTypes": [
+    "tfmg:cast_iron_vat",
+    "tfmg:steel_vat",
+    "tfmg:firebrick_lined_vat"
+  ],
+  "ingredients": [
+    {
+      "type": "neoforge:single",
+      "amount": 500,
+      "fluid": "chemica:ammonia"
+    },
+    {
+      "type": "neoforge:single",
+      "amount": 500,
+      "fluid": "chemica:oxygen"
+    },
+    {
+      "item": "chemica:platinum_catalyst"
+    }
+  ],
+  "machines": [],
+  "minSize": 1,
+  "processingTime": 200,
+  "results": [
+    {
+      "amount": 500,
+      "id": "chemica:nitrous_oxide",
+      "nbt": {}
+    },
+    {
+      "amount": 200,
+      "id": "minecraft:water",
+      "nbt": {}
+    },
+    {
+      "id": "chemica:platinum_catalyst"
+    }
+  ]
+}

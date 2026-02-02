@@ -1,0 +1,14 @@
+{
+  "type": "create:compacting",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "item": "chemica:chromium_dust"
+    }
+  ],
+  "results": [
+    {
+      "id": "chemica:chromium_ingot"
+    }
+  ]
+}

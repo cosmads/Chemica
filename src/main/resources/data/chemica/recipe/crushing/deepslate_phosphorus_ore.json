@@ -1,0 +1,23 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "chemica:deepslate_phosphorus_ore"
+    }
+  ],
+  "processingTime": 250,
+  "results": [
+    {
+      "count": 3,
+      "id": "chemica:phosphorus_dust"
+    },
+    {
+      "chance": 0.1,
+      "id": "chemica:phosphorus_dust"
+    },
+    {
+      "chance": 0.03,
+      "id": "chemica:arsenic_dust"
+    }
+  ]
+}

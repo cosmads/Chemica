@@ -1,0 +1,15 @@
+{
+  "type": "create:cutting",
+  "ingredients": [
+    {
+      "item": "minecraft:glass"
+    }
+  ],
+  "processingTime": 300,
+  "results": [
+    {
+      "count": 2,
+      "id": "chemica:glass_vial"
+    }
+  ]
+}

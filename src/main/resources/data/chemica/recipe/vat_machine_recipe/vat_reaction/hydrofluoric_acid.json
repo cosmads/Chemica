@@ -1,0 +1,30 @@
+{
+  "type": "tfmg:vat_machine_recipe",
+  "allowedVatTypes": [
+    "tfmg:cast_iron_vat",
+    "tfmg:steel_vat",
+    "tfmg:firebrick_lined_vat"
+  ],
+  "ingredients": [
+    {
+        "item": "chemica:fluorite_dust"
+    },
+    {
+        "item": "chemica:fluorite_dust"
+    },
+    {
+      "type": "neoforge:single",
+      "amount": 1000,
+      "fluid": "tfmg:sulfuric_acid"
+    }
+  ],
+  "machines": [],
+  "minSize": 1,
+  "processingTime": 200,
+  "results": [
+    {
+      "amount": 1000,
+      "id": "chemica:hydrofluoric_acid"
+    }
+  ]
+}

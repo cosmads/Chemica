@@ -1,0 +1,37 @@
+{
+  "type": "tfmg:distillation",
+  "ingredients": [
+    {
+      "type": "neoforge:single",
+      "amount": 1000,
+      "fluid": "chemica:light_hydrocarbons"
+    }
+  ],
+  "results": [
+    {
+      "amount": 200,
+      "id": "chemica:toluene"
+    },
+    {
+      "amount": 100,
+      "id": "chemica:benzene"
+    },
+    {
+      "amount": 100,
+      "id": "chemica:butene"
+    },
+    {
+      "amount": 150,
+      "id": "chemica:propene"
+    },
+    {
+      "amount": 200,
+      "id": "chemica:ethane"
+    },
+    {
+      "amount": 250,
+      "id": "chemica:methane"
+    }
+    
+  ]
+}

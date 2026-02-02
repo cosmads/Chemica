@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "chemica:hydrogen_fuel",
+    "chemica:flowing_hydrogen_fuel"
+  ]
+}

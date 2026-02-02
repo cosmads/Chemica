@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "S": {
+      "item": "minecraft:flint_and_steel"
+    },
+    "C": {
+      "item": "create:iron_sheet"
+    }
+  },
+  "pattern": [
+    " S ",
+    "C C",
+    "CCC"
+  ],
+  "result": {
+    "count": 1,
+    "id": "chemica:ethanol_engine_cylinder",
+    "components": {
+      "tfmg:fuel_tags": {
+        "ethanol": "c:ethanol"
+      },
+      "tfmg:fuels": {
+        "ethanol": "fluid.chemica.ethanol"
+      }
+    }
+  }
+}

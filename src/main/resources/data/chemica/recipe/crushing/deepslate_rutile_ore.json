@@ -1,0 +1,32 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "chemica:deepslate_rutile_ore"
+    }
+  ],
+  "processingTime": 250,
+  "results": [
+    {
+      "chance": 0.5,
+      "count": 2,
+      "id": "chemica:rutile_crystal"
+    },
+    {
+      "chance": 0.3,
+      "id": "chemica:medium_grade_rutile_crystal"
+    },
+    {
+      "chance": 0.2,
+      "id": "chemica:high_grade_rutile_crystal"
+    },
+    {
+      "chance": 0.1,
+      "id": "chemica:rutile_dust"
+    },
+    {
+      "chance": 0.05,
+      "id": "chemica:iron_dust"
+    }
+  ]
+}

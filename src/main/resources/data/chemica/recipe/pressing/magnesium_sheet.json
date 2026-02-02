@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "chemica:magnesium_ingot"
+    }
+  ],
+  "results": [
+    {
+      "id": "chemica:magnesium_sheet"
+    }
+  ]
+}

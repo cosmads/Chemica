@@ -1,0 +1,24 @@
+{
+  "type": "create:compacting",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "type": "neoforge:single",
+      "amount": 1000,
+      "fluid": "chemica:syngas"
+    },
+    {
+      "item": "chemica:iron_dust"
+    }
+  ],
+  "results": [
+    {
+      "amount": 800,
+      "id": "chemica:hydrogen_fuel"
+    },
+    {
+      "amount": 200,
+      "id": "minecraft:water"
+    }
+  ]
+}

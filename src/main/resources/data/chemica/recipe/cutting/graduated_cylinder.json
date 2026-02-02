@@ -1,0 +1,14 @@
+{
+  "type": "create:cutting",
+  "ingredients": [
+    {
+      "item": "minecraft:glass"
+    }
+  ],
+  "processingTime": 300,
+  "results": [
+    {
+      "id": "chemica:graduated_cylinder"
+    }
+  ]
+}

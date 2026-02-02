@@ -1,0 +1,16 @@
+{
+  "values": [
+    "chemica:flowing_chromic_acid",
+    "chemica:chromic_acid",
+    "chemica:flowing_hydrochloric_acid",
+    "chemica:hydrochloric_acid",
+    "chemica:flowing_hydrofluoric_acid",
+    "chemica:hydrofluoric_acid",
+    "chemica:flowing_nitric_acid",
+    "chemica:nitric_acid",
+    "chemica:flowing_phosphoric_acid",
+    "chemica:phosphoric_acid",
+    "chemica:flowing_sulfuric_nickel_solution",
+    "chemica:sulfuric_nickel_solution"
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "chemica:iridium_sheet"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "id": "chemica:reinforced_iridium_plate"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "chemica:unfinished_reinforced_iridium_plate"
+        },
+        {
+          "item": "chemica:iridium_ingot"
+        }
+      ],
+      "results": [
+        {
+          "id": "chemica:unfinished_reinforced_iridium_plate"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "chemica:unfinished_reinforced_iridium_plate"
+        }
+      ],
+      "results": [
+        {
+          "id": "chemica:unfinished_reinforced_iridium_plate"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "chemica:unfinished_reinforced_iridium_plate"
+        }
+      ],
+      "results": [
+        {
+          "id": "chemica:unfinished_reinforced_iridium_plate"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "chemica:unfinished_reinforced_iridium_plate"
+  }
+}

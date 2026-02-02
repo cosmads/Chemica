@@ -1,0 +1,35 @@
+{
+  "type": "tfmg:vat_machine_recipe",
+  "allowedVatTypes": [
+    "tfmg:cast_iron_vat",
+    "tfmg:steel_vat",
+    "tfmg:firebrick_lined_vat"
+  ],
+  "ingredients": [
+    {
+      "type": "neoforge:single",
+      "amount": 250,
+      "fluid": "chemica:benzene"
+    },
+    {
+      "type": "neoforge:single",
+      "amount": 1000,
+      "fluid": "tfmg:hydrogen"
+    },
+    {
+      "item": "chemica:nickel_catalyst"
+    }
+  ],
+  "machines": [],
+  "minSize": 1,
+  "processingTime": 300,
+  "results": [
+    {
+      "amount": 1000,
+      "id": "chemica:cyclohexane"
+    },
+    {
+      "id": "chemica:nickel_catalyst"
+    }
+  ]
+}

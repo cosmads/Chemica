@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "bcb",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "create:copper_nugget"
+    },
+    "b": {
+      "item": "tfmg:copper_wire"
+    },
+    "c": {
+      "item": "create:iron_sheet"
+    }
+  },
+  "result": {
+    "id": "chemica:coil"
+  }
+}

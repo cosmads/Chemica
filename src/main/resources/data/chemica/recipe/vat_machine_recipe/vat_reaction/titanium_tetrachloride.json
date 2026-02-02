@@ -1,0 +1,35 @@
+{
+  "type": "tfmg:vat_machine_recipe",
+  "heat_requirement": "heated",
+  "allowedVatTypes": [
+    "tfmg:steel_vat",
+    "tfmg:firebrick_lined_vat"
+  ],
+  "ingredients": [
+    {
+      "item": "chemica:rutile_crystal"
+    },
+    {
+      "type": "neoforge:single",
+      "amount": 250,
+      "fluid": "chemica:hydrochloric_acid",
+      "nbt": {}
+    },
+    {
+      "type": "neoforge:single",
+      "amount": 250,
+      "fluid": "chemica:chlorine",
+      "nbt": {}
+    }
+  ],
+  "machines": [],
+  "minSize": 1,
+  "processingTime": 300,
+  "results": [
+    {
+      "amount": 500,
+      "id": "chemica:titanium_tetrachloride",
+      "nbt": {}
+    }
+  ]
+}

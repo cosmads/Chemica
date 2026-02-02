@@ -1,0 +1,66 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "chemica:tantalum_sheet"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "id": "chemica:tantalum_capacitor_item",
+      "count": 4
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "chemica:unfinished_tantalum_capacitor"
+        },
+        {
+          "tag": "c:plates/copper"
+        }
+      ],
+      "results": [
+        {
+          "id": "chemica:unfinished_tantalum_capacitor"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "chemica:unfinished_tantalum_capacitor"
+        },
+        {
+          "item": "chemica:conductive_paste"
+        }
+      ],
+      "results": [
+        {
+          "id": "chemica:unfinished_tantalum_capacitor"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "chemica:unfinished_tantalum_capacitor"
+        },
+        {
+          "tag": "c:plates/copper"
+        }
+      ],
+      "results": [
+        {
+          "id": "chemica:unfinished_tantalum_capacitor"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "chemica:unfinished_tantalum_capacitor"
+  }
+}

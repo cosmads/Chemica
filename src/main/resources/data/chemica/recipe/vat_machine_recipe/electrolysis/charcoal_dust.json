@@ -1,0 +1,29 @@
+{
+  "type": "tfmg:vat_machine_recipe",
+  "allowedVatTypes": [
+  	"tfmg:cast_iron_vat",
+    "tfmg:steel_vat",
+    "tfmg:firebrick_lined_vat"
+  ],
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "item": "chemica:charcoal_dust"
+    }
+  ],
+  "machines": [
+    "tfmg:electrode",
+    "tfmg:electrode"
+  ],
+  "minSize": 1,
+  "processingTime": 100,
+  "results": [
+    {
+      "amount": 150,
+      "id": "tfmg:carbon_dioxide"
+    },
+    {
+        "id": "chemica:coal_dust"
+    }
+  ]
+}

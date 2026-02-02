@@ -1,0 +1,22 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "chemica:cobalt_catalyst"
+    },
+    {
+      "type": "neoforge:single",
+      "amount": 1000,
+      "fluid": "chemica:acrylonitrile"
+    }
+  ],
+  "results": [
+    {
+      "amount": 1000,
+      "id": "chemica:pan_precursor"
+    },
+    {
+      "id": "chemica:cobalt_catalyst"
+    }
+  ]
+}

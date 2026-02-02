@@ -1,0 +1,39 @@
+{
+  "type": "tfmg:vat_machine_recipe",
+  "allowedVatTypes": [
+    "tfmg:steel_vat",
+    "tfmg:firebrick_lined_vat"
+  ],
+  "ingredients": [
+    {
+      "type": "neoforge:single",
+      "amount": 1000,
+      "fluid": "minecraft:water"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "create:dough"
+    },
+    {
+      "item": "create:dough"
+    }
+  ],
+  "machines": [],
+  "minSize": 1,
+  "processingTime": 1000,
+  "results": [
+    {
+      "count": 4,
+      "id": "chemica:yeast"
+    },
+    {
+      "chance": 0.4,
+      "id": "chemica:yeast"
+    }
+  ]
+}

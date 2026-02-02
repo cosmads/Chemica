@@ -1,0 +1,16 @@
+{
+  "type": "tfmg:casting",
+  "ingredients": [
+    {
+      "type": "neoforge:single",
+      "amount": 144,
+      "fluid": "chemica:molten_titanium"
+    }
+  ],
+  "processing_time": 100,
+  "results": [
+    {
+      "id": "chemica:titanium_ingot"
+    }
+  ]
+}

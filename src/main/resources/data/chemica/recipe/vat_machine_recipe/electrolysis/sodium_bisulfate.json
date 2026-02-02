@@ -1,0 +1,28 @@
+{
+  "type": "tfmg:vat_machine_recipe",
+  "allowedVatTypes": [
+    "tfmg:steel_vat",
+    "tfmg:firebrick_lined_vat"
+  ],
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "item": "chemica:sodium_bisulfate_dust"
+    }
+  ],
+  "machines": [
+    "tfmg:electrode",
+    "tfmg:electrode"
+  ],
+  "minSize": 1,
+  "processingTime": 100,
+  "results": [
+    {
+      "amount": 500,
+      "id": "tfmg:hydrogen"
+    },
+    {
+      "id": "chemica:sodium_persulfate"
+    }
+  ]
+}

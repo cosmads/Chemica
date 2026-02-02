@@ -1,0 +1,28 @@
+{
+  "type": "tfmg:distillation",
+  "ingredients": [
+    {
+      "type": "neoforge:single",
+      "amount": 1000,
+      "fluid": "tfmg:air"
+    }
+  ],
+  "results": [
+    {
+      "amount": 10,
+      "id": "chemica:helium"
+    },
+    {
+      "amount": 760,
+      "id": "chemica:nitrogen"
+    },
+    {
+      "amount": 20,
+      "id": "chemica:argon"
+    },
+    {
+      "amount": 210,
+      "id": "chemica:oxygen"
+    }
+  ]
+}

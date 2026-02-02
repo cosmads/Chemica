@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "chemica:item/heat_resistant_tough_alloy"
+  }
+}

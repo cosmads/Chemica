@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "experience": 0.0,
+  "cookingtime": 100,
+  "ingredient": {
+    "item": "chemica:crushed_raw_cobalt"
+  },
+  "result": {
+    "id": "chemica:cobalt_ingot"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "type": "tfmg:vat_machine_recipe",
+  "allowedVatTypes": [
+    "tfmg:cast_iron_vat",
+    "tfmg:steel_vat",
+    "tfmg:firebrick_lined_vat"
+  ],
+  "heat_requirement": "superheated",
+  "ingredients": [
+    {
+      "type": "neoforge:single",
+      "amount": 1000,
+      "fluid": "minecraft:water"
+    }
+  ],
+  "machines": [],
+  "minSize": 1,
+  "processingTime": 350,
+  "results": [
+    {
+      "amount": 500,
+      "id": "chemica:steam"
+    },
+    {
+      "amount": 500,
+      "id": "minecraft:water"
+    }
+  ]
+}

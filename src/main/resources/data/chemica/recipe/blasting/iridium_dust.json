@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "experience": 0.0,
+  "cookingtime": 100,
+  "ingredient": {
+    "item": "chemica:iridium_dust"
+  },
+  "result": {
+    "id": "chemica:iridium_ingot"
+  }
+}

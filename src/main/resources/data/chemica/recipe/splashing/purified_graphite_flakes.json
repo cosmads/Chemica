@@ -1,0 +1,18 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "item": "chemica:crushed_graphite"
+    }
+  ],
+  "results": [
+    {
+      "count": 2,
+      "id": "chemica:purified_graphite_flakes"
+    },
+    {
+      "chance": 0.15,
+      "id": "chemica:purified_graphite_flakes"
+    }
+  ]
+}

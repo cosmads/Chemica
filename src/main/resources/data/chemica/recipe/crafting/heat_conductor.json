@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "bbb",
+    "ccc"
+  ],
+  "key": {
+    "a": {
+      "item": "create:copper_sheet"
+    },
+    "b": {
+      "item": "minecraft:redstone"
+    },
+    "c": {
+      "item": "chemica:graphite_sheet"
+    }
+  },
+  "result": {
+    "id": "chemica:heat_conductor",
+    "count": 4
+  }
+}

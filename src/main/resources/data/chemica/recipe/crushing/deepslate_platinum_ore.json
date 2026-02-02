@@ -1,0 +1,23 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "chemica:deepslate_platinum_ore"
+    }
+  ],
+  "processingTime": 250,
+  "results": [
+    {
+      "count": 2,
+      "id": "create:crushed_raw_platinum"
+    },
+    {
+      "chance": 0.08,
+      "id": "chemica:platinum_dust"
+    },
+    {
+      "chance": 0.02,
+      "id": "chemica:iridium_dust"
+    }
+  ]
+}

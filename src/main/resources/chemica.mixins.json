@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "package": "com.cosmads.chemica.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "TurbineEngineBlockEntityMixin",
+    "RegularEngineBlockEntityMixin"
+  ],
+  "client": [
+    "ChemicalVatCategoryMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

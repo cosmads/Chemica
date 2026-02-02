@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "experience": 1.0,
+  "cookingtime": 100,
+  "ingredient": {
+    "item": "chemica:deepslate_antimony_ore"
+  },
+  "result": {
+    "id": "chemica:antimony_ingot"
+  }
+}

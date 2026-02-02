@@ -1,0 +1,19 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "chemica:deepslate_silver_ore"
+    }
+  ],
+  "processingTime": 250,
+  "results": [
+    {
+      "id": "create:crushed_raw_silver",
+      "count": 3
+    },
+    {
+      "id": "chemica:arsenic_dust",
+      "chance": 0.03
+    }
+  ]
+}

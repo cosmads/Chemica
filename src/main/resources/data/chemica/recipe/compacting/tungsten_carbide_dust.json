@@ -1,0 +1,17 @@
+{
+  "type": "create:compacting",
+  "heat_requirement": "superheated",
+  "ingredients": [
+    {
+      "item": "chemica:tungsten_dust"
+    },
+    {
+      "item": "chemica:coal_dust"
+    }
+  ],
+  "results": [
+    {
+      "id": "chemica:tungsten_carbide_dust"
+    }
+  ]
+}

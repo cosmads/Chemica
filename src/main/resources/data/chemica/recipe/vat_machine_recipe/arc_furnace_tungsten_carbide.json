@@ -1,0 +1,33 @@
+{
+  "type": "tfmg:vat_machine_recipe",
+  "allowedVatTypes": [
+    "tfmg:firebrick_lined_vat"
+  ],
+  "ingredients": [
+    {
+      "item": "chemica:tungsten_carbide_dust"
+    },
+    {
+      "type": "neoforge:single",
+      "amount": 150,
+      "fluid": "chemica:helium"
+    }
+  ],
+  "machines": [
+    "tfmg:graphite_electrode",
+    "tfmg:graphite_electrode",
+    "tfmg:graphite_electrode"
+  ],
+  "minSize": 6,
+  "processingTime": 20,
+  "results": [
+    {
+      "amount": 144,
+      "id": "chemica:molten_tungsten_carbide"
+    },
+    {
+      "amount": 56,
+      "id": "tfmg:molten_slag"
+    }
+  ]
+}

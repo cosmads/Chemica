@@ -1,0 +1,30 @@
+{
+  "type": "tfmg:vat_machine_recipe",
+  "allowedVatTypes": [
+  	"tfmg:cast_iron_vat",
+    "tfmg:steel_vat",
+    "tfmg:firebrick_lined_vat"
+  ],
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "type": "neoforge:single",
+      "amount": 500,
+      "fluid": "chemica:reformate"
+    }
+  ],
+  "machines": [
+    "tfmg:centrifuge"
+  ],
+  "minSize": 1,
+  "results": [
+    {
+      "amount": 300,
+      "id": "chemica:aromatic_mix"
+    },
+    {
+      "amount": 200,
+      "id": "chemica:light_hydrocarbons"
+    }
+  ]
+}

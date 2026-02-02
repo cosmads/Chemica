@@ -1,0 +1,13 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "tfmg:nickel_ingot"
+    }
+  ],
+  "results": [
+    {
+      "id": "chemica:nickel_dust"
+    }
+  ]
+}

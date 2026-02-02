@@ -1,0 +1,20 @@
+{
+  "type": "tfmg:distillation",
+  "ingredients": [
+    {
+      "type": "neoforge:single",
+      "amount": 500,
+      "fluid": "chemica:light_hydrocarbons"
+    }
+  ],
+  "results": [
+    {
+      "amount": 250,
+      "id": "tfmg:butane"
+    },
+    {
+      "amount": 250,
+      "id": "tfmg:propane"
+    }
+  ]
+}

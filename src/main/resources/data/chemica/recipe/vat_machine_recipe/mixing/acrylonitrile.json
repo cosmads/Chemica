@@ -1,0 +1,37 @@
+{
+  "type": "tfmg:vat_machine_recipe",
+  "allowedVatTypes": [
+    "tfmg:cast_iron_vat",
+    "tfmg:steel_vat",
+    "tfmg:firebrick_lined_vat"
+  ],
+  "ingredients": [
+    {
+      "type": "neoforge:single",
+      "amount": 1000,
+      "fluid": "tfmg:ethylene"
+    },
+    {
+      "type": "neoforge:single",
+      "amount": 500,
+      "fluid": "chemica:ammonia"
+    },
+    {
+      "item": "chemica:vanadium_catalyst"
+    }
+  ],
+  "machines": [
+    "tfmg:mixing"
+  ],
+  "minSize": 1,
+  "processingTime": 200,
+  "results": [
+    {
+      "amount": 500,
+      "id": "chemica:acrylonitrile"
+    },
+    {
+      "id": "chemica:vanadium_catalyst"
+    }
+  ]
+}

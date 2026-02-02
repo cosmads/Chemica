@@ -1,0 +1,16 @@
+{
+  "type": "tfmg:casting",
+  "ingredients": [
+    {
+      "type": "neoforge:single",
+      "amount": 144,
+      "fluid": "chemica:molten_nylon"
+    }
+  ],
+  "processing_time": 100,
+  "results": [
+    {
+      "id": "chemica:nylon_ingot"
+    }
+  ]
+}

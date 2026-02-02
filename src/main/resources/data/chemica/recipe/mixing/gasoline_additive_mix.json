@@ -1,0 +1,21 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "type": "neoforge:single",
+      "amount": 250,
+      "fluid": "chemica:ethyl_tert_butyl_ether"
+    },
+    {
+      "type": "neoforge:single",
+      "amount": 250,
+      "fluid": "chemica:toluene"
+    }
+  ],
+  "results": [
+    {
+      "amount": 500,
+      "id": "chemica:gasoline_additive_mix"
+    }
+  ]
+}

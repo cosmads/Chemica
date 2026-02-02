@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "T": {
+      "item": "tfmg:turbine_blade"
+    },
+    "O": {
+      "item": "tfmg:heavy_plate"
+    },
+    "X": {
+      "item": "tfmg:screw"
+    },
+    "C": {
+      "item": "chemica:carbon_fiber_composite_sheet"
+    }
+  },
+  "pattern": [
+    "XCX",
+    "OTO",
+    "XCX"
+  ],
+  "result": {
+    "count": 1,
+    "id": "chemica:hydrogen_turbine_blade",
+    "components": {
+      "tfmg:fuel_tags": {
+        "hydrogen_fuel": "c:hydrogen_fuel"
+      },
+      "tfmg:fuels": {
+        "hydrogen_fuel": "fluid.chemica.hydrogen_fuel"
+      }
+    }
+  }
+}

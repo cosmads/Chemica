@@ -1,0 +1,16 @@
+{
+  "type": "create:deploying",
+  "ingredients": [
+    {
+      "item": "chemica:empty_epoxy_circuit_board"
+    },
+    {
+      "tag": "c:plates/gold"
+    }
+  ],
+  "results": [
+    {
+      "id": "chemica:coated_epoxy_circuit_board"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "type": "neoforge:single",
+      "amount": 250,
+      "fluid": "chemica:pan_precursor"
+    }
+  ],
+  "results": [
+    {
+      "id": "chemica:pan_fibers"
+    }
+  ]
+}

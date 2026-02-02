@@ -1,0 +1,30 @@
+{
+  "type": "tfmg:vat_machine_recipe",
+  "allowedVatTypes": [
+    "tfmg:steel_vat",
+    "tfmg:firebrick_lined_vat"
+  ],
+  "ingredients": [
+    {
+      "type": "neoforge:single",
+      "amount": 1000,
+      "fluid": "chemica:benzene"
+    },
+    {
+      "item": "chemica:platinum_catalyst"
+    }
+  ],
+  "machines": [],
+  "minSize": 1,
+  "processingTime": 300,
+  "results": [
+    {
+      "amount": 750,
+      "id": "chemica:reformate"
+    },
+    {
+      "amount": 50,
+      "id": "chemica:hydrogen"
+    }
+  ]
+}

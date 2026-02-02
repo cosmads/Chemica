@@ -1,0 +1,15 @@
+{
+  "type": "create:cutting",
+  "ingredients": [
+    {
+      "item": "minecraft:glass"
+    }
+  ],
+  "processingTime": 300,
+  "results": [
+    {
+      "count": 4,
+      "id": "chemica:petri_dish"
+    }
+  ]
+}

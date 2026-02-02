@@ -1,0 +1,22 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "minecraft:coal_block"
+    }
+  ],
+  "results": [
+    {
+    	"count": 7,
+      "id": "chemica:coal_dust"
+    },
+    {
+      "chance": 0.5,
+      "id": "chemica:coal_dust"
+    },
+    {
+      "chance": 0.25,
+      "id": "chemica:coal_dust"
+    }
+  ]
+}

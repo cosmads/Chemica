@@ -1,0 +1,44 @@
+{
+  "type": "tfmg:vat_machine_recipe",
+  "allowedVatTypes": [
+    "tfmg:steel_vat",
+    "tfmg:firebrick_lined_vat"
+  ],
+  "ingredients": [
+    {
+      "type": "neoforge:single",
+      "amount": 1000,
+      "fluid": "chemica:epichlorohydrin"
+    },
+    {
+      "type": "neoforge:single",
+      "amount": 250,
+      "fluid": "chemica:caustic_soda"
+    },
+    {
+      "type": "neoforge:single",
+      "amount": 250,
+      "fluid": "chemica:phenol"
+    },
+    {
+      "type": "neoforge:single",
+      "amount": 250,
+      "fluid": "chemica:acetone"
+    }
+  ],
+  "machines": [
+    "tfmg:mixing"
+  ],
+  "minSize": 3,
+  "processingTime": 300,
+  "results": [
+    {
+      "amount": 1000,
+      "id": "chemica:epoxy_resin"
+    },
+    {
+      "amount": 150,
+      "id": "chemica:brine"
+    }
+  ]
+}

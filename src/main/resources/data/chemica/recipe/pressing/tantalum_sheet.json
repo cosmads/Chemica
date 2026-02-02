@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "chemica:tantalum_ingot"
+    }
+  ],
+  "results": [
+    {
+      "id": "chemica:tantalum_sheet"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "type": "tfmg:hot_blast",
+  "ingredients": [
+    {
+      "type": "neoforge:single",
+      "amount": 100,
+      "fluid": "chemica:nitrogen"
+    },
+    {
+      "type": "neoforge:single",
+      "amount": 100,
+      "fluid": "tfmg:hydrogen"
+    }
+  ],
+  "processingTime": 200,
+  "results": [
+    {
+      "amount": 180,
+      "id": "chemica:ammonia"
+    },
+    {
+      "amount": 20,
+      "id": "tfmg:hot_air"
+    }
+  ]
+}

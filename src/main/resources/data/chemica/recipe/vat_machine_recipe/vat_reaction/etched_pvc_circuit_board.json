@@ -1,0 +1,26 @@
+{
+  "type": "tfmg:vat_machine_recipe",
+  "allowedVatTypes": [
+    "tfmg:steel_vat",
+    "tfmg:cast_iron_vat",
+    "tfmg:firebrick_lined_vat"
+  ],
+  "ingredients": [
+    {
+      "item": "chemica:coated_pvc_circuit_board"
+    },
+    {
+      "type": "neoforge:single",
+      "amount": 250,
+      "fluid": "tfmg:sulfuric_acid"
+    }
+  ],
+  "machines": [],
+  "minSize": 1,
+  "processingTime": 100,
+  "results": [
+    {
+      "id": "chemica:etched_pvc_circuit_board"
+    }
+  ]
+}

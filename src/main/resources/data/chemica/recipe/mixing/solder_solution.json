@@ -1,0 +1,21 @@
+{
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "type": "neoforge:single",
+      "amount": 500,
+      "fluid": "chemica:epoxy_resin"
+    },
+    {
+      "count": 2,
+      "item": "chemica:silver_dust"
+    }
+  ],
+  "results": [
+    {
+      "amount": 500,
+      "id": "chemica:solder_solution"
+    }
+  ]
+}

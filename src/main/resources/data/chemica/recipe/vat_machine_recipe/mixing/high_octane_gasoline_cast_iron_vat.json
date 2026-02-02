@@ -1,0 +1,34 @@
+{
+  "type": "tfmg:vat_machine_recipe",
+  "allowedVatTypes": [
+    "tfmg:cast_iron_vat"
+  ],
+  "ingredients": [
+    {
+      "type": "neoforge:single",
+      "amount": 800,
+      "fluid": "tfmg:gasoline"
+    },
+    {
+      "type": "neoforge:single",
+      "amount": 200,
+      "fluid": "chemica:gasoline_additive_mix"
+    },
+    {
+      "type": "neoforge:single",
+      "amount": 50,
+      "fluid": "chemica:nitrous_oxide"
+    }
+  ],
+  "machines": [
+    "tfmg:mixing"
+  ],
+  "minSize": 1,
+  "processingTime": 120,
+  "results": [
+    {
+      "amount": 1000,
+      "id": "chemica:high_octane_gasoline"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "experience": 1.0,
+  "cookingtime": 100,
+  "ingredient": {
+    "item": "chemica:deepslate_molybdenum_ore"
+  },
+  "result": {
+    "id": "chemica:molybdenum_ingot"
+  }
+}

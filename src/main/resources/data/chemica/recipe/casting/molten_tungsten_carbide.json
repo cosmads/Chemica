@@ -1,0 +1,16 @@
+{
+  "type": "tfmg:casting",
+  "ingredients": [
+    {
+      "type": "neoforge:single",
+      "amount": 144,
+      "fluid": "chemica:molten_tungsten_carbide"
+    }
+  ],
+  "processing_time": 100,
+  "results": [
+    {
+      "id": "chemica:tungsten_carbide_ingot"
+    }
+  ]
+}

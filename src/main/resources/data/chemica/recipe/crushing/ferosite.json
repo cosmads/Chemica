@@ -1,0 +1,20 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "chemica:fervorite"
+    }
+  ],
+  "processingTime": 250,
+  "results": [
+    {
+      "chance": 0.3,
+      "count": 2,
+      "id": "chemica:magnesium_dust"
+    },
+    {
+      "id": "tfmg:sulfur_dust",
+      "chance": 0.2
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "chemica:sodium_ingot"
+    }
+  ],
+  "processingTime": 100,
+  "results": [
+    {
+      "id": "chemica:sodium_dust"
+    }
+  ]
+}

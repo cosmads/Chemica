@@ -1,0 +1,13 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "chemica:chromium_ingot"
+    }
+  ],
+  "results": [
+    {
+      "id": "chemica:chromium_dust"
+    }
+  ]
+}

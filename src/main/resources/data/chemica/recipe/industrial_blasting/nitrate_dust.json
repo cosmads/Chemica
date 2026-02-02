@@ -1,0 +1,26 @@
+{
+  "type": "tfmg:industrial_blasting",
+  "ingredients": [
+    {
+      "item": "tfmg:nitrate_dust"
+    },
+    {
+      "item": "chemica:coal_dust"
+    }
+  ],
+  "processingTime": 20,
+  "results": [
+    {
+      "amount": 100,
+      "id": "chemica:nitrogen"
+    },
+    {
+      "amount": 80,
+      "id": "tfmg:carbon_dioxide"
+    },
+    {
+      "amount": 20,
+      "id": "tfmg:furnace_gas"
+    }
+  ]
+}

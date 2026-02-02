@@ -1,0 +1,18 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "minecraft:bucket"
+    },
+    {
+      "type": "neoforge:single",
+      "amount": 1000,
+      "fluid": "chemica:vinyl_chloride_monomer"
+    }
+  ],
+  "results": [
+    {
+      "id": "chemica:vinyl_chloride_monomer_bucket"
+    }
+  ]
+}

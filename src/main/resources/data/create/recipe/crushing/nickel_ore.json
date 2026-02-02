@@ -1,0 +1,19 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "tfmg:nickel_ore"
+    }
+  ],
+  "processingTime": 250,
+  "results": [
+    {
+      "count": 1,
+      "item": "create:crushed_raw_nickel"
+    },
+    {
+      "chance": 0.11,
+      "item": "chemica:cobalt_dust"
+    }
+  ]
+}

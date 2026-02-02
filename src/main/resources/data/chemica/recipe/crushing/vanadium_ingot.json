@@ -1,0 +1,13 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "chemica:vanadium_ingot"
+    }
+  ],
+  "results": [
+    {
+      "id": "chemica:vanadium_dust"
+    }
+  ]
+}

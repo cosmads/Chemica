@@ -1,0 +1,17 @@
+{
+  "type": "create:compacting",
+  "heat_requirement": "superheated",
+  "ingredients": [
+    {
+      "type": "neoforge:single",
+      "amount": 250,
+      "fluid": "tfmg:hydrogen"
+    }
+  ],
+  "results": [
+    {
+      "amount" : 250,
+      "id": "chemica:liquid_hydrogen"
+    }
+  ]
+}

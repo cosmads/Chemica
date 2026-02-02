@@ -1,0 +1,19 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "chemica:carbon_fiber_strands"
+    },
+    {
+      "type": "neoforge:single",
+      "amount": 250,
+      "fluid": "chemica:epoxy_resin"
+    }
+  ],
+  "processingTime": 300,
+  "results": [
+    {
+      "id": "chemica:carbon_fiber_composite_sheet"
+    }
+  ]
+}

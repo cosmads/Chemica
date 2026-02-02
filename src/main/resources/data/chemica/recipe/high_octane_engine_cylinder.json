@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "tfmg:diesel_engine_cylinder"
+    },
+    "S": {
+      "item": "tfmg:spark_plug"
+    },
+    "P": {
+      "item": "create:precision_mechanism"
+    }
+  },
+  "pattern": [
+    " S ",
+    " C ",
+    " P "
+  ],
+  "result": {
+    "count": 1,
+    "id": "chemica:high_octane_engine_cylinder",
+    "components": {
+      "tfmg:fuel_tags": {
+        "high_octane_gasoline": "c:high_octane_gasoline"
+      },
+      "tfmg:fuels": {
+        "high_octane_gasoline": "fluid.chemica.high_octane_gasoline"
+      }
+    }
+  }
+}

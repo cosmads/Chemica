@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "chemica:silver_ingot"
+    }
+  ],
+  "results": [
+    {
+      "id": "chemica:silver_sheet"
+    }
+  ]
+}
