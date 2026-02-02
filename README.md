@@ -1,25 +1,31 @@
+<div align="center">
+  <img src="https://cdn.modrinth.com/data/E6GusVzz/9591f40147323c74b8f03ebde968978361048eee_96.webp">
+  <h1>Chemica</h1>
+  <a href="https://www.curseforge.com/minecraft/mc-mods/chemica"><picture><source srcset="https://img.shields.io/badge/CurseForge-202830?style=for-the-badge&logo=curseforge" media="(prefers-color-scheme: dark)"><img src="https://img.shields.io/badge/CurseForge-white?style=for-the-badge&logo=curseforge" alt="CurseForge"></picture></a>
+  <a href="https://modrinth.com/mod/chemica"><picture><source srcset="https://img.shields.io/badge/Modrinth-202830?style=for-the-badge&logo=modrinth" media="(prefers-color-scheme: dark)"><img src="https://img.shields.io/badge/Modrinth-white?style=for-the-badge&logo=modrinth" alt="Modrinth"></picture></a>
+  <a href="https://discord.gg/mN3wrPxs3x"><picture><source srcset="https://img.shields.io/badge/Discord-202830?style=for-the-badge&logo=discord" media="(prefers-color-scheme: dark)"><img src="https://img.shields.io/badge/Discord-white?style=for-the-badge&logo=discord" alt="Discord"></picture></a>
+  <br>
+  <a>Chemistry and Materials addon for The Factory Must Grow</a>
+</div>
 
-Installation information
-=======
+## About
+Chemica is an addon for Create: The Factory Must Grow that aims to implement real-world chemistry and industrial processes in a fun and meaningful way. It brings an array of new materials, items, fluids, gases and recipe trees.
 
-This template repository can be directly cloned to get you started with a new
-mod. Simply create a new repository cloned from this one, by following the
-instructions provided by [GitHub](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
+Some of Chemica's current content includes:
 
-Once you have your clone, simply open the repository in the IDE of your choice. The usual recommendation for an IDE is either IntelliJ IDEA or Eclipse.
+- Creation of new types of plastic like PVC and Epoxy Resin
+- Production and use of multiple types of acid
+- Carbon Fiber processing tree
+- Many new ores, metals, fluids & fuels
+- Chemical production from various materials
+<br>... and much more planned for the future!
 
-If at any point you are missing libraries in your IDE, or you've run into problems you can
-run `gradlew --refresh-dependencies` to refresh the local cache. `gradlew clean` to reset everything 
-{this does not affect your code} and then start the process again.
+## Development
+This project is still early in development and content is subject to change.
+Once built up, the project will (hopefully) have a full wiki accessible here.
 
-Mapping Names:
-============
-By default, the MDK is configured to use the official mapping names from Mojang for methods and fields 
-in the Minecraft codebase. These names are covered by a specific license. All modders should be aware of this
-license. For the latest license text, refer to the mapping file itself, or the reference copy here:
-https://github.com/NeoForged/NeoForm/blob/main/Mojang.md
+### Developers
+cosmads
 
-Additional Resources: 
-==========
-Community Documentation: https://docs.neoforged.net/  
-NeoForged Discord: https://discord.neoforged.net/
+### Contributors
+PouffyDev
