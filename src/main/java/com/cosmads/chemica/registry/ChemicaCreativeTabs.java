@@ -1,6 +1,7 @@
 package com.cosmads.chemica.registry;
 
 import com.cosmads.chemica.Chemica;
+import com.cosmads.chemica.registry.rutile.ChemicaMaterials;
 import com.tterrag.registrate.util.entry.RegistryEntry;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -16,6 +17,7 @@ public class ChemicaCreativeTabs {
              .title(Component.literal("Chemica"))
              .icon(() -> new ItemStack(ChemicaItems.SODIUM_DUST.get()))
              .displayItems((params, output) -> {
+                 ChemicaMaterials.toTab(output::acceptAll);
                  output.accept(ChemicaItems.createBiodieselCylinder());
                  output.accept(ChemicaItems.createEthanolCylinder());
                  output.accept(ChemicaItems.createHighOctaneCylinder());

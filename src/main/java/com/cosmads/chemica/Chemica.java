@@ -3,14 +3,18 @@ package com.cosmads.chemica;
 import com.cosmads.chemica.common.registrate.ChemicaRegistrate;
 import com.cosmads.chemica.data.ChemicaDataGenerators;
 import com.cosmads.chemica.registry.*;
+import com.cosmads.chemica.registry.rutile.ChemicaMaterials;
+import com.cosmads.chemica.registry.rutile.ChemicaTagPrefixes;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTab;
 import net.neoforged.bus.api.IEventBus;
+import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.neoforged.neoforge.registries.RegisterEvent;
 import org.slf4j.Logger;
 import com.mojang.logging.LogUtils;
 
@@ -42,7 +46,7 @@ public class Chemica {
 
         // Register TFMG integration setup
         modEventBus.addListener(this::commonSetup);
-
+        modEventBus.register(CommonInit.class);
         // Register datagen event
         modEventBus.addListener(ChemicaDataGenerators::gatherData);
 
@@ -66,5 +70,19 @@ public class Chemica {
 
             LOGGER.info("Chemica TFMG integration initialized");
         });
+    }
+
+    public static class CommonInit {
+        private static boolean didRunRegistration = false;
+
+        @SubscribeEvent
+        public static void onRegister(RegisterEvent event) {
+            if (didRunRegistration) {
+                return;
+            }
+            ChemicaMaterials.init();
+            ChemicaTagPrefixes.init();
+            didRunRegistration = true;
+        }
     }
 }

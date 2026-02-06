@@ -2,6 +2,9 @@ package com.cosmads.chemica.data;
 
 import com.cosmads.chemica.registry.ChemicaBlocks;
 import com.cosmads.chemica.registry.ChemicaItems;
+import com.cosmads.chemica.registry.rutile.ChemicaMaterials;
+import dev.metallurgists.rutile.api.material.MaterialHelper;
+import dev.metallurgists.rutile.registry.RutileTagPrefixes;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.loot.LootTableSubProvider;
 import net.minecraft.resources.ResourceKey;
@@ -39,8 +42,8 @@ public class BlockLootTableProvider implements LootTableSubProvider {
         dropSelf(consumer, ChemicaBlocks.RAW_PLATINUM_BLOCK);
         dropSelf(consumer, ChemicaBlocks.ZELOSITE);
 
-        addOreWithFortune(consumer, ChemicaBlocks.DEEPSLATE_ANTIMONY_ORE, ChemicaItems.RAW_ANTIMONY.get(), fortuneHolder);
-        addOreWithFortune(consumer, ChemicaBlocks.DEEPSLATE_CHROMITE_ORE, ChemicaItems.RAW_CHROMITE.get(), fortuneHolder);
+        addOreWithFortune(consumer, ChemicaBlocks.DEEPSLATE_ANTIMONY_ORE, MaterialHelper.get(RutileTagPrefixes.RawOre, ChemicaMaterials.Antimony).getItem(), fortuneHolder);
+        addOreWithFortune(consumer, ChemicaBlocks.DEEPSLATE_CHROMITE_ORE, MaterialHelper.get(RutileTagPrefixes.RawOre, ChemicaMaterials.Chromium).getItem(), fortuneHolder);
         addOreWithFortune(consumer, ChemicaBlocks.DEEPSLATE_COBALT_ORE, ChemicaItems.RAW_COBALT.get(), fortuneHolder);
         addOreWithFortune(consumer, ChemicaBlocks.DEEPSLATE_MOLYBDENUM_ORE, ChemicaItems.RAW_MOLYBDENUM.get(), fortuneHolder);
         addOreWithFortune(consumer, ChemicaBlocks.DEEPSLATE_PLATINUM_ORE, ChemicaItems.RAW_PLATINUM.get(), fortuneHolder);

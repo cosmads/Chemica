@@ -115,11 +115,11 @@ public class ChemicaRegistrate extends CreateRegistrate {
     }
 
     public <T extends Electrode> ElectrodeBuilder<T, ChemicaRegistrate> electrode(NonNullFunction<Electrode.Properties, T> factory) {
-        return this.electrode((ChemicaRegistrate) this, factory);
+        return this.electrode(this, factory);
     }
 
     public <T extends Electrode> ElectrodeBuilder<T, ChemicaRegistrate> electrode(String name, NonNullFunction<Electrode.Properties, T> factory) {
-        return this.electrode((ChemicaRegistrate) this, name, factory);
+        return this.electrode(this, name, factory);
     }
 
     public <T extends Electrode, P> ElectrodeBuilder<T, P> electrode(P parent, NonNullFunction<Electrode.Properties, T> factory) {

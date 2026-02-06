@@ -10,7 +10,6 @@ import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Rarity;
 import net.neoforged.neoforge.common.Tags;
 
 public class ChemicaItems {
@@ -26,87 +25,87 @@ public class ChemicaItems {
     }
 
     // Register items - Metals Section
-    public static final ItemEntry<Item> ANTIMONY_INGOT = Chemica.REGISTRATE
-            .item("antimony_ingot", Item::new)
-            .lang("Antimony Ingot")
-            .tag(Tags.Items.INGOTS)
-            .tag(createCommonItemTag("ingots/antimony"))
-            .tab(MAIN_TAB_KEY)
-            .properties(p -> p.stacksTo(64))
-            .register();
+    //public static final ItemEntry<Item> ANTIMONY_INGOT = Chemica.REGISTRATE
+    //        .item("antimony_ingot", Item::new)
+    //        .lang("Antimony Ingot")
+    //        .tag(Tags.Items.INGOTS)
+    //        .tag(createCommonItemTag("ingots/antimony"))
+    //        .tab(MAIN_TAB_KEY)
+    //        .properties(p -> p.stacksTo(64))
+    //        .register();
 
-    public static final ItemEntry<Item> ANTIMONY_NUGGET = Chemica.REGISTRATE
-            .item("antimony_nugget", Item::new)
-            .lang("Antimony Nugget")
-            .tag(Tags.Items.NUGGETS)
-            .tag(createCommonItemTag("nuggets/antimony"))
-            .tab(MAIN_TAB_KEY)
-            .properties(p -> p.stacksTo(64))
-            .register();
+    //public static final ItemEntry<Item> ANTIMONY_NUGGET = Chemica.REGISTRATE
+    //        .item("antimony_nugget", Item::new)
+    //        .lang("Antimony Nugget")
+    //        .tag(Tags.Items.NUGGETS)
+    //        .tag(createCommonItemTag("nuggets/antimony"))
+    //        .tab(MAIN_TAB_KEY)
+    //        .properties(p -> p.stacksTo(64))
+    //        .register();
 
-    public static final ItemEntry<Item> RAW_ANTIMONY = Chemica.REGISTRATE
-            .item("raw_antimony", Item::new)
-            .lang("Raw Antimony")
-            .tag(createCommonItemTag("raw_materials/antimony"))
-            .tab(MAIN_TAB_KEY)
-            .properties(p -> p.stacksTo(64))
-            .register();
+    //public static final ItemEntry<Item> RAW_ANTIMONY = Chemica.REGISTRATE
+    //        .item("raw_antimony", Item::new)
+    //        .lang("Raw Antimony")
+    //        .tag(createCommonItemTag("raw_materials/antimony"))
+    //        .tab(MAIN_TAB_KEY)
+    //        .properties(p -> p.stacksTo(64))
+    //        .register();
 
-    public static final ItemEntry<Item> CRUSHED_RAW_ANTIMONY = Chemica.REGISTRATE.item("crushed_raw_antimony", Item::new)
-            .lang("Crushed Raw Antimony")
-            .tab(MAIN_TAB_KEY)
-            .properties(p -> p.stacksTo(64))
-            .register();
+    //public static final ItemEntry<Item> CRUSHED_RAW_ANTIMONY = Chemica.REGISTRATE.item("crushed_raw_antimony", Item::new)
+    //        .lang("Crushed Raw Antimony")
+    //        .tab(MAIN_TAB_KEY)
+    //        .properties(p -> p.stacksTo(64))
+    //        .register();
 
-    public static final ItemEntry<Item> ANTIMONY_DUST = Chemica.REGISTRATE
-            .item("antimony_dust", Item::new)
-            .lang("Antimony Dust")
-            .tag(Tags.Items.DUSTS)
-            .tag(createCommonItemTag("dusts/antimony"))
-            .tab(MAIN_TAB_KEY)
-            .properties(p -> p.stacksTo(64))
-            .register();
+    //public static final ItemEntry<Item> ANTIMONY_DUST = Chemica.REGISTRATE
+    //        .item("antimony_dust", Item::new)
+    //        .lang("Antimony Dust")
+    //        .tag(Tags.Items.DUSTS)
+    //        .tag(createCommonItemTag("dusts/antimony"))
+    //        .tab(MAIN_TAB_KEY)
+    //        .properties(p -> p.stacksTo(64))
+    //        .register();
 
-    public static final ItemEntry<Item> CHROMIUM_INGOT = Chemica.REGISTRATE
-            .item("chromium_ingot", Item::new)
-            .lang("Chromium Ingot")
-            .tag(Tags.Items.INGOTS)
-            .tag(createCommonItemTag("ingots/chromium"))
-            .tab(MAIN_TAB_KEY)
-            .properties(p -> p.stacksTo(64))
-            .register();
+    //public static final ItemEntry<Item> CHROMIUM_INGOT = Chemica.REGISTRATE
+    //        .item("chromium_ingot", Item::new)
+    //        .lang("Chromium Ingot")
+    //        .tag(Tags.Items.INGOTS)
+    //        .tag(createCommonItemTag("ingots/chromium"))
+    //        .tab(MAIN_TAB_KEY)
+    //        .properties(p -> p.stacksTo(64))
+    //        .register();
 
-    public static final ItemEntry<Item> CHROMIUM_NUGGET = Chemica.REGISTRATE
-            .item("chromium_nugget", Item::new)
-            .lang("Chromium Nugget")
-            .tag(Tags.Items.NUGGETS)
-            .tag(createCommonItemTag("nuggets/chromium"))
-            .tab(MAIN_TAB_KEY)
-            .properties(p -> p.stacksTo(64))
-            .register();
+    //public static final ItemEntry<Item> CHROMIUM_NUGGET = Chemica.REGISTRATE
+    //        .item("chromium_nugget", Item::new)
+    //        .lang("Chromium Nugget")
+    //        .tag(Tags.Items.NUGGETS)
+    //        .tag(createCommonItemTag("nuggets/chromium"))
+    //        .tab(MAIN_TAB_KEY)
+    //        .properties(p -> p.stacksTo(64))
+    //        .register();
 
-    public static final ItemEntry<Item> RAW_CHROMITE = Chemica.REGISTRATE
-            .item("raw_chromite", Item::new)
-            .lang("Raw Chromite")
-            .tag(createCommonItemTag("raw_materials/chromium"))
-            .tab(MAIN_TAB_KEY)
-            .properties(p -> p.stacksTo(64))
-            .register();
+    //public static final ItemEntry<Item> RAW_CHROMITE = Chemica.REGISTRATE
+    //        .item("raw_chromite", Item::new)
+    //        .lang("Raw Chromite")
+    //        .tag(createCommonItemTag("raw_materials/chromium"))
+    //        .tab(MAIN_TAB_KEY)
+    //        .properties(p -> p.stacksTo(64))
+    //        .register();
 
-    public static final ItemEntry<Item> CRUSHED_RAW_CHROMIUM = Chemica.REGISTRATE.item("crushed_raw_chromium", Item::new)
-            .lang("Crushed Raw Chromium")
-            .tab(MAIN_TAB_KEY)
-            .properties(p -> p.stacksTo(64))
-            .register();
+    //public static final ItemEntry<Item> CRUSHED_RAW_CHROMIUM = Chemica.REGISTRATE.item("crushed_raw_chromium", Item::new)
+    //        .lang("Crushed Raw Chromium")
+    //        .tab(MAIN_TAB_KEY)
+    //        .properties(p -> p.stacksTo(64))
+    //        .register();
 
-    public static final ItemEntry<Item> CHROMIUM_DUST = Chemica.REGISTRATE
-            .item("chromium_dust", Item::new)
-            .lang("Chromium Dust")
-            .tag(Tags.Items.DUSTS)
-            .tag(createCommonItemTag("dusts/chromium"))
-            .tab(MAIN_TAB_KEY)
-            .properties(p -> p.stacksTo(64))
-            .register();
+    //public static final ItemEntry<Item> CHROMIUM_DUST = Chemica.REGISTRATE
+    //        .item("chromium_dust", Item::new)
+    //        .lang("Chromium Dust")
+    //        .tag(Tags.Items.DUSTS)
+    //        .tag(createCommonItemTag("dusts/chromium"))
+    //        .tab(MAIN_TAB_KEY)
+    //        .properties(p -> p.stacksTo(64))
+    //        .register();
 
     public static final ItemEntry<Item> COBALT_INGOT = Chemica.REGISTRATE
             .item("cobalt_ingot", Item::new)

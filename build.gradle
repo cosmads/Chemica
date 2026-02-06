@@ -105,7 +105,7 @@ dependencies {
     runtimeOnly("curse.maven:configured-457570:7122915")
     implementation("mezz.jei:jei-${jei_minecraft_version}-neoforge:${jei_version}")
     implementation("com.tterrag.registrate:Registrate:${registrate_version}")
-    // implementation("com.github.Metallurgists-of-Create:Rutile:${rutile_version}")
+    implementation("maven.modrinth:rutile:${rutile_version}")
     implementation("curse.maven:create-industry-693815:${tfmg_file_id}")
 }
 
