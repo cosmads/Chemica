@@ -25,7 +25,7 @@
     },
     {
       "amount": 50,
-      "fluid": "chemica:hydrogen",
+      "fluid": "tfmg:hydrogen",
       "nbt": {}
     }
   ]
