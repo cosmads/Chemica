@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "chemica:raw_antimony",
+    "chemica:raw_chromite",
+    "chemica:raw_cobalt",
+    "chemica:raw_molybdenum",
+    "chemica:raw_platinum",
+    "chemica:raw_silver",
+    "chemica:raw_vanadium",
+    "chemica:raw_tungsten",
+    "chemica:raw_tin",
+  ]
+}
