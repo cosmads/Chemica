@@ -5,27 +5,27 @@
       "item": "minecraft:copper_ore"
     }
   ],
-  "processingTime": 250,
   "results": [
     {
-      "count": 5,
-      "item": "create:crushed_raw_copper"
+      "id": "create:crushed_raw_copper",
+      "amount": 5
     },
     {
       "chance": 0.25,
-      "item": "create:crushed_raw_copper"
+      "id": "create:crushed_raw_copper"
     },
     {
       "chance": 0.75,
-      "item": "create:experience_nugget"
+      "id": "create:experience_nugget"
     },
     {
       "chance": 0.125,
-      "item": "minecraft:cobblestone"
+      "id": "minecraft:cobblestone"
     },
     {
       "chance": 0.125,
-      "item": "chemica:arsenic_dust"
+      "id": "chemica:arsenic_dust"
     }
-  ]
+  ],
+  "processing_time": 250
 }
