@@ -1,35 +1,35 @@
 {
   "type": "create:crushing",
-  "conditions": [
-    {
-      "type": "forge:not",
-      "value": {
-        "type": "forge:tag_empty",
-        "tag": "forge:ores/lead"
-      }
-    }
-  ],
   "ingredients": [
     {
-      "tag": "forge:ores/lead"
+      "tag": "c:ores/lead"
     }
   ],
-  "processingTime": 400,
   "results": [
     {
-      "item": "create:crushed_raw_lead"
+      "id": "create:crushed_raw_lead"
     },
     {
       "chance": 0.75,
-      "item": "create:crushed_raw_lead"
+      "id": "create:crushed_raw_lead"
     },
     {
       "chance": 0.75,
-      "item": "create:experience_nugget"
+      "id": "create:experience_nugget"
     },
     {
       "chance": 0.075,
-      "item": "chemica:silver_dust"
+      "id": "chemica:silver_dust"
+    }
+  ],
+  "processing_time": 400,
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:ores/lead"
+      }
     }
   ]
 }
