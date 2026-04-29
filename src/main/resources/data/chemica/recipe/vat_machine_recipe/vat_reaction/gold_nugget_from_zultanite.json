@@ -1,0 +1,46 @@
+{
+    "neoforge:conditions": [
+        {
+            "type": "neoforge:mod_loaded",
+            "modid": "creategarnished"
+        }
+    ],
+    "type": "tfmg:vat_machine_recipe",
+    "heat_requirement": "heated",
+    "allowedVatTypes": ["tfmg:steel_vat", "tfmg:firebrick_lined_vat"],
+    "ingredients": [
+      {
+        "type": "neoforge:single",
+        "amount": 5,
+        "fluid": "chemica:nitric_acid"
+      },
+      {
+        "type": "neoforge:single",
+        "amount": 10,
+        "fluid": "chemica:hydrochloric_acid"
+      },
+      {
+        "item": "garnished:yellow_zultanite",
+        "amount": 5
+      }
+    ],
+    "machines": [],
+    "minSize": 1,
+    "processingTime": 300,
+    "results": [
+      {
+        "amount": 3,
+        "id": "create:gold_nugget"
+      },
+      {
+        "chance": 0.5,
+        "amount": 2,
+        "id": "create:zinc_nugget"
+      },
+      {
+        "chance": 0.2,
+        "amount": 1,
+        "id": "tfmg:lead_nugget"
+      }
+    ]
+  }

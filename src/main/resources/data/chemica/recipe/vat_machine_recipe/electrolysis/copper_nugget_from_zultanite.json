@@ -1,0 +1,45 @@
+{
+    "neoforge:conditions": [
+        {
+            "type": "neoforge:mod_loaded",
+            "modid": "creategarnished"
+        }
+    ],
+    "type": "tfmg:vat_machine_recipe",
+    "heat_requirement": "heated",
+    "allowedVatTypes": ["tfmg:steel_vat", "tfmg:firebrick_lined_vat"],
+    "ingredients": [
+      {
+        "type": "neoforge:single",
+        "amount": 10,
+        "fluid": "tfmg:sulfuric_acid"
+      },
+      {
+        "item": "garnished:green_zultanite",
+        "amount": 5
+      }
+    ],
+    "machines": ["tfmg:electrode", "tfmg:electrode"],
+    "minSize": 1,
+    "processingTime": 200,
+    "results": [
+      {
+        "amount": 3,
+        "id": "create:copper_nugget"
+      },
+      {
+        "chance": 0.2,
+        "amount": 1,
+        "id": "chemica:silver_nugget"
+      },
+      {
+        "chance": 0.1,
+        "amount": 1,
+        "id": "minecraft:gold_nugget"
+      },
+      {
+        "amount": 5,
+        "id": "tfmg:sulfuric_acid"
+      }
+    ]
+  }
