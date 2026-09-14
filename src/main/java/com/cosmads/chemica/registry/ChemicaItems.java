@@ -1114,6 +1114,14 @@ public class ChemicaItems {
                 .texture("layer0", prov.modLoc("item/ethanol_engine_cylinder")))
             .register();
 
+    public static final ItemEntry<CylinderItem> HIGH_CETANE_CYLINDER = Chemica.REGISTRATE
+            .item("high_cetane_engine_cylinder", CylinderItem::new)
+            .lang("High Cetane Engine Cylinder")
+            .properties(p -> p.stacksTo(64))
+            .model((ctx, prov) -> prov.withExistingParent(ctx.getName(), prov.mcLoc("item/generated"))
+                    .texture("layer0", prov.modLoc("item/high_cetane_engine_cylinder")))
+            .register();
+
     public static final ItemEntry<CylinderItem> HIGH_OCTANE_CYLINDER = Chemica.REGISTRATE
             .item("high_octane_engine_cylinder", CylinderItem::new)
             .lang("High Octane Engine Cylinder")
@@ -1157,6 +1165,10 @@ public class ChemicaItems {
 
     public static ItemStack createEthanolCylinder() {
         return createCylinderWithData(ETHANOL_CYLINDER, "ethanol", "ethanol");
+    }
+
+    public static ItemStack createHighCetaneCylinder() {
+        return createCylinderWithData(HIGH_CETANE_CYLINDER, "high_cetane_diesel", "high_cetane_diesel");
     }
 
     public static ItemStack createHighOctaneCylinder() {

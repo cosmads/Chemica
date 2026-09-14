@@ -21,6 +21,7 @@ public class RegularEngineBlockEntityMixin {
         // Allow Chemica cylinders
         if (itemStack.is(ChemicaItems.BIODIESEL_CYLINDER.get()) ||
                 itemStack.is(ChemicaItems.ETHANOL_CYLINDER.get()) ||
+                itemStack.is(ChemicaItems.HIGH_CETANE_CYLINDER.get()) ||
                 itemStack.is(ChemicaItems.HIGH_OCTANE_CYLINDER.get())) {
             cir.setReturnValue(true);
         }

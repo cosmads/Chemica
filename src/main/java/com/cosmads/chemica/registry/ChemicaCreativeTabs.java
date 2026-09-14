@@ -18,6 +18,7 @@ public class ChemicaCreativeTabs {
              .displayItems((params, output) -> {
                  output.accept(ChemicaItems.createBiodieselCylinder());
                  output.accept(ChemicaItems.createEthanolCylinder());
+                 output.accept(ChemicaItems.createHighCetaneCylinder());
                  output.accept(ChemicaItems.createHighOctaneCylinder());
                  output.accept(ChemicaItems.createHydrogenTurbineBlade());
              }))

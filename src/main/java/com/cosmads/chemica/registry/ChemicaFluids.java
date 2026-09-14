@@ -75,7 +75,7 @@ public class ChemicaFluids {
                 .register();
     }
 
-    // Helper method for gases (non-placeable, using VirtualFluid) - UPDATED to use ChemicaRegistrate
+    // Helper method for gases (non-placeable, using VirtualFluid)
     private static FluidEntry<VirtualFluid> gas(String name, int color) {
         return REGISTRATE.gasFluid(name, color)  // Now using the method from ChemicaRegistrate
                 .lang(toHumanReadable(name))
@@ -87,7 +87,7 @@ public class ChemicaFluids {
                 .register();
     }
 
-    // Alternative: Use TFMG's gasFluid method if you prefer that style
+    // TFMG's gasFluid method
     private static FluidEntry<VirtualFluid> gasTFMG(String name, int color) {
         return REGISTRATE.gasFluidTFMG(name, color)  // If you added this method to ChemicaRegistrate
                 .lang(toHumanReadable(name))
@@ -121,7 +121,7 @@ public class ChemicaFluids {
                 .collect(Collectors.joining(" "));
     }
 
-    // Regular Fluids - NO CHANGES NEEDED HERE
+    // Regular Fluids
     public static final FluidEntry<BaseFlowingFluid.Flowing>
             ACETONE = fluid("acetone", 0x80d0d0d0, 600, 790),
             ACETONITRILE = fluid("acrylonitrile", 0x80c8d7f0, 400, 810),
@@ -159,7 +159,7 @@ public class ChemicaFluids {
             WASTE_SLURRY = fluid("waste_slurry", 0xCC8C7A6B, 1800, 1200),
             XYLENE = fluid("xylene", 0x807f9799, 620, 860);
 
-    // Acid Fluids - UPDATED to use TFMG's AcidFluidType
+    // Acid Fluids
     public static final FluidEntry<BaseFlowingFluid.Flowing>
             CHROMIC_ACID = acidFluid("chromic_acid", 0xc8d4e4, 900, 1170,
             TagKey.create(Registries.FLUID, ResourceLocation.fromNamespaceAndPath("c", "acids")),
@@ -185,14 +185,14 @@ public class ChemicaFluids {
             TagKey.create(Registries.FLUID, ResourceLocation.fromNamespaceAndPath("c", "acids")),
             TagKey.create(Registries.FLUID, ResourceLocation.fromNamespaceAndPath("c", "acids/sulfuric_nickel")));
 
-    // Molten texture fluids (using manualFluid)
+    // Molten texture fluids
     public static final FluidEntry<BaseFlowingFluid.Flowing>
             MOLTEN_GLASS = manualFluid("molten_glass", 3500, 1440),
             MOLTEN_NYLON = manualFluid("molten_nylon", 5000, 1140),
             MOLTEN_TITANIUM = manualFluid("molten_titanium", 5000, 1140),
             MOLTEN_TUNGSTEN_CARBIDE = manualFluid("molten_tungsten_carbide", 5000, 1140);
 
-    // Gases (Non-placeable fluids using VirtualFluid) - UPDATED to use new gas() method
+    // Gases
     public static final FluidEntry<VirtualFluid>
             AMMONIA = gas("ammonia", 0x33dcf1cb),
             ARGON = gas("argon", 0x33c66bce),
@@ -216,7 +216,7 @@ public class ChemicaFluids {
             TUNGSTEN_HEXAFLUORIDE = gas("tungsten_hexafluoride", 0x66D1B3B3),
             VINYL_CHLORIDE_MONOMER = gas("vinyl_chloride_monomer", 0x66efe0a0);
 
-    // Fuel fluids - UPDATED to use REGISTRATE directly
+    // Fuel fluids
     public static final FluidEntry<BaseFlowingFluid.Flowing>
             BIODIESEL = REGISTRATE.fluid("biodiesel",
                     Chemica.asResource("block/fluid/biodiesel_still"),
@@ -257,6 +257,20 @@ public class ChemicaFluids {
             .bucket()
             .model((ctx, prov) -> prov.generated(ctx, prov.modLoc("item/high_octane_gasoline_bucket")))
             .tag(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "buckets/high_octane_gasoline")))
+            .build()
+            .register(),
+
+    HIGH_CETANE_DIESEL = REGISTRATE.fluid("high_cetane_diesel",
+                    Chemica.asResource("block/fluid/high_cetane_diesel_still"),
+                    Chemica.asResource("block/fluid/high_cetane_diesel_flow"))
+            .lang("High Cetane Diesel")
+            .properties(builder -> builder
+                    .viscosity(680)
+                    .density(1310))
+            .source(BaseFlowingFluid.Source::new)
+            .bucket()
+            .model((ctx, prov) -> prov.generated(ctx, prov.modLoc("item/high_cetane_diesels_bucket")))
+            .tag(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "buckets/high_cetane_diesel")))
             .build()
             .register(),
 
