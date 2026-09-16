@@ -1,0 +1,6 @@
+{
+  "fluids": ["chemica:hydrogen_fuel"],
+  "gj_per_mb": 1,
+  "combustion_engine_use": 0.16,
+  "combustion_engine_rpm": 64.0
+}
