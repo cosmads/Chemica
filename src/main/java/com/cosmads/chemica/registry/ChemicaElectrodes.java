@@ -1,18 +1,16 @@
 package com.cosmads.chemica.registry;
 
-import com.drmangotea.tfmg.content.machinery.vat.electrode_holder.electrode.Electrode;
 import com.drmangotea.tfmg.content.machinery.vat.electrode_holder.electrode.ElectrodeEntry;
 import com.cosmads.chemica.Chemica;
+import com.drmangotea.tfmg.content.machinery.vat.electrode_holder.electrode.SparkingElectrode;
+
+import static com.cosmads.chemica.Chemica.REGISTRATE;
+
 
 public class ChemicaElectrodes {
-    private static final com.cosmads.chemica.common.registrate.ChemicaRegistrate REGISTRATE = Chemica.REGISTRATE;
 
-    public static final ElectrodeEntry<Electrode> PLATINUM = REGISTRATE
-            .electrode("electrode", Electrode::new)
-            .properties(p -> p
-                    .resistance(8)
-                    .item(ChemicaItems.PLATINUM_ELECTRODE)
-                    .operationId("chemica:electrode"))
+    public static final ElectrodeEntry<SparkingElectrode> PLATINUM = REGISTRATE.electrode("platinum", SparkingElectrode::new)
+            .properties((p) -> p.resistance(8).operationId(ChemicaVatOperations.PLATINUM_ELECTRODE))
             .register();
 
     public static void register() {

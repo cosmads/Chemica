@@ -353,7 +353,5 @@
   "item.chemica.xylene_bucket": "Xylene Bucket",
   "item.chemica.yeast": "Yeast",
   "item.chemica.zinc_dust": "Zinc Dust",
-  "itemGroup.chemica.main": "Main",
-  "create.goggles.fluid_storage": "Fluid Storage",
-  "tfmg.goggles.vat.chemica.electrode": "Platinum Electrode"
+  "itemGroup.chemica.main": "Main"
 }

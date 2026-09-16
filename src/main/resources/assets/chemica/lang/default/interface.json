@@ -1,0 +1,8 @@
+{
+  "chemica.recipe.vat.platinum_electrode": "Requires Platinum Electrodes",
+  "engine_fuel.chemica.biodiesel": "Biodiesel",
+  "engine_fuel.chemica.ethanol": "Ethanol",
+  "engine_fuel.chemica.high_cetane_diesel": "High Cetane Diesel",
+  "engine_fuel.chemica.high_octane_gasoline": "High Octane Gasoline",
+  "engine_fuel.chemica.hydrogen_fuel": "Hydrogen Fuel"
+}

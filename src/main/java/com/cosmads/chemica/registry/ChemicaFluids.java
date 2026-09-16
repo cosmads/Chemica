@@ -2,6 +2,7 @@ package com.cosmads.chemica.registry;
 
 import com.cosmads.chemica.Chemica;
 import com.cosmads.chemica.common.TransparentTintedFluidType;
+import com.cosmads.chemica.data.tags.ChemicaTags;
 import com.drmangotea.tfmg.base.fluid.AcidFluidType;
 import com.simibubi.create.content.fluids.VirtualFluid;
 import com.tterrag.registrate.util.entry.FluidEntry;
@@ -226,6 +227,7 @@ public class ChemicaFluids {
                     .viscosity(1200)
                     .density(1140))
             .source(BaseFlowingFluid.Source::new)
+            .tag(ChemicaTags.Fluids.BIODIESEL.tag)
             .bucket()
             .model((ctx, prov) -> prov.generated(ctx, prov.modLoc("item/biodiesel_bucket")))
             .tag(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "buckets/biodiesel")))
@@ -240,6 +242,7 @@ public class ChemicaFluids {
                     .viscosity(600)
                     .density(1140))
             .source(BaseFlowingFluid.Source::new)
+            .tag(ChemicaTags.Fluids.ETHANOL.tag)
             .bucket()
             .model((ctx, prov) -> prov.generated(ctx, prov.modLoc("item/ethanol_bucket")))
             .tag(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "buckets/ethanol")))
@@ -254,6 +257,7 @@ public class ChemicaFluids {
                     .viscosity(600)
                     .density(1140))
             .source(BaseFlowingFluid.Source::new)
+            .tag(ChemicaTags.Fluids.HIGH_OCTANE_GASOLINE.tag)
             .bucket()
             .model((ctx, prov) -> prov.generated(ctx, prov.modLoc("item/high_octane_gasoline_bucket")))
             .tag(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "buckets/high_octane_gasoline")))
@@ -268,8 +272,9 @@ public class ChemicaFluids {
                     .viscosity(680)
                     .density(1310))
             .source(BaseFlowingFluid.Source::new)
+            .tag(ChemicaTags.Fluids.HIGH_CETANE_DIESEL.tag)
             .bucket()
-            .model((ctx, prov) -> prov.generated(ctx, prov.modLoc("item/high_cetane_diesels_bucket")))
+            .model((ctx, prov) -> prov.generated(ctx, prov.modLoc("item/high_cetane_diesel_bucket")))
             .tag(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "buckets/high_cetane_diesel")))
             .build()
             .register(),
@@ -282,6 +287,7 @@ public class ChemicaFluids {
                     .viscosity(600)
                     .density(1140))
             .source(BaseFlowingFluid.Source::new)
+            .tag(ChemicaTags.Fluids.HYDROGEN_FUEL.tag)
             .bucket()
             .model((ctx, prov) -> prov.generated(ctx, prov.modLoc("item/hydrogen_fuel_bucket")))
             .tag(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "buckets/hydrogen_fuel")))
