@@ -1,0 +1,19 @@
+{
+    "type": "create:splashing",
+    "ingredients": [
+      {
+        "item": "create:crushed_raw_tin"
+      }
+    ],
+    "results": [
+      {
+        "id": "chemica:tin_nugget",
+        "count": 9
+      },
+      {
+        "id": "minecraft:iron_nugget",
+        "count": 2,
+        "chance": 0.5
+      }
+    ]
+  }
