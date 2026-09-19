@@ -2,6 +2,7 @@ package com.cosmads.chemica.data.recipes;
 
 import com.cosmads.chemica.Chemica;
 import com.simibubi.create.api.data.recipe.ProcessingRecipeGen;
+import com.simibubi.create.foundation.data.recipe.CommonMetal;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.CachedOutput;
 import net.minecraft.data.DataGenerator;
@@ -9,6 +10,8 @@ import net.minecraft.data.DataProvider;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.RecipeProvider;
+import net.minecraft.tags.TagKey;
+import net.minecraft.world.item.Item;
 import org.jetbrains.annotations.NotNull;
 
 import javax.annotation.ParametersAreNonnullByDefault;
@@ -77,5 +80,17 @@ public class ChemicaRecipeProvider extends RecipeProvider {
     }
 
     public static class Marker {
+    }
+
+    public static class I {
+        public static TagKey<Item> steelIngot() {
+            return CommonMetal.STEEL.ingots;
+        }
+        public static TagKey<Item> steelNugget() {
+            return CommonMetal.STEEL.nuggets;
+        }
+        public static TagKey<Item> steelSheet() {
+            return CommonMetal.STEEL.plates;
+        }
     }
 }

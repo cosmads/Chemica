@@ -21,6 +21,7 @@ public class ChemicaClientEvents {
             ChemicaGuiTextures.PLATINUM_ELECTRODE.render(graphics, 19, 32);
             ChemicaGuiTextures.PLATINUM_ELECTRODE.render(graphics, 83, 32);
         });
+
         event.addOperationTooltip(ChemicaVatOperations.PLATINUM_ELECTRODE.get(), (recipe, tooltip, mouseX, mouseY) -> {
             boolean xCheck = mouseX > 11 && mouseX < 35 || mouseX > 75 && mouseX < 99;
             if (mouseY > -3 && mouseY < 60 && xCheck) {

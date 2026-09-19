@@ -21,8 +21,8 @@
     }
   ],
   "machines": [
-    "chemica:electrode",
-    "chemica:electrode"
+    "chemica:platinum_electrode",
+    "chemica:platinum_electrode"
   ],
   "min_size": 3,
   "processing_time": 300,
