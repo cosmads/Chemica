@@ -2,6 +2,7 @@ package com.cosmads.chemica.registry;
 
 import com.cosmads.chemica.Chemica;
 import com.cosmads.chemica.data.ChemMaterial;
+import com.cosmads.chemica.data.tags.ChemicaTags;
 import com.drmangotea.tfmg.base.data_storage.CylinderFuels;
 import com.drmangotea.tfmg.content.engines.fuels.EngineFuelType;
 import com.drmangotea.tfmg.content.machinery.vat.electrode_holder.electrode.Electrode;
@@ -18,6 +19,7 @@ import com.tterrag.registrate.util.DataIngredient;
 import com.tterrag.registrate.util.entry.ItemEntry;
 import com.tterrag.registrate.util.nullness.NonNullBiConsumer;
 import com.tterrag.registrate.util.nullness.NonNullFunction;
+import net.minecraft.core.Holder;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.recipes.RecipeCategory;
 import net.minecraft.data.recipes.ShapedRecipeBuilder;
@@ -36,14 +38,7 @@ import static com.cosmads.chemica.Chemica.REGISTRATE;
 public class ChemicaItems {
 
     // Create a ResourceKey for the tab
-    private static final ResourceKey<CreativeModeTab> MAIN_TAB_KEY =
-            ResourceKey.create(Registries.CREATIVE_MODE_TAB, Chemica.asResource("main"));
-
-    // Helper method for common item tags
-    private static TagKey<Item> createCommonItemTag(String path) {
-        return TagKey.create(Registries.ITEM,
-                ResourceLocation.fromNamespaceAndPath("c", path));
-    }
+    private static final ResourceKey<CreativeModeTab> MAIN_TAB_KEY = ResourceKey.create(Registries.CREATIVE_MODE_TAB, Chemica.asResource("main"));
 
     // Misc Dusts
     public static final ItemEntry<Item> COPPER_DUST = dust("copper_dust", ChemMaterial.COPPER);
@@ -74,19 +69,19 @@ public class ChemicaItems {
     public static final ItemEntry<Item> COBALT_DUST = dust("cobalt_dust", ChemMaterial.COBALT);
     //  Graphite
     public static final ItemEntry<Item> GRAPHITE_INGOT = ingot("graphite_ingot", ChemMaterial.GRAPHITE);
-    public static final ItemEntry<Item> GRAPHITE_SHEET = sheet("graphite_sheet", ChemMaterial.GRAPHITE);
+    public static final ItemEntry<Item> GRAPHITE_SHEET = sheet("graphite_sheet", ChemMaterial.GRAPHITE).register();
     public static final ItemEntry<Item> GRAPHITE_NUGGET = nugget("graphite_nugget", ChemMaterial.GRAPHITE);
     public static final ItemEntry<Item> CRUSHED_GRAPHITE = crushedRaw("crushed_graphite", ChemMaterial.GRAPHITE);
     public static final ItemEntry<Item> PURIFIED_GRAPHITE_FLAKES = item("purified_graphite_flakes", Item::new).register();
     //  Iridium
     public static final ItemEntry<Item> IRIDIUM_INGOT = ingot("iridium_ingot", ChemMaterial.IRIDIUM);
-    public static final ItemEntry<Item> IRIDIUM_SHEET = sheet("iridium_sheet", ChemMaterial.IRIDIUM);
-    public static final ItemEntry<Item> REINFORCED_IRIDIUM_PLATE = sheet("reinforced_iridium_plate", ChemMaterial.REINFORCED_IRIDIUM);
+    public static final ItemEntry<Item> IRIDIUM_SHEET = sheet("iridium_sheet", ChemMaterial.IRIDIUM).register();
+    public static final ItemEntry<Item> REINFORCED_IRIDIUM_PLATE = sheet("reinforced_iridium_plate", ChemMaterial.REINFORCED_IRIDIUM).register();
     public static final ItemEntry<Item> IRIDIUM_NUGGET = nugget("iridium_nugget", ChemMaterial.IRIDIUM);
     public static final ItemEntry<Item> IRIDIUM_DUST = dust("iridium_dust", ChemMaterial.IRIDIUM);
     //  Magnesium
     public static final ItemEntry<Item> MAGNESIUM_INGOT = ingot("magnesium_ingot", ChemMaterial.MAGNESIUM);
-    public static final ItemEntry<Item> MAGNESIUM_SHEET = sheet("magnesium_sheet", ChemMaterial.MAGNESIUM);
+    public static final ItemEntry<Item> MAGNESIUM_SHEET = sheet("magnesium_sheet", ChemMaterial.MAGNESIUM).register();
     public static final ItemEntry<Item> MAGNESIUM_NUGGET = nugget("magnesium_nugget", ChemMaterial.MAGNESIUM);
     public static final ItemEntry<Item> MAGNESIUM_DUST = dust("magnesium_dust", ChemMaterial.MAGNESIUM);
     //  Molybdenum
@@ -100,7 +95,7 @@ public class ChemicaItems {
     public static final ItemEntry<Item> PLATINUM_DUST = dust("platinum_dust", ChemMaterial.PLATINUM);
     //  Silver
     public static final ItemEntry<Item> SILVER_INGOT = ingot("silver_ingot", ChemMaterial.SILVER);
-    public static final ItemEntry<Item> SILVER_SHEET = sheet("silver_sheet", ChemMaterial.SILVER);
+    public static final ItemEntry<Item> SILVER_SHEET = sheet("silver_sheet", ChemMaterial.SILVER).register();
     public static final ItemEntry<Item> SILVER_NUGGET = nugget("silver_nugget", ChemMaterial.SILVER);
     public static final ItemEntry<Item> RAW_SILVER = raw("raw_silver", ChemMaterial.SILVER);
     public static final ItemEntry<Item> SILVER_DUST = dust("silver_dust", ChemMaterial.SILVER);
@@ -109,18 +104,18 @@ public class ChemicaItems {
     public static final ItemEntry<Item> SODIUM_DUST = dust("sodium_dust", ChemMaterial.SODIUM);
     //  Tantalum
     public static final ItemEntry<Item> TANTALUM_INGOT = ingot("tantalum_ingot", ChemMaterial.TANTALUM);
-    public static final ItemEntry<Item> TANTALUM_SHEET = sheet("tantalum_sheet", ChemMaterial.TANTALUM);
+    public static final ItemEntry<Item> TANTALUM_SHEET = sheet("tantalum_sheet", ChemMaterial.TANTALUM).register();
     public static final ItemEntry<Item> TANTALUM_NUGGET = nugget("tantalum_nugget", ChemMaterial.TANTALUM);
     public static final ItemEntry<Item> TANTALUM_DUST = dust("tantalum_dust", ChemMaterial.TANTALUM);
     //  Tin
     public static final ItemEntry<Item> TIN_INGOT = ingot("tin_ingot", ChemMaterial.TIN);
-    public static final ItemEntry<Item> TIN_SHEET = sheet("tin_sheet", ChemMaterial.TIN);
+    public static final ItemEntry<Item> TIN_SHEET = sheet("tin_sheet", ChemMaterial.TIN).register();
     public static final ItemEntry<Item> TIN_NUGGET = nugget("tin_nugget", ChemMaterial.TIN);
     public static final ItemEntry<Item> RAW_TIN = raw("raw_tin", ChemMaterial.TIN);
     public static final ItemEntry<Item> TIN_DUST = dust("tin_dust", ChemMaterial.TIN);
     //  Titanium
     public static final ItemEntry<Item> TITANIUM_INGOT = ingot("titanium_ingot", ChemMaterial.TITANIUM);
-    public static final ItemEntry<Item> TITANIUM_SHEET = sheet("titanium_sheet", ChemMaterial.TITANIUM);
+    public static final ItemEntry<Item> TITANIUM_SHEET = sheet("titanium_sheet", ChemMaterial.TITANIUM).register();
     public static final ItemEntry<Item> TITANIUM_NUGGET = nugget("titanium_nugget", ChemMaterial.TITANIUM);
     public static final ItemEntry<Item> TITANIUM_DUST = dust("titanium_dust", ChemMaterial.TITANIUM);
     //  Tungsten
@@ -144,448 +139,86 @@ public class ChemicaItems {
     public static final ItemEntry<Item> STEEL_BASED_TOUGH_ALLOY = ingot("steel_based_tough_alloy", ChemMaterial.STEEL_BASED_ALLOY);
 
     // Chemical Dusts
-    public static final ItemEntry<Item> AMMONIUM_PERSULFATE = REGISTRATE
-            .item("ammonium_persulfate", Item::new)
-            .lang("Ammonium Persulfate")
-            .tag(Tags.Items.DUSTS)
-            .tag(createCommonItemTag("dusts/ammonium_persulfate"))
-            .tab(MAIN_TAB_KEY)
-            .properties(p -> p.stacksTo(64))
-            .register();
-
-    public static final ItemEntry<Item> ARSENIC_DUST = REGISTRATE
-            .item("arsenic_dust", Item::new)
-            .lang("Arsenic Dust")
-            .tag(Tags.Items.DUSTS)
-            .tag(createCommonItemTag("dusts/arsenic"))
-            .tab(MAIN_TAB_KEY)
-            .properties(p -> p.stacksTo(64))
-            .register();
-
-    public static final ItemEntry<Item> ASH = REGISTRATE
-            .item("ash", Item::new)
-            .lang("Ash")
-            .tag(Tags.Items.DUSTS)
-            .tag(createCommonItemTag("dusts/ash"))
-            .tab(MAIN_TAB_KEY)
-            .properties(p -> p.stacksTo(64))
-            .register();
-
-    public static final ItemEntry<Item> CAUSTIC_SODA_DUST = REGISTRATE
-            .item("caustic_soda_dust", Item::new)
-            .lang("Caustic Soda Dust")
-            .tag(Tags.Items.DUSTS)
-            .tag(createCommonItemTag("dusts/caustic_soda"))
-            .tab(MAIN_TAB_KEY)
-            .properties(p -> p.stacksTo(64))
-            .register();
-
-    public static final ItemEntry<Item> CHARCOAL_DUST = REGISTRATE
-            .item("charcoal_dust", Item::new)
-            .lang("Charcoal Dust")
-            .tag(Tags.Items.DUSTS)
-            .tag(createCommonItemTag("dusts/charcoal"))
-            .tab(MAIN_TAB_KEY)
-            .properties(p -> p.stacksTo(64))
-            .register();
-
-    public static final ItemEntry<Item> COAL_DUST = REGISTRATE
-            .item("coal_dust", Item::new)
-            .lang("Coal Dust")
-            .tag(Tags.Items.DUSTS)
-            .tag(createCommonItemTag("dusts/coal"))
-            .tab(MAIN_TAB_KEY)
-            .properties(p -> p.stacksTo(64))
-            .register();
-
-    public static final ItemEntry<Item> CONSTANTAN_DUST = REGISTRATE
-            .item("constantan_dust", Item::new)
-            .lang("Constantan Dust")
-            .tag(Tags.Items.DUSTS)
-            .tag(createCommonItemTag("dusts/constantan"))
-            .tab(MAIN_TAB_KEY)
-            .properties(p -> p.stacksTo(64))
-            .register();
-
-    public static final ItemEntry<Item> ELECTRUM_GRIT = REGISTRATE
-            .item("electrum_grit", Item::new)
-            .lang("Electrum Grit")
-            .tag(Tags.Items.DUSTS)
-            .tag(createCommonItemTag("dusts/electrum"))
-            .tab(MAIN_TAB_KEY)
-            .properties(p -> p.stacksTo(64))
-            .register();
-
-    public static final ItemEntry<Item> FLUORITE_DUST = REGISTRATE
-            .item("fluorite_dust", Item::new)
-            .lang("Fluorite Dust")
-            .tag(Tags.Items.DUSTS)
-            .tag(createCommonItemTag("dusts/fluorite"))
-            .tab(MAIN_TAB_KEY)
-            .properties(p -> p.stacksTo(64))
-            .register();
-
-    public static final ItemEntry<Item> PHOSPHORUS_DUST = REGISTRATE
-            .item("phosphorus_dust", Item::new)
-            .lang("Phosphorus Dust")
-            .tag(Tags.Items.DUSTS)
-            .tag(createCommonItemTag("dusts/phosphorus"))
-            .tab(MAIN_TAB_KEY)
-            .properties(p -> p.stacksTo(64))
-            .register();
-
-    public static final ItemEntry<Item> QUARTZ_DUST = REGISTRATE
-            .item("quartz_dust", Item::new)
-            .lang("Quartz Dust")
-            .tag(Tags.Items.DUSTS)
-            .tag(createCommonItemTag("dusts/quartz"))
-            .tab(MAIN_TAB_KEY)
-            .properties(p -> p.stacksTo(64))
-            .register();
-
-    public static final ItemEntry<Item> RUTILE_DUST = REGISTRATE
-            .item("rutile_dust", Item::new)
-            .lang("Rutile Dust")
-            .tag(Tags.Items.DUSTS)
-            .tag(createCommonItemTag("dusts/rutile"))
-            .tab(MAIN_TAB_KEY)
-            .properties(p -> p.stacksTo(64))
-            .register();
-
-    public static final ItemEntry<Item> SALT = REGISTRATE
-            .item("salt", Item::new)
-            .lang("Salt")
-            .tag(Tags.Items.DUSTS)
-            .tag(createCommonItemTag("dusts/salt"))
-            .tab(MAIN_TAB_KEY)
-            .properties(p -> p.stacksTo(64))
-            .register();
-
-    public static final ItemEntry<Item> SODA_ASH = REGISTRATE
-            .item("soda_ash", Item::new)
-            .lang("Soda Ash")
-            .tag(Tags.Items.DUSTS)
-            .tag(createCommonItemTag("dusts/soda_ash"))
-            .tab(MAIN_TAB_KEY)
-            .properties(p -> p.stacksTo(64))
-            .register();
-
-    public static final ItemEntry<Item> SODIUM_BISULFATE_DUST = REGISTRATE
-            .item("sodium_bisulfate_dust", Item::new)
-            .lang("Sodium Bisulfate Dust")
-            .tag(Tags.Items.DUSTS)
-            .tag(createCommonItemTag("dusts/sodium_bisulfate"))
-            .tab(MAIN_TAB_KEY)
-            .properties(p -> p.stacksTo(64))
-            .register();
-
-    public static final ItemEntry<Item> SODIUM_PERSULFATE = REGISTRATE
-            .item("sodium_persulfate", Item::new)
-            .lang("Sodium Persulfate")
-            .tag(Tags.Items.DUSTS)
-            .tag(createCommonItemTag("dusts/sodium_persulfate"))
-            .tab(MAIN_TAB_KEY)
-            .properties(p -> p.stacksTo(64))
-            .register();
+    public static final ItemEntry<Item> AMMONIUM_PERSULFATE = dust("ammonium_persulfate", ChemMaterial.AMMONIUM_PERSULFATE);
+    public static final ItemEntry<Item> ARSENIC_DUST = dust("arsenic_dust", ChemMaterial.ARSENIC);
+    public static final ItemEntry<Item> ASH = dust("ash", ChemMaterial.ASH);
+    public static final ItemEntry<Item> CAUSTIC_SODA_DUST = dust("caustic_soda_dust", ChemMaterial.CAUSTIC_SODA);
+    public static final ItemEntry<Item> CHARCOAL_DUST = dust("charcoal_dust", ChemMaterial.CHARCOAL);
+    public static final ItemEntry<Item> COAL_DUST = dust("coal_dust", ChemMaterial.COAL);
+    public static final ItemEntry<Item> CONSTANTAN_DUST = dust("constantan_dust", ChemMaterial.CONSTANTAN);
+    public static final ItemEntry<Item> ELECTRUM_GRIT = dust("electrum_grit", ChemMaterial.ELECTRUM);
+    public static final ItemEntry<Item> FLUORITE_DUST = dust("fluorite_dust", ChemMaterial.FLUORITE);
+    public static final ItemEntry<Item> PHOSPHORUS_DUST = dust("phosphorus_dust", ChemMaterial.PHOSPHORUS);
+    public static final ItemEntry<Item> QUARTZ_DUST = dust("quartz_dust", ChemMaterial.QUARTZ);
+    public static final ItemEntry<Item> RUTILE_DUST = dust("rutile_dust", ChemMaterial.RUTILE);
+    public static final ItemEntry<Item> SALT = dust("salt", ChemMaterial.SALT);
+    public static final ItemEntry<Item> SODA_ASH = dust("soda_ash", ChemMaterial.SODA_ASH);
+    public static final ItemEntry<Item> SODIUM_BISULFATE_DUST = dust("sodium_bisulfate_dust", ChemMaterial.SODIUM_BISULFATE);
+    public static final ItemEntry<Item> SODIUM_PERSULFATE = dust("sodium_persulfate", ChemMaterial.SODIUM_PERSULFATE);
 
     // Catalysts
-    public static final ItemEntry<Item> COBALT_CATALYST = REGISTRATE
-            .item("cobalt_catalyst", Item::new)
-            .lang("Cobalt Catalyst")
-            .tab(MAIN_TAB_KEY)
-            .properties(p -> p .stacksTo(16))
-            .register();
-
-    public static final ItemEntry<Item> COPPER_CATALYST = REGISTRATE
-            .item("copper_catalyst", Item::new)
-            .lang("Copper Catalyst")
-            .tab(MAIN_TAB_KEY)
-            .properties(p -> p .stacksTo(16))
-            .register();
-
-    public static final ItemEntry<Item> IRON_CATALYST = REGISTRATE
-            .item("iron_catalyst", Item::new)
-            .lang("Iron Catalyst")
-            .tab(MAIN_TAB_KEY)
-            .properties(p -> p .stacksTo(16))
-            .register();
-
-    public static final ItemEntry<Item> NICKEL_CATALYST = REGISTRATE
-            .item("nickel_catalyst", Item::new)
-            .lang("Nickel Catalyst")
-            .tab(MAIN_TAB_KEY)
-            .properties(p -> p .stacksTo(16))
-            .register();
-
-    public static final ItemEntry<Item> PLATINUM_CATALYST = REGISTRATE
-            .item("platinum_catalyst", Item::new)
-            .lang("Platinum Catalyst")
-            .tab(MAIN_TAB_KEY)
-            .properties(p -> p.stacksTo(16))
-            .register();
-
-    public static final ItemEntry<Item> VANADIUM_CATALYST = REGISTRATE
-            .item("vanadium_catalyst", Item::new)
-            .lang("Vanadium Catalyst")
-            .tab(MAIN_TAB_KEY)
-            .properties(p -> p .stacksTo(16))
-            .register();
+    public static final ItemEntry<Item> COBALT_CATALYST = catalyst("cobalt_catalyst", ChemMaterial.COBALT);
+    public static final ItemEntry<Item> COPPER_CATALYST = catalyst("copper_catalyst", ChemMaterial.COPPER);
+    public static final ItemEntry<Item> IRON_CATALYST = catalyst("iron_catalyst", ChemMaterial.IRON);
+    public static final ItemEntry<Item> NICKEL_CATALYST = catalyst("nickel_catalyst", ChemMaterial.NICKEL);
+    public static final ItemEntry<Item> PLATINUM_CATALYST = catalyst("platinum_catalyst", ChemMaterial.PLATINUM);
+    public static final ItemEntry<Item> VANADIUM_CATALYST = catalyst("vanadium_catalyst", ChemMaterial.VANADIUM);
 
     // Rutile Crystals
-    public static final ItemEntry<Item> HIGH_GRADE_RUTILE_CRYSTAL = REGISTRATE.item("high_grade_rutile_crystal", Item::new)
-            .lang("High Grade Rutile Crystal")
-            .tab(MAIN_TAB_KEY)
-            .properties(p -> p.stacksTo(64))
-            .register();
+    public static final ItemEntry<Item> HIGH_GRADE_RUTILE_CRYSTAL = crystal("rutile_crystal", ChemMaterial.RUTILE, ChemMaterial.Grade.HIGH);
+    public static final ItemEntry<Item> MEDIUM_GRADE_RUTILE_CRYSTAL = crystal("rutile_crystal", ChemMaterial.RUTILE, ChemMaterial.Grade.MEDIUM);
+    public static final ItemEntry<Item> RUTILE_CRYSTAL = crystal("rutile_crystal", ChemMaterial.RUTILE, ChemMaterial.Grade.LOW);
 
-    public static final ItemEntry<Item> MEDIUM_GRADE_RUTILE_CRYSTAL = REGISTRATE.item("medium_grade_rutile_crystal", Item::new)
-            .lang("Medium Grade Rutile Crystal")
-            .tab(MAIN_TAB_KEY)
-            .properties(p -> p.stacksTo(64))
-            .register();
+    // Sheets | Plates
+    public static final ItemEntry<Item> CARBON_FIBER_COMPOSITE_SHEET = sheet("carbon_fiber_composite_sheet", ChemMaterial.CARBON_FIBER).register();
+    public static final ItemEntry<Item> CURED_EPOXY_SHEET = sheet("cured_epoxy_sheet", ChemMaterial.EPOXY_RESIN).register();
+    public static final ItemEntry<Item> ELECTROCHEMICALLY_EXFOLIATED_GRAPHENE = sheet("electrochemically_exfoliated_graphene", ChemMaterial.GRAPHENE).lang("Electrochemically-Exfoliated Graphene").register();
+    public static final ItemEntry<Item> POLYETHYLENE_SHEET = sheet("polyethylene_sheet", ChemMaterial.POLYETHYLENE).register();
+    public static final ItemEntry<Item> POLYTETRAFLUOROETHYLENE_SHEET = sheet("polytetrafluoroethylene_sheet", ChemMaterial.PTFE).register();
+    public static final ItemEntry<Item> POLYVINYL_CHLORIDE_SHEET = sheet("polyvinyl_chloride_sheet", ChemMaterial.PVC).register();
 
-    public static final ItemEntry<Item> RUTILE_CRYSTAL = REGISTRATE.item("rutile_crystal", Item::new)
-            .lang("Rutile Crystal")
-            .tab(MAIN_TAB_KEY)
-            .properties(p -> p.stacksTo(64))
-            .register();
-
-    // Sheets/Plates
-    public static final ItemEntry<Item> CARBON_FIBER_COMPOSITE_SHEET = REGISTRATE
-            .item("carbon_fiber_composite_sheet", Item::new)
-            .lang("Carbon Fiber Composite Sheet")
-            .tag(createCommonItemTag("plates/carbon_fiber"))
-            .tab(MAIN_TAB_KEY)
-            .properties(p -> p.stacksTo(64))
-            .register();
-
-    public static final ItemEntry<Item> CURED_EPOXY_SHEET = REGISTRATE
-            .item("cured_epoxy_sheet", Item::new)
-            .lang("Cured Epoxy Sheet")
-            .tag(createCommonItemTag("plates/epoxy_resin"))
-            .tab(MAIN_TAB_KEY)
-            .properties(p -> p.stacksTo(64))
-            .register();
-
-    public static final ItemEntry<Item> ELECTROCHEMICALLY_EXFOLIATED_GRAPHENE = REGISTRATE.item("electrochemically_exfoliated_graphene", Item::new)
-            .lang("Electrochemically-Exfoliated Graphene")
-            .tag(createCommonItemTag("plates/graphene"))
-            .tab(MAIN_TAB_KEY)
-            .properties(p -> p.stacksTo(64))
-            .register();
-
-    public static final ItemEntry<Item> POLYETHYLENE_SHEET = REGISTRATE.item("polyethylene_sheet", Item::new)
-            .lang("Polyethylene Sheet")
-            .tag(createCommonItemTag("plates/polyethylene"))
-            .tab(MAIN_TAB_KEY)
-            .properties(p -> p.stacksTo(64))
-            .register();
-
-    public static final ItemEntry<Item> POLYTETRAFLUOROETHYLENE_SHEET = REGISTRATE
-            .item("polytetrafluoroethylene_sheet", Item::new)
-            .lang("Polytetrafluoroethylene (PTFE) Sheet")
-            .tag(createCommonItemTag("plates/ptfe"))
-            .tab(MAIN_TAB_KEY)
-            .properties(p -> p.stacksTo(64))
-            .register();
-
-    public static final ItemEntry<Item> POLYVINYL_CHLORIDE_SHEET = REGISTRATE
-            .item("polyvinyl_chloride_sheet", Item::new)
-            .lang("Polyvinyl Chloride Sheet")
-            .tag(createCommonItemTag("plates/pvc"))
-            .tab(MAIN_TAB_KEY)
-            .properties(p -> p.stacksTo(64))
-            .register();
-
-    public static final ItemEntry<Item> RUBBER_STRIP = REGISTRATE.item("rubber_strip", Item::new)
-            .lang("Rubber Strip")
-            .tab(MAIN_TAB_KEY)
-            .properties(p -> p.stacksTo(64))
-            .register();
+    public static final ItemEntry<Item> RUBBER_STRIP = item("rubber_strip", Item::new).register();
 
     // Nylon/Fibers/Chemicals
-    public static final ItemEntry<Item> NYLON_INGOT = REGISTRATE
-            .item("nylon_ingot", Item::new)
-            .lang("Nylon Ingot")
-            .tag(Tags.Items.INGOTS)
-            .tag(createCommonItemTag("ingots/nylon"))
-            .tab(MAIN_TAB_KEY)
-            .properties(p -> p.stacksTo(64))
-            .register();
+    public static final ItemEntry<Item> NYLON_INGOT = ingot("nylon_ingot", ChemMaterial.NYLON);
+    public static final ItemEntry<Item> NYLON_SALT = dust("nylon_salt", ChemMaterial.NYLON_SALT);
+    public static final ItemEntry<Item> NYLON_SALT_CRYSTALS = crystal("nylon_salt_crystals", ChemMaterial.NYLON_SALT);
 
-    public static final ItemEntry<Item> NYLON_SALT = REGISTRATE
-            .item("nylon_salt", Item::new)
-            .lang("Nylon Salt")
-            .tab(MAIN_TAB_KEY)
-            .properties(p -> p.stacksTo(64))
-            .register();
-
-    public static final ItemEntry<Item> NYLON_SALT_CRYSTALS = REGISTRATE
-            .item("nylon_salt_crystals", Item::new)
-            .lang("Nylon Salt Crystals")
-            .tab(MAIN_TAB_KEY)
-            .properties(p -> p.stacksTo(64))
-            .register();
-
-    public static final ItemEntry<Item> CARBON_FIBER_STRANDS = REGISTRATE
-            .item("carbon_fiber_strands", Item::new)
-            .lang("Carbon Fiber Strands")
-            .tab(MAIN_TAB_KEY)
-            .properties(p -> p.stacksTo(64))
-            .register();
-
-    public static final ItemEntry<Item> PAN_FIBERS = REGISTRATE
-            .item("pan_fibers", Item::new)
-            .lang("PAN Fibers")
-            .tab(MAIN_TAB_KEY)
-            .properties(p -> p.stacksTo(64))
-            .register();
-
-    public static final ItemEntry<Item> STABILIZED_FIBERS = REGISTRATE
-            .item("stabilized_fibers", Item::new)
-            .lang("Stabilized Fibers")
-            .tab(MAIN_TAB_KEY)
-            .properties(p -> p.stacksTo(64))
-            .register();
-
-    public static final ItemEntry<Item> YEAST = REGISTRATE
-            .item("yeast", Item::new)
-            .lang("Yeast")
-            .tab(MAIN_TAB_KEY)
-            .properties(p -> p.stacksTo(64))
-            .register();
+    public static final ItemEntry<Item> CARBON_FIBER_STRANDS = item("carbon_fiber_strands", Item::new).register();
+    public static final ItemEntry<Item> PAN_FIBERS = item("pan_fibers", Item::new).lang("PAN Fibers").register();
+    public static final ItemEntry<Item> STABILIZED_FIBERS = item("stabilized_fibers", Item::new).register();
+    public static final ItemEntry<Item> YEAST = item("yeast", Item::new).register();
 
     // Circuit Boards/Components
-    public static final ItemEntry<Item> EMPTY_EPOXY_CIRCUIT_BOARD = REGISTRATE.item("empty_epoxy_circuit_board", Item::new)
-            .lang("Empty Epoxy Circuit Board")
-            .tab(MAIN_TAB_KEY)
-            .properties(p -> p.stacksTo(64))
-            .register();
+    public static final ItemEntry<Item> EMPTY_EPOXY_CIRCUIT_BOARD = item("empty_epoxy_circuit_board", Item::new).register();
+    public static final ItemEntry<Item> COATED_EPOXY_CIRCUIT_BOARD = item("coated_epoxy_circuit_board", Item::new).register();
+    public static final ItemEntry<Item> ETCHED_EPOXY_CIRCUIT_BOARD = item("etched_epoxy_circuit_board", Item::new).register();
+    public static final ItemEntry<Item> ADVANCED_CIRCUIT_BOARD = item("advanced_circuit_board", Item::new).register();
+    public static final ItemEntry<Item> EMPTY_PVC_CIRCUIT_BOARD = item("empty_pvc_circuit_board", Item::new).lang("Empty PVC Circuit Board").register();
+    public static final ItemEntry<Item> COATED_PVC_CIRCUIT_BOARD = item("coated_pvc_circuit_board", Item::new).lang("Coated PVC Circuit Board").register();
+    public static final ItemEntry<Item> ETCHED_PVC_CIRCUIT_BOARD = item("etched_pvc_circuit_board", Item::new).lang("Etched PVC Circuit Board").register();
+    public static final ItemEntry<Item> ELECTRONIC_CIRCUIT = item("electronic_circuit", Item::new).register();
 
-    public static final ItemEntry<Item> COATED_EPOXY_CIRCUIT_BOARD = REGISTRATE.item("coated_epoxy_circuit_board", Item::new)
-            .lang("Coated Epoxy Circuit Board")
-            .tab(MAIN_TAB_KEY)
-            .properties(p -> p.stacksTo(64))
-            .register();
+    public static final ItemEntry<Item> COIL = item("coil", Item::new).properties(p -> p.stacksTo(16)).register();
+    public static final ItemEntry<Item> CONDUCTIVE_PASTE = item("conductive_paste", Item::new).properties(p -> p.stacksTo(1)).register();
+    public static final ItemEntry<Item> HEAT_CONDUCTOR = item("heat_conductor", Item::new).properties(p -> p.stacksTo(16)).register();
 
-    public static final ItemEntry<Item> ETCHED_EPOXY_CIRCUIT_BOARD = REGISTRATE.item("etched_epoxy_circuit_board", Item::new)
-            .lang("Etched Epoxy Circuit Board")
-            .tab(MAIN_TAB_KEY)
-            .properties(p -> p.stacksTo(64))
-            .register();
-
-    public static final ItemEntry<Item> ADVANCED_CIRCUIT_BOARD = REGISTRATE.item("advanced_circuit_board", Item::new)
-            .lang("Advanced Circuit Board")
-            .tab(MAIN_TAB_KEY)
-            .properties(p -> p.stacksTo(64))
-            .register();
-
-    public static final ItemEntry<Item> EMPTY_PVC_CIRCUIT_BOARD = REGISTRATE.item("empty_pvc_circuit_board", Item::new)
-            .lang("Empty PVC Circuit Board")
-            .tab(MAIN_TAB_KEY)
-            .properties(p -> p.stacksTo(64))
-            .register();
-
-    public static final ItemEntry<Item> COATED_PVC_CIRCUIT_BOARD = REGISTRATE.item("coated_pvc_circuit_board", Item::new)
-            .lang("Coated PVC Circuit Board")
-            .tab(MAIN_TAB_KEY)
-            .properties(p -> p.stacksTo(64))
-            .register();
-
-    public static final ItemEntry<Item> ETCHED_PVC_CIRCUIT_BOARD = REGISTRATE.item("etched_pvc_circuit_board", Item::new)
-            .lang("Etched PVC Circuit Board")
-            .tab(MAIN_TAB_KEY)
-            .properties(p -> p.stacksTo(64))
-            .register();
-
-    public static final ItemEntry<Item> ELECTRONIC_CIRCUIT = REGISTRATE.item("electronic_circuit", Item::new)
-            .lang("Electronic Circuit")
-            .tab(MAIN_TAB_KEY)
-            .properties(p -> p.stacksTo(64))
-            .register();
-
-    public static final ItemEntry<Item> COIL = REGISTRATE.item("coil", Item::new)
-            .lang("Coil")
-            .tab(MAIN_TAB_KEY)
-            .properties(p -> p.stacksTo(16))
-            .register();
-
-    public static final ItemEntry<Item> CONDUCTIVE_PASTE = REGISTRATE.item("conductive_paste", Item::new)
-            .lang("Conductive Paste")
-            .tab(MAIN_TAB_KEY)
-            .properties(p -> p.stacksTo(1))
-            .register();
-
-    public static final ItemEntry<Item> HEAT_CONDUCTOR = REGISTRATE.item("heat_conductor", Item::new)
-            .lang("Heat Conductor")
-            .tab(MAIN_TAB_KEY)
-            .properties(p -> p.stacksTo(16))
-            .register();
-
-    public static final ItemEntry<Item> TANTALUM_CAPACITOR_ITEM = REGISTRATE.item("tantalum_capacitor_item", Item::new)
-            .lang("Tantalum Capacitor")
-            .tab(MAIN_TAB_KEY)
-            .properties(p -> p.stacksTo(64))
-            .register();
+    public static final ItemEntry<Item> TANTALUM_CAPACITOR_ITEM = item("tantalum_capacitor_item", Item::new).lang("Tantalum Capacitor").register();
 
     // Lab Equipment
-    public static final ItemEntry<Item> GLASS_VIAL = REGISTRATE.item("glass_vial", Item::new)
-            .lang("Glass Vial")
-            .tab(MAIN_TAB_KEY)
-            .properties(p -> p.stacksTo(16))
-            .register();
-
-    public static final ItemEntry<Item> GRADUATED_CYLINDER = REGISTRATE.item("graduated_cylinder", Item::new)
-            .lang("Graduated Cylinder")
-            .tab(MAIN_TAB_KEY)
-            .properties(p -> p.stacksTo(16))
-            .register();
-
-    public static final ItemEntry<Item> PETRI_DISH = REGISTRATE.item("petri_dish", Item::new)
-            .lang("Petri Dish")
-            .tab(MAIN_TAB_KEY)
-            .properties(p -> p.stacksTo(16))
-            .register();
+    public static final ItemEntry<Item> GLASS_VIAL = item("glass_vial", Item::new).properties(p -> p.stacksTo(16)).register();
+    public static final ItemEntry<Item> GRADUATED_CYLINDER = item("graduated_cylinder", Item::new).properties(p -> p.stacksTo(16)).register();
+    public static final ItemEntry<Item> PETRI_DISH = item("petri_dish", Item::new).properties(p -> p.stacksTo(16)).register();
 
     // Special Components
-    public static final ItemEntry<Item> PLATINUM_ELECTRODE = REGISTRATE
-            .item("platinum_electrode", Item::new)
-            .lang("Platinum Electrode")
-            .tab(MAIN_TAB_KEY)
-            .properties(p -> p.component(TFMGDataComponents.ELECTRODE, new Electrode.Stored(ChemicaElectrodes.PLATINUM)).stacksTo(1))
-            .model((ctx, prov) -> prov.withExistingParent(ctx.getName(), "chemica:block/platinum_electrode_model"))
-            .register();
+    public static final ItemEntry<Item> PLATINUM_ELECTRODE = electrode("platinum_electrode", ChemicaElectrodes.PLATINUM);
 
     // Unfinished Items
-    public static final ItemEntry<Item> UNFINISHED_ADVANCED_CIRCUIT_BOARD = REGISTRATE.item("unfinished_advanced_circuit_board", Item::new)
-            .lang("Unfinished Advanced Circuit Board")
-            .tab(MAIN_TAB_KEY)
-            .properties(p -> p.stacksTo(1))
-            .register();
-
-    public static final ItemEntry<Item> UNFINISHED_ELECTRONIC_CIRCUIT_BOARD = REGISTRATE.item("unfinished_electronic_circuit_board", Item::new)
-            .lang("Unfinished Electronic Circuit Board")
-            .tab(MAIN_TAB_KEY)
-            .properties(p -> p.stacksTo(1))
-            .register();
-
-    public static final ItemEntry<Item> UNFINISHED_TANTALUM_CAPACITOR = REGISTRATE.item("unfinished_tantalum_capacitor", Item::new)
-            .lang("Unfinished Tantalum Capacitor")
-            .tab(MAIN_TAB_KEY)
-            .properties(p -> p.stacksTo(1))
-            .register();
-
-    public static final ItemEntry<Item> UNFINISHED_REINFORCED_IRIDIUM_PLATE = REGISTRATE.item("unfinished_reinforced_iridium_plate", Item::new)
-            .lang("Unfinished Reinforced Iridium Plate")
-            .tab(MAIN_TAB_KEY)
-            .properties(p -> p.stacksTo(1))
-            .register();
-
-    public static final ItemEntry<Item> UNFINISHED_CONDUCTIVE_PASTE = REGISTRATE.item("unfinished_conductive_paste", Item::new)
-            .lang("Unfinished Conductive Paste")
-            .tab(MAIN_TAB_KEY)
-            .properties(p -> p.stacksTo(1))
-            .register();
+    public static final ItemEntry<Item> UNFINISHED_ADVANCED_CIRCUIT_BOARD = unfinished("unfinished_advanced_circuit_board", Item::new).register();
+    public static final ItemEntry<Item> UNFINISHED_ELECTRONIC_CIRCUIT_BOARD = unfinished("unfinished_electronic_circuit_board", Item::new).register();
+    public static final ItemEntry<Item> UNFINISHED_TANTALUM_CAPACITOR = unfinished("unfinished_tantalum_capacitor", Item::new).register();
+    public static final ItemEntry<Item> UNFINISHED_REINFORCED_IRIDIUM_PLATE = unfinished("unfinished_reinforced_iridium_plate", Item::new).register();
+    public static final ItemEntry<Item> UNFINISHED_CONDUCTIVE_PASTE = unfinished("unfinished_conductive_paste", Item::new).register();
 
     // Engine Cylinders
     public static final ItemEntry<Item>
@@ -638,6 +271,13 @@ public class ChemicaItems {
                 .register();
     }
 
+    public static ItemEntry<Item> electrode(String name, Holder<Electrode> electrode) {
+        return item(name, Item::new)
+                .properties(p -> p.component(TFMGDataComponents.ELECTRODE, new Electrode.Stored(electrode)).stacksTo(1))
+                .model((ctx, prov) -> prov.withExistingParent(ctx.getName(), prov.modLoc("block/%s_model".formatted(name))))
+                .register();
+    }
+
     public static ItemEntry<Item> ingot(String name, ChemMaterial metal) {
         return item(name, Item::new)
                 .tag(Tags.Items.INGOTS)
@@ -672,15 +312,42 @@ public class ChemicaItems {
                 .register();
     }
 
-    public static ItemEntry<Item> sheet(String name, ChemMaterial metal) {
+    public static ItemBuilder<Item, CreateRegistrate> sheet(String name, ChemMaterial metal) {
         return item(name, Item::new)
                 .tag(AllTags.AllItemTags.PLATES.tag)
-                .tag(metal.plates)
+                .tag(metal.plates);
+    }
+
+    public static ItemEntry<Item> catalyst(String name, ChemMaterial metal) {
+        return item(name, Item::new)
+                .properties(p -> p.stacksTo(16))
+                .tag(ChemicaTags.Items.CATALYSTS.tag)
+                .tag(metal.catalysts)
+                .register();
+    }
+
+    public static ItemEntry<Item> crystal(String name, ChemMaterial metal) {
+        return item(name, Item::new)
+                .tag(ChemicaTags.Items.CRYSTALS.tag)
+                .tag(metal.crystals)
+                .register();
+    }
+
+    public static ItemEntry<Item> crystal(String name, ChemMaterial metal, ChemMaterial.Grade grade) {
+        return item(grade.prefix(name), Item::new)
+                .tag(ChemicaTags.Items.CRYSTALS.tag)
+                .tag(grade.tag)
+                .tag(metal.gradedCrystals.apply(grade))
+                .tag(metal.crystals)
                 .register();
     }
 
     public static <T extends Item> ItemBuilder<T, CreateRegistrate> item(String name, NonNullFunction<Item.Properties, T> supplier) {
         return Chemica.REGISTRATE.item(name, supplier).tab(MAIN_TAB_KEY);
+    }
+
+    public static <T extends Item> ItemBuilder<T, CreateRegistrate> unfinished(String name, NonNullFunction<Item.Properties, T> supplier) {
+        return Chemica.REGISTRATE.item(name, supplier).properties(p -> p.stacksTo(1));
     }
 
     public static void register() {

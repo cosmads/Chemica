@@ -8,6 +8,7 @@ import net.neoforged.bus.api.EventPriority;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.ModContainer;
+import org.jetbrains.annotations.Contract;
 import org.slf4j.Logger;
 import com.mojang.logging.LogUtils;
 
@@ -45,7 +46,18 @@ public class Chemica {
     }
 
     // Helper method to create ResourceLocation
+    @Contract("_ -> new")
     public static ResourceLocation asResource(String path) {
-        return ResourceLocation.fromNamespaceAndPath(MOD_ID, path);
+        return path.contains(":")
+                ? ResourceLocation.tryParse(path)
+                : ResourceLocation.fromNamespaceAndPath(MOD_ID, path);
+    }
+
+    // Used for tags and allows an override of the common namespace
+    @Contract("_ -> new")
+    public static ResourceLocation asCommon(String path) {
+        return path.contains(":")
+                ? ResourceLocation.tryParse(path)
+                : ResourceLocation.fromNamespaceAndPath("c", path);
     }
 }

@@ -1,0 +1,10 @@
+{
+  "values": [
+    "chemica:cobalt_catalyst",
+    "chemica:copper_catalyst",
+    "chemica:iron_catalyst",
+    "chemica:nickel_catalyst",
+    "chemica:platinum_catalyst",
+    "chemica:vanadium_catalyst"
+  ]
+}
