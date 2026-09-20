@@ -105,8 +105,12 @@ repositories {
     maven("https://dl.cloudsmith.io/public/wolfieboy09/liquid-fuel-reburned/maven/")
 
     maven {
-        name = "Krystals Maven"
-        url = uri("https://krystalsmaven.oreostack.uk/${property("krystal_maven_target")}") // TFMG
+        name = "Krystals Snapshots Maven"
+        url = uri("https://krystalsmaven.oreostack.uk/snapshots") // TFMG
+    }
+    maven {
+        name = "Krystals Releases Maven"
+        url = uri("https://krystalsmaven.oreostack.uk/releases") // Rutile
     }
     maven("https://maven.ryanhcode.dev/releases") // Sable Companion
 
@@ -126,6 +130,11 @@ repositories {
 }
 
 dependencies {
+    jarJar(api("dev.metallurgists:rutile:${property("minecraft_version")}-${property("rutile_version")}") {
+        version {
+            prefer(property("rutile_version") as String)
+        }
+    })  { isTransitive = false }
     implementation("com.simibubi.create:create-${property("minecraft_version")}:${property("create_version")}:slim") { isTransitive = false }
     implementation("net.createmod.ponder:ponder-neoforge:${property("ponder_version")}+mc1.21.1")
     compileOnly("dev.engine-room.flywheel:flywheel-neoforge-api-${property("minecraft_version")}:${property("flywheel_version")}")
