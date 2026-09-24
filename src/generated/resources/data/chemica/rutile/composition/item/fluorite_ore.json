@@ -1,0 +1,23 @@
+{
+  "compositions": [
+    {
+      "elements": [
+        {
+          "amount": 1,
+          "id": "rutile:calcium"
+        },
+        {
+          "amount": 2,
+          "id": "rutile:fluorine"
+        },
+        {
+          "amount": 1,
+          "id": "rutile:lead"
+        }
+      ]
+    }
+  ],
+  "contents": [
+    "chemica:deepslate_fluorite_ore"
+  ]
+}

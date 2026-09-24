@@ -1,0 +1,23 @@
+{
+  "compositions": [
+    {
+      "elements": [
+        {
+          "amount": 1,
+          "id": "rutile:tantalum"
+        },
+        {
+          "amount": 1,
+          "id": "rutile:iridium"
+        },
+        {
+          "amount": 1,
+          "id": "rutile:null"
+        }
+      ]
+    }
+  ],
+  "contents": [
+    "chemica:zelosite"
+  ]
+}

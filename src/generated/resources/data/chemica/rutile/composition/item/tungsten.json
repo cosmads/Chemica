@@ -1,0 +1,19 @@
+{
+  "compositions": [
+    {
+      "elements": [
+        {
+          "amount": 1,
+          "id": "rutile:tungsten"
+        }
+      ]
+    }
+  ],
+  "contents": [
+    "chemica:tungsten_dust",
+    "chemica:tungsten_ingot",
+    "chemica:tungsten_nugget",
+    "chemica:raw_tungsten",
+    "chemica:deepslate_wolframite_ore"
+  ]
+}

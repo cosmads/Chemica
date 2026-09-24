@@ -1,0 +1,20 @@
+{
+  "compositions": [
+    {
+      "elements": [
+        {
+          "amount": 1,
+          "id": "rutile:iridium"
+        }
+      ]
+    }
+  ],
+  "contents": [
+    "chemica:iridium_dust",
+    "chemica:iridium_ingot",
+    "chemica:iridium_nugget",
+    "chemica:iridium_sheet",
+    "chemica:unfinished_reinforced_iridium_plate",
+    "chemica:reinforced_iridium_plate"
+  ]
+}

@@ -2,6 +2,7 @@ package com.cosmads.chemica.data;
 
 import com.cosmads.chemica.Chemica;
 import com.cosmads.chemica.data.tags.ChemicaRegistrateTags;
+import com.drmangotea.tfmg.datagen.integration.TFMGRutileProvider;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.simibubi.create.foundation.utility.FilesHelper;
@@ -35,6 +36,10 @@ public class ChemicaDataGenerators {
         generator.addProvider(event.includeServer(), generatedEntriesProvider);
 
         var includeServer = event.includeServer();
+
+
+        generator.addProvider(event.includeServer(), new ChemicaRutileProvider.Item(output, lookupProvider));
+        generator.addProvider(event.includeServer(), new ChemicaRutileProvider.Fluid(output, lookupProvider));
 
         Chemica.LOGGER.info("[Chemica] Data generator registered successfully");
     }

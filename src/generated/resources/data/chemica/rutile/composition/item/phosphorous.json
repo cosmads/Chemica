@@ -1,0 +1,16 @@
+{
+  "compositions": [
+    {
+      "elements": [
+        {
+          "amount": 1,
+          "id": "rutile:phosphorus"
+        }
+      ]
+    }
+  ],
+  "contents": [
+    "chemica:phosphorus_dust",
+    "chemica:deepslate_phosphorus_ore"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "compositions": [
+    {
+      "elements": [
+        {
+          "amount": 1,
+          "id": "rutile:molybdenum"
+        }
+      ]
+    }
+  ],
+  "contents": [
+    "chemica:molybdenum_ingot",
+    "chemica:molybdenum_nugget"
+  ]
+}

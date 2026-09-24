@@ -1,0 +1,18 @@
+{
+  "compositions": [
+    {
+      "elements": [
+        {
+          "amount": 1,
+          "id": "rutile:vanadium"
+        }
+      ]
+    }
+  ],
+  "contents": [
+    "chemica:vanadium_dust",
+    "chemica:crushed_raw_vanadium",
+    "chemica:vanadium_ingot",
+    "chemica:vanadium_nugget"
+  ]
+}

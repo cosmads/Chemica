@@ -1,0 +1,23 @@
+{
+  "compositions": [
+    {
+      "elements": [
+        {
+          "amount": 1,
+          "id": "rutile:platinum"
+        },
+        {
+          "amount": 1,
+          "id": "rutile:iron"
+        },
+        {
+          "amount": 1,
+          "id": "rutile:carbon"
+        }
+      ]
+    }
+  ],
+  "contents": [
+    "chemica:platinum_catalyst"
+  ]
+}

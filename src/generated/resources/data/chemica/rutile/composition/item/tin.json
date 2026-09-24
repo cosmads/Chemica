@@ -1,0 +1,22 @@
+{
+  "compositions": [
+    {
+      "elements": [
+        {
+          "amount": 1,
+          "id": "rutile:tin"
+        }
+      ]
+    }
+  ],
+  "contents": [
+    "chemica:tin_dust",
+    "create:crushed_raw_tin",
+    "chemica:tin_ingot",
+    "chemica:tin_nugget",
+    "chemica:tin_sheet",
+    "chemica:raw_tin",
+    "chemica:tin_ore",
+    "chemica:deepslate_tin_ore"
+  ]
+}

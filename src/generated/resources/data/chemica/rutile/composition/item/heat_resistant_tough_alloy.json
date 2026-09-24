@@ -1,0 +1,23 @@
+{
+  "compositions": [
+    {
+      "elements": [
+        {
+          "amount": 1,
+          "id": "rutile:null"
+        },
+        {
+          "amount": 1,
+          "id": "rutile:tungsten"
+        },
+        {
+          "amount": 1,
+          "id": "rutile:iridium"
+        }
+      ]
+    }
+  ],
+  "contents": [
+    "chemica:heat_resistant_tough_alloy"
+  ]
+}
