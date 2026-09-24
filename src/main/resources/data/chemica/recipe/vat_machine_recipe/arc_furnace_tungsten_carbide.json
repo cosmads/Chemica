@@ -22,11 +22,11 @@
   "processingTime": 20,
   "results": [
     {
-      "amount": 144,
+      "amount": 90,
       "id": "chemica:molten_tungsten_carbide"
     },
     {
-      "amount": 56,
+      "amount": 60,
       "id": "tfmg:molten_slag"
     }
   ]

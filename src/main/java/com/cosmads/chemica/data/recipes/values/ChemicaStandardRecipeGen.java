@@ -76,6 +76,7 @@ public class ChemicaStandardRecipeGen extends ChemicaRecipeProvider {
 
 
     <T extends ItemLike> GeneratedRecipe compact(ItemProviderEntry<T, T> result, Supplier<TagKey<Item>> ingredient) {
+
         return create(result).withSuffix("_from_compacting")
                 .unlockedByTag(ingredient)
                 .viaShaped(b -> b.pattern("###").pattern("###").pattern("###").define('#', ingredient.get()));
