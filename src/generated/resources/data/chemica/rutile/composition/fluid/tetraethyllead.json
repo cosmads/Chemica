@@ -1,0 +1,28 @@
+{
+  "compositions": [
+    {
+      "elements": [
+        {
+          "amount": 1,
+          "id": "rutile:lead"
+        }
+      ]
+    },
+    {
+      "amount": 4,
+      "elements": [
+        {
+          "amount": 2,
+          "id": "rutile:carbon"
+        },
+        {
+          "amount": 5,
+          "id": "rutile:hydrogen"
+        }
+      ]
+    }
+  ],
+  "contents": [
+    "chemica:tetraethyllead"
+  ]
+}

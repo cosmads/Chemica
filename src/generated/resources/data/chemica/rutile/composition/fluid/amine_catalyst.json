@@ -1,0 +1,23 @@
+{
+  "compositions": [
+    {
+      "elements": [
+        {
+          "amount": 1,
+          "id": "rutile:carbon"
+        },
+        {
+          "amount": 1,
+          "id": "rutile:nitrogen"
+        },
+        {
+          "amount": 3,
+          "id": "rutile:hydrogen"
+        }
+      ]
+    }
+  ],
+  "contents": [
+    "chemica:amine_catalyst"
+  ]
+}

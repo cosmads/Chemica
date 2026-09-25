@@ -96,6 +96,12 @@ public class ChemicaRutileProvider {
                     .element(RutileElements.S, 2).element(RutileElements.O, 8));
             addData("sodium_hydroxide", List.of(CAUSTIC_SODA_DUST.asItem()), c -> c
                     .element(RutileElements.Na).element(RutileElements.O).element(RutileElements.H));
+            addData("polyethylene", List.of(POLYETHYLENE_SHEET.asItem()), c -> c
+                    .element(RutileElements.C, 2).element(RutileElements.H, 4));
+            addData("polyvinyl_chloride", List.of(POLYVINYL_CHLORIDE_SHEET.asItem()), c -> c
+                    .element(RutileElements.C, 2).element(RutileElements.H, 3).element(RutileElements.Cl));
+            addData("epoxy", List.of(CURED_EPOXY_BLOCK.asItem(), CURED_EPOXY_SHEET.asItem()), c -> c
+                    .element(RutileElements.C, 21).element(RutileElements.H, 25).element(RutileElements.Cl).element(RutileElements.O, 5));
         }
     }
 
@@ -125,12 +131,86 @@ public class ChemicaRutileProvider {
                     .element(RutileElements.C, 6).element(RutileElements.H, 12));
             addData("cyclohexanol", CYCLOHEXANOL.get().getSource(), c -> c
                     .element(RutileElements.C, 6).element(RutileElements.H, 12).element(RutileElements.O));
-            addData("distilled_water", DISTILLED_WATER.get().getSource(), c -> c
+            addData("water", List.of(DISTILLED_WATER.get().getSource(), STEAM.get().getSource()), c -> c
                     .element(RutileElements.H, 2).element(RutileElements.O));
             addData("ethylbenzene", ETHYLBENZENE.get().getSource(), c -> c
                     .element(RutileElements.C, 8).element(RutileElements.H, 10));
             addData("glycerin", GLYCERIN.get().getSource(), c -> c
                     .element(RutileElements.C, 3).element(RutileElements.H, 8).element(RutileElements.O, 3));
+            addData("nitrogen_dioxide", NITROGEN_DIOXIDE.get().getSource(), c -> c
+                    .element(RutileElements.N).element(RutileElements.O, 2));
+            addData("nitrous_oxide", NITROUS_OXIDE.get().getSource(), c -> c
+                    .element(RutileElements.N, 2).element(RutileElements.O));
+            addData("methane", METHANE.get().getSource(), c -> c
+                    .element(RutileElements.C).element(RutileElements.H, 4));
+            addData("ethane", ETHANE.get().getSource(), c -> c
+                    .element(RutileElements.C, 2).element(RutileElements.H, 6));
+            addData("epichlorohydrin", EPICHLOROHYDRIN.get().getSource(), c -> c
+                    .element(RutileElements.C, 3).element(RutileElements.H, 5).element(RutileElements.Cl).element(RutileElements.O));
+            addData("butene", BUTENE.get().getSource(), c -> c
+                    .element(RutileElements.C, 4).element(RutileElements.H, 8));
+            addData("carbon_monoxide", CARBON_MONOXIDE.get().getSource(), c -> c
+                    .element(RutileElements.C).element(RutileElements.O));
+            addData("tungsten_hexafluoride", TUNGSTEN_HEXAFLUORIDE.get().getSource(), c -> c
+                    .element(RutileElements.W).element(RutileElements.F, 6));
+            addData("syngas", SYNGAS.get().getSource(), c -> c
+                    .element(RutileElements.H, 2).element(RutileElements.C).element(RutileElements.O));
+            addData("propene", PROPENE.get().getSource(), c -> c
+                    .element(RutileElements.C, 3).element(RutileElements.H, 6));
+            addData("ammonia", AMMONIA.get().getSource(), c -> c
+                    .element(RutileElements.N).element(RutileElements.H, 3));
+            addData("ethanol", ETHANOL.get().getSource(), c -> c
+                    .element(RutileElements.C, 2).element(RutileElements.H, 6).element(RutileElements.O));
+            addData("hydrogen_fuel", HYDROGEN_FUEL.get().getSource(), c -> c
+                    .element(RutileElements.H, 2));
+            addData("toluene", TOLUENE.get().getSource(), c -> c
+                    .element(RutileElements.C, 7).element(RutileElements.H, 8));
+            addData("xylene", XYLENE.get().getSource(), c -> c
+                    .element(RutileElements.C).element(RutileElements.H, 3)
+                    .setAmount(2).next()
+                    .element(RutileElements.C, 6).element(RutileElements.H, 4));
+            addData("phosphoric_acid", PHOSPHORIC_ACID.get().getSource(), c -> c
+                    .element(RutileElements.H, 3).element(RutileElements.P).element(RutileElements.O, 4));
+            addData("nitric_acid", NITRIC_ACID.get().getSource(), c -> c
+                    .element(RutileElements.H).element(RutileElements.N).element(RutileElements.O, 3));
+            addData("hydrofluoric_acid", HYDROFLUORIC_ACID.get().getSource(), c -> c
+                    .element(RutileElements.H).element(RutileElements.F));
+            addData("hydrochloric_acid", HYDROCHLORIC_ACID.get().getSource(), c -> c
+                    .element(RutileElements.H).element(RutileElements.Cl));
+            addData("chromic_acid", CHROMIC_ACID.get().getSource(), c -> c
+                    .element(RutileElements.H, 2).element(RutileElements.Cr).element(RutileElements.O, 4));
+            addData("titanium_tetrachloride", TITANIUM_TETRACHLORIDE.get().getSource(), c -> c
+                    .element(RutileElements.Ti).element(RutileElements.Cl, 4));
+            addData("tetraethyllead", TETRAETHYLLEAD.get().getSource(), c -> c
+                    .element(RutileElements.Pb).next()
+                    .element(RutileElements.C, 2).element(RutileElements.H, 5)
+                    .setAmount(4));
+            addData("phenol", PHENOL.get().getSource(), c -> c
+                    .element(RutileElements.C, 6).element(RutileElements.H, 6).element(RutileElements.O));
+            addData("nitroglycerin", NITROGLYCERIN.get().getSource(), c -> c
+                    .element(RutileElements.C, 3).element(RutileElements.H, 5).element(RutileElements.N, 3).element(RutileElements.O, 9));
+            addData("polyethylene", POLYETHYLENE.get().getSource(), c -> c
+                    .element(RutileElements.C, 2).element(RutileElements.H, 4));
+            addData("polyvinyl_chloride", POLYVINYL_CHLORIDE.get().getSource(), c -> c
+                    .element(RutileElements.C, 2).element(RutileElements.H, 3).element(RutileElements.Cl));
+            addData("hexamethylenediamine", HEXAMETHYLENEDIAMINE_SOLUTION.get().getSource(), c -> c
+                    .element(RutileElements.C, 6).element(RutileElements.H, 16).element(RutileElements.N, 2));
+            addData("amine_catalyst", AMINE_CATALYST.get().getSource(), c -> c
+                    .element(RutileElements.C).element(RutileElements.N).element(RutileElements.H, 3));
+            addData("epoxy", EPOXY_RESIN.get().getSource(), c -> c
+                    .element(RutileElements.C, 21).element(RutileElements.H, 25).element(RutileElements.Cl).element(RutileElements.O, 5));
+            addData("tungsten_carbide", MOLTEN_TUNGSTEN_CARBIDE.get().getSource(), c -> c.element(RutileElements.W).element(RutileElements.C));
+
+            //Pure Elemental fluids
+            addData("argon", ARGON.get().getSource(), c -> c.element(RutileElements.Ar));
+            addData("nitrogen", NITROGEN.get().getSource(), c -> c.element(RutileElements.N));
+            addData("oxygen", OXYGEN.get().getSource(), c -> c.element(RutileElements.O));
+            addData("chlorine", CHLORINE.get().getSource(), c -> c.element(RutileElements.Cl));
+            addData("helium", HELIUM.get().getSource(), c -> c.element(RutileElements.He));
+            addData("fluorine", FLUORINE.get().getSource(), c -> c.element(RutileElements.F));
+            addData("mercury", MERCURY.get().getSource(), c -> c.element(RutileElements.Hg));
+            addData("hydrogen", LIQUID_HYDROGEN.get().getSource(), c -> c.element(RutileElements.H));
+            addData("titanium", MOLTEN_TITANIUM.get().getSource(), c -> c.element(RutileElements.Ti));
         }
     }
 }

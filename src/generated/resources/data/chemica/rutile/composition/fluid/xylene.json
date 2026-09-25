@@ -1,0 +1,32 @@
+{
+  "compositions": [
+    {
+      "amount": 2,
+      "elements": [
+        {
+          "amount": 1,
+          "id": "rutile:carbon"
+        },
+        {
+          "amount": 3,
+          "id": "rutile:hydrogen"
+        }
+      ]
+    },
+    {
+      "elements": [
+        {
+          "amount": 6,
+          "id": "rutile:carbon"
+        },
+        {
+          "amount": 4,
+          "id": "rutile:hydrogen"
+        }
+      ]
+    }
+  ],
+  "contents": [
+    "chemica:xylene"
+  ]
+}

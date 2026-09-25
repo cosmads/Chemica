@@ -1,0 +1,23 @@
+{
+  "compositions": [
+    {
+      "elements": [
+        {
+          "amount": 6,
+          "id": "rutile:carbon"
+        },
+        {
+          "amount": 16,
+          "id": "rutile:hydrogen"
+        },
+        {
+          "amount": 2,
+          "id": "rutile:nitrogen"
+        }
+      ]
+    }
+  ],
+  "contents": [
+    "chemica:hexamethylenediamine_solution"
+  ]
+}

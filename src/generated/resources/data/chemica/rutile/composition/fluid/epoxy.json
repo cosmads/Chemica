@@ -1,0 +1,27 @@
+{
+  "compositions": [
+    {
+      "elements": [
+        {
+          "amount": 21,
+          "id": "rutile:carbon"
+        },
+        {
+          "amount": 25,
+          "id": "rutile:hydrogen"
+        },
+        {
+          "amount": 1,
+          "id": "rutile:chlorine"
+        },
+        {
+          "amount": 5,
+          "id": "rutile:oxygen"
+        }
+      ]
+    }
+  ],
+  "contents": [
+    "chemica:epoxy_resin"
+  ]
+}
