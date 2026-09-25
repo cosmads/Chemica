@@ -1,0 +1,16 @@
+{
+  "compositions": [
+    {
+      "elements": [
+        {
+          "amount": 1,
+          "id": "rutile:sodium"
+        }
+      ]
+    }
+  ],
+  "contents": [
+    "chemica:sodium_dust",
+    "chemica:sodium_ingot"
+  ]
+}

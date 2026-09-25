@@ -1,0 +1,21 @@
+{
+  "compositions": [
+    {
+      "elements": [
+        {
+          "amount": 1,
+          "id": "rutile:platinum"
+        }
+      ]
+    }
+  ],
+  "contents": [
+    "chemica:platinum_dust",
+    "create:crushed_raw_platinum",
+    "chemica:platinum_ingot",
+    "chemica:platinum_nugget",
+    "chemica:platinum_electrode",
+    "chemica:platinum_block",
+    "chemica:raw_platinum_block"
+  ]
+}

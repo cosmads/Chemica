@@ -1,0 +1,19 @@
+{
+  "compositions": [
+    {
+      "elements": [
+        {
+          "amount": 6,
+          "id": "rutile:carbon"
+        },
+        {
+          "amount": 6,
+          "id": "rutile:hydrogen"
+        }
+      ]
+    }
+  ],
+  "contents": [
+    "chemica:benzene"
+  ]
+}

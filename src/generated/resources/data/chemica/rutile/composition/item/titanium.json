@@ -1,0 +1,18 @@
+{
+  "compositions": [
+    {
+      "elements": [
+        {
+          "amount": 1,
+          "id": "rutile:titanium"
+        }
+      ]
+    }
+  ],
+  "contents": [
+    "chemica:titanium_dust",
+    "chemica:titanium_ingot",
+    "chemica:titanium_nugget",
+    "chemica:titanium_sheet"
+  ]
+}

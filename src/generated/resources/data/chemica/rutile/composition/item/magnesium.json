@@ -1,0 +1,18 @@
+{
+  "compositions": [
+    {
+      "elements": [
+        {
+          "amount": 1,
+          "id": "rutile:magnesium"
+        }
+      ]
+    }
+  ],
+  "contents": [
+    "chemica:magnesium_dust",
+    "chemica:magnesium_ingot",
+    "chemica:magnesium_nugget",
+    "chemica:magnesium_sheet"
+  ]
+}

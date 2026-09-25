@@ -1,5 +1,6 @@
 package com.cosmads.chemica.common.registrate;
 
+import com.drmangotea.tfmg.base.TFMGRegistrate;
 import com.drmangotea.tfmg.base.fluid.GasFluidType;
 import com.drmangotea.tfmg.content.electricity.connection.cable_type.CableType;
 import com.drmangotea.tfmg.content.electricity.connection.cable_type.CableTypeBuilder;
@@ -22,7 +23,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.core.registries.Registries;
 
-public class ChemicaRegistrate extends CreateRegistrate {
+public class ChemicaRegistrate extends TFMGRegistrate {
 
     protected ChemicaRegistrate(String modid) {
         super(modid);
@@ -94,39 +95,5 @@ public class ChemicaRegistrate extends CreateRegistrate {
                 TransparentTintedFluidType.create(color),
                 VirtualFluid::createSource,
                 VirtualFluid::createFlowing);
-    }
-
-    // TFMG Registries - REMOVE the self() method and use casting directly
-
-    public <T extends CableType> CableTypeBuilder<T, ChemicaRegistrate> cableType(NonNullFunction<CableType.Properties, T> factory) {
-        return this.cableType((ChemicaRegistrate) this, factory);
-    }
-
-    public <T extends CableType> CableTypeBuilder<T, ChemicaRegistrate> cableType(String name, NonNullFunction<CableType.Properties, T> factory) {
-        return this.cableType((ChemicaRegistrate) this, name, factory);
-    }
-
-    public <T extends CableType, P> CableTypeBuilder<T, P> cableType(P parent, NonNullFunction<CableType.Properties, T> factory) {
-        return this.cableType(parent, this.currentName(), factory);
-    }
-
-    public <T extends CableType, P> CableTypeBuilder<T, P> cableType(P parent, String name, NonNullFunction<CableType.Properties, T> factory) {
-        return this.entry(name, (callback) -> CableTypeBuilder.create(this, parent, name, callback, factory));
-    }
-
-    public <T extends Electrode> ElectrodeBuilder<T, ChemicaRegistrate> electrode(NonNullFunction<Electrode.Properties, T> factory) {
-        return this.electrode(this, factory);
-    }
-
-    public <T extends Electrode> ElectrodeBuilder<T, ChemicaRegistrate> electrode(String name, NonNullFunction<Electrode.Properties, T> factory) {
-        return this.electrode(this, name, factory);
-    }
-
-    public <T extends Electrode, P> ElectrodeBuilder<T, P> electrode(P parent, NonNullFunction<Electrode.Properties, T> factory) {
-        return this.electrode(parent, this.currentName(), factory);
-    }
-
-    public <T extends Electrode, P> ElectrodeBuilder<T, P> electrode(P parent, String name, NonNullFunction<Electrode.Properties, T> factory) {
-        return this.entry(name, (callback) -> ElectrodeBuilder.create(this, parent, name, callback, factory));
     }
 }

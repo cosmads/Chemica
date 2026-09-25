@@ -1,0 +1,23 @@
+{
+  "compositions": [
+    {
+      "elements": [
+        {
+          "amount": 1,
+          "id": "rutile:iron"
+        },
+        {
+          "amount": 1,
+          "id": "rutile:silver"
+        },
+        {
+          "amount": 1,
+          "id": "rutile:sodium"
+        }
+      ]
+    }
+  ],
+  "contents": [
+    "chemica:iron_catalyst"
+  ]
+}

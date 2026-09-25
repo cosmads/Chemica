@@ -1,8 +1,10 @@
 package com.cosmads.chemica.registry;
 
 import com.cosmads.chemica.Chemica;
+import com.drmangotea.tfmg.registry.TFMGItems;
 import com.simibubi.create.foundation.data.SharedProperties;
 import com.tterrag.registrate.util.entry.BlockEntry;
+import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
@@ -10,9 +12,16 @@ import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.enchantment.Enchantment;
+import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.material.MapColor;
+import net.minecraft.world.level.storage.loot.entries.LootItem;
+import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
+import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
+import net.minecraft.world.level.storage.loot.predicates.ExplosionCondition;
+import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
 import net.neoforged.neoforge.common.Tags;
 
 public class ChemicaBlocks {
@@ -37,12 +46,18 @@ public class ChemicaBlocks {
             .block("deepslate_antimony_ore", Block::new)
             .initialProperties(() -> Blocks.DEEPSLATE)
             .properties(p -> p.mapColor(MapColor.DEEPSLATE))
-            .lang("Deepslate Antimony Ore")
             .tag(Tags.Blocks.ORES)
             .tag(Tags.Blocks.ORES_IN_GROUND_DEEPSLATE)
             .tag(createCommonBlockTag("ores/antimony"))
             .tag(BlockTags.MINEABLE_WITH_PICKAXE)
             .tag(BlockTags.NEEDS_IRON_TOOL)
+            .loot((lt, b) -> {
+                HolderLookup.RegistryLookup<Enchantment> enchantmentRegistryLookup = lt.getRegistries().lookupOrThrow(Registries.ENCHANTMENT);
+                lt.add(b,
+                        lt.createSilkTouchDispatchTable(b,
+                                lt.applyExplosionDecay(b, LootItem.lootTableItem(ChemicaItems.RAW_ANTIMONY.get())
+                                        .apply(ApplyBonusCount.addOreBonusCount(enchantmentRegistryLookup.getOrThrow(Enchantments.FORTUNE))))));
+            })
             .simpleItem()
             .register();
 
@@ -56,6 +71,13 @@ public class ChemicaBlocks {
             .tag(createCommonBlockTag("ores/chromium"))
             .tag(BlockTags.MINEABLE_WITH_PICKAXE)
             .tag(BlockTags.NEEDS_IRON_TOOL)
+            .loot((lt, b) -> {
+                HolderLookup.RegistryLookup<Enchantment> enchantmentRegistryLookup = lt.getRegistries().lookupOrThrow(Registries.ENCHANTMENT);
+                lt.add(b,
+                        lt.createSilkTouchDispatchTable(b,
+                                lt.applyExplosionDecay(b, LootItem.lootTableItem(ChemicaItems.RAW_CHROMITE.get())
+                                        .apply(ApplyBonusCount.addOreBonusCount(enchantmentRegistryLookup.getOrThrow(Enchantments.FORTUNE))))));
+            })
             .simpleItem()
             .register();
 
@@ -69,6 +91,13 @@ public class ChemicaBlocks {
             .tag(createCommonBlockTag("ores/cobalt"))
             .tag(BlockTags.MINEABLE_WITH_PICKAXE)
             .tag(BlockTags.NEEDS_IRON_TOOL)
+            .loot((lt, b) -> {
+                HolderLookup.RegistryLookup<Enchantment> enchantmentRegistryLookup = lt.getRegistries().lookupOrThrow(Registries.ENCHANTMENT);
+                lt.add(b,
+                        lt.createSilkTouchDispatchTable(b,
+                                lt.applyExplosionDecay(b, LootItem.lootTableItem(ChemicaItems.RAW_COBALT.get())
+                                        .apply(ApplyBonusCount.addOreBonusCount(enchantmentRegistryLookup.getOrThrow(Enchantments.FORTUNE))))));
+            })
             .simpleItem()
             .register();
 
@@ -82,6 +111,14 @@ public class ChemicaBlocks {
             .tag(createCommonBlockTag("ores/fluorite"))
             .tag(BlockTags.MINEABLE_WITH_PICKAXE)
             .tag(BlockTags.NEEDS_IRON_TOOL)
+            .loot((lt, b) -> {
+                HolderLookup.RegistryLookup<Enchantment> enchantmentRegistryLookup = lt.getRegistries().lookupOrThrow(Registries.ENCHANTMENT);
+                lt.add(b,
+                        lt.createSilkTouchDispatchTable(b, LootItem.lootTableItem(ChemicaItems.FLUORITE_DUST.get())
+                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(2, 4)))
+                                .apply(ApplyBonusCount.addOreBonusCount(enchantmentRegistryLookup.getOrThrow(Enchantments.FORTUNE)))
+                                .when(ExplosionCondition.survivesExplosion())));
+            })
             .simpleItem()
             .register();
 
@@ -108,6 +145,13 @@ public class ChemicaBlocks {
             .tag(createCommonBlockTag("ores/molybdenum"))
             .tag(BlockTags.MINEABLE_WITH_PICKAXE)
             .tag(BlockTags.NEEDS_DIAMOND_TOOL)
+            .loot((lt, b) -> {
+                HolderLookup.RegistryLookup<Enchantment> enchantmentRegistryLookup = lt.getRegistries().lookupOrThrow(Registries.ENCHANTMENT);
+                lt.add(b,
+                        lt.createSilkTouchDispatchTable(b,
+                                lt.applyExplosionDecay(b, LootItem.lootTableItem(ChemicaItems.RAW_MOLYBDENUM.get())
+                                        .apply(ApplyBonusCount.addOreBonusCount(enchantmentRegistryLookup.getOrThrow(Enchantments.FORTUNE))))));
+            })
             .simpleItem()
             .register();
 
@@ -121,6 +165,14 @@ public class ChemicaBlocks {
             .tag(createCommonBlockTag("ores/phosphorus"))
             .tag(BlockTags.MINEABLE_WITH_PICKAXE)
             .tag(BlockTags.NEEDS_STONE_TOOL)
+            .loot((lt, b) -> {
+                HolderLookup.RegistryLookup<Enchantment> enchantmentRegistryLookup = lt.getRegistries().lookupOrThrow(Registries.ENCHANTMENT);
+                lt.add(b,
+                        lt.createSilkTouchDispatchTable(b, LootItem.lootTableItem(ChemicaItems.PHOSPHORUS_DUST.get())
+                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(2, 3)))
+                                .apply(ApplyBonusCount.addOreBonusCount(enchantmentRegistryLookup.getOrThrow(Enchantments.FORTUNE)))
+                                .when(ExplosionCondition.survivesExplosion())));
+            })
             .simpleItem()
             .register();
 
@@ -134,6 +186,14 @@ public class ChemicaBlocks {
             .tag(createCommonBlockTag("ores/phosphorus"))
             .tag(BlockTags.MINEABLE_WITH_PICKAXE)
             .tag(BlockTags.NEEDS_STONE_TOOL)
+            .loot((lt, b) -> {
+                HolderLookup.RegistryLookup<Enchantment> enchantmentRegistryLookup = lt.getRegistries().lookupOrThrow(Registries.ENCHANTMENT);
+                lt.add(b,
+                        lt.createSilkTouchDispatchTable(b, LootItem.lootTableItem(ChemicaItems.PHOSPHORUS_DUST.get())
+                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(2, 4)))
+                                .apply(ApplyBonusCount.addOreBonusCount(enchantmentRegistryLookup.getOrThrow(Enchantments.FORTUNE)))
+                                .when(ExplosionCondition.survivesExplosion())));
+            })
             .simpleItem()
             .register();
 
@@ -147,6 +207,13 @@ public class ChemicaBlocks {
             .tag(createCommonBlockTag("ores/platinum"))
             .tag(BlockTags.MINEABLE_WITH_PICKAXE)
             .tag(BlockTags.NEEDS_IRON_TOOL)
+            .loot((lt, b) -> {
+                HolderLookup.RegistryLookup<Enchantment> enchantmentRegistryLookup = lt.getRegistries().lookupOrThrow(Registries.ENCHANTMENT);
+                lt.add(b,
+                        lt.createSilkTouchDispatchTable(b,
+                                lt.applyExplosionDecay(b, LootItem.lootTableItem(ChemicaItems.RAW_PLATINUM.get())
+                                        .apply(ApplyBonusCount.addOreBonusCount(enchantmentRegistryLookup.getOrThrow(Enchantments.FORTUNE))))));
+            })
             .simpleItem()
             .register();
 
@@ -173,6 +240,13 @@ public class ChemicaBlocks {
             .tag(createCommonBlockTag("ores/silver"))
             .tag(BlockTags.MINEABLE_WITH_PICKAXE)
             .tag(BlockTags.NEEDS_IRON_TOOL)
+            .loot((lt, b) -> {
+                HolderLookup.RegistryLookup<Enchantment> enchantmentRegistryLookup = lt.getRegistries().lookupOrThrow(Registries.ENCHANTMENT);
+                lt.add(b,
+                        lt.createSilkTouchDispatchTable(b,
+                                lt.applyExplosionDecay(b, LootItem.lootTableItem(ChemicaItems.RAW_SILVER.get())
+                                        .apply(ApplyBonusCount.addOreBonusCount(enchantmentRegistryLookup.getOrThrow(Enchantments.FORTUNE))))));
+            })
             .simpleItem()
             .register();
 
@@ -186,6 +260,13 @@ public class ChemicaBlocks {
             .tag(createCommonBlockTag("ores/tin"))
             .tag(BlockTags.MINEABLE_WITH_PICKAXE)
             .tag(BlockTags.NEEDS_STONE_TOOL)
+            .loot((lt, b) -> {
+                HolderLookup.RegistryLookup<Enchantment> enchantmentRegistryLookup = lt.getRegistries().lookupOrThrow(Registries.ENCHANTMENT);
+                lt.add(b,
+                        lt.createSilkTouchDispatchTable(b,
+                                lt.applyExplosionDecay(b, LootItem.lootTableItem(ChemicaItems.RAW_TIN.get())
+                                        .apply(ApplyBonusCount.addOreBonusCount(enchantmentRegistryLookup.getOrThrow(Enchantments.FORTUNE))))));
+            })
             .simpleItem()
             .register();
 
@@ -199,6 +280,13 @@ public class ChemicaBlocks {
             .tag(createCommonBlockTag("ores/tin"))
             .tag(BlockTags.MINEABLE_WITH_PICKAXE)
             .tag(BlockTags.NEEDS_STONE_TOOL)
+            .loot((lt, b) -> {
+                HolderLookup.RegistryLookup<Enchantment> enchantmentRegistryLookup = lt.getRegistries().lookupOrThrow(Registries.ENCHANTMENT);
+                lt.add(b,
+                        lt.createSilkTouchDispatchTable(b,
+                                lt.applyExplosionDecay(b, LootItem.lootTableItem(ChemicaItems.RAW_TIN.get())
+                                        .apply(ApplyBonusCount.addOreBonusCount(enchantmentRegistryLookup.getOrThrow(Enchantments.FORTUNE))))));
+            })
             .simpleItem()
             .register();
 
@@ -212,6 +300,13 @@ public class ChemicaBlocks {
             .tag(createCommonBlockTag("ores/vanadium"))
             .tag(BlockTags.MINEABLE_WITH_PICKAXE)
             .tag(BlockTags.NEEDS_IRON_TOOL)
+            .loot((lt, b) -> {
+                HolderLookup.RegistryLookup<Enchantment> enchantmentRegistryLookup = lt.getRegistries().lookupOrThrow(Registries.ENCHANTMENT);
+                lt.add(b,
+                        lt.createSilkTouchDispatchTable(b,
+                                lt.applyExplosionDecay(b, LootItem.lootTableItem(ChemicaItems.RAW_VANADIUM.get())
+                                        .apply(ApplyBonusCount.addOreBonusCount(enchantmentRegistryLookup.getOrThrow(Enchantments.FORTUNE))))));
+            })
             .simpleItem()
             .register();
 

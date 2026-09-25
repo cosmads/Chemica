@@ -1,0 +1,18 @@
+{
+  "values": [
+    "chemica:graphite_sheet",
+    "chemica:iridium_sheet",
+    "chemica:reinforced_iridium_plate",
+    "chemica:magnesium_sheet",
+    "chemica:silver_sheet",
+    "chemica:tantalum_sheet",
+    "chemica:tin_sheet",
+    "chemica:titanium_sheet",
+    "chemica:carbon_fiber_composite_sheet",
+    "chemica:cured_epoxy_sheet",
+    "chemica:electrochemically_exfoliated_graphene",
+    "chemica:polyethylene_sheet",
+    "chemica:polytetrafluoroethylene_sheet",
+    "chemica:polyvinyl_chloride_sheet"
+  ]
+}

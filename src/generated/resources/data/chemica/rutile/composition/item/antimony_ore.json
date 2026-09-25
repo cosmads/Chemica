@@ -1,0 +1,16 @@
+{
+  "compositions": [
+    {
+      "elements": [
+        {
+          "amount": 1,
+          "id": "rutile:antimony"
+        }
+      ]
+    }
+  ],
+  "contents": [
+    "chemica:raw_antimony",
+    "chemica:deepslate_antimony_ore"
+  ]
+}

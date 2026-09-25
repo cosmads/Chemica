@@ -69,6 +69,12 @@
   "block.chemica.waste_slurry": "Waste Slurry",
   "block.chemica.xylene": "Xylene",
   "block.chemica.zelosite": "Zelosite",
+  "chemica.recipe.vat.platinum_electrode": "Requires Platinum Electrodes",
+  "engine_fuel.chemica.biodiesel": "Biodiesel",
+  "engine_fuel.chemica.ethanol": "Ethanol",
+  "engine_fuel.chemica.high_cetane_diesel": "High Cetane Diesel",
+  "engine_fuel.chemica.high_octane_gasoline": "High Octane Gasoline",
+  "engine_fuel.chemica.hydrogen_fuel": "Hydrogen Fuel",
   "fluid.chemica.acetone": "Acetone",
   "fluid.chemica.acrylonitrile": "Acrylonitrile",
   "fluid.chemica.adipic_acid_solution": "Adipic Acid Solution",
@@ -278,7 +284,7 @@
   "item.chemica.platinum_nugget": "Platinum Nugget",
   "item.chemica.polyethylene_bucket": "Polyethylene Bucket",
   "item.chemica.polyethylene_sheet": "Polyethylene Sheet",
-  "item.chemica.polytetrafluoroethylene_sheet": "Polytetrafluoroethylene (PTFE) Sheet",
+  "item.chemica.polytetrafluoroethylene_sheet": "Polytetrafluoroethylene Sheet",
   "item.chemica.polyvinyl_chloride_bucket": "Polyvinyl Chloride Bucket",
   "item.chemica.polyvinyl_chloride_sheet": "Polyvinyl Chloride Sheet",
   "item.chemica.propene_bucket": "Propene Tank",
@@ -353,7 +359,5 @@
   "item.chemica.xylene_bucket": "Xylene Bucket",
   "item.chemica.yeast": "Yeast",
   "item.chemica.zinc_dust": "Zinc Dust",
-  "itemGroup.chemica.main": "Main",
-  "create.goggles.fluid_storage": "Fluid Storage",
-  "tfmg.goggles.vat.chemica.electrode": "Platinum Electrode"
+  "itemGroup.chemica.main": "Main"
 }

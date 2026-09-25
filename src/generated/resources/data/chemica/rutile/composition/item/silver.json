@@ -1,0 +1,21 @@
+{
+  "compositions": [
+    {
+      "elements": [
+        {
+          "amount": 1,
+          "id": "rutile:silver"
+        }
+      ]
+    }
+  ],
+  "contents": [
+    "chemica:silver_dust",
+    "create:crushed_raw_silver",
+    "chemica:silver_ingot",
+    "chemica:silver_nugget",
+    "chemica:silver_sheet",
+    "chemica:raw_silver",
+    "chemica:deepslate_silver_ore"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "values": [
+    "chemica:biodiesel_engine_cylinder",
+    "chemica:ethanol_engine_cylinder",
+    "chemica:high_cetane_engine_cylinder",
+    "chemica:high_octane_engine_cylinder"
+  ]
+}

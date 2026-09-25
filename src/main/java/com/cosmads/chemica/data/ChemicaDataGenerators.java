@@ -1,62 +1,76 @@
 package com.cosmads.chemica.data;
 
 import com.cosmads.chemica.Chemica;
-import com.cosmads.chemica.worldgen.ChemicaBiomeModifiers;
-import com.cosmads.chemica.worldgen.ChemicaConfiguredFeatures;
-import com.cosmads.chemica.worldgen.ChemicaPlacedFeatures;
+import com.cosmads.chemica.data.tags.ChemicaRegistrateTags;
+import com.drmangotea.tfmg.datagen.integration.TFMGRutileProvider;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonObject;
+import com.simibubi.create.foundation.utility.FilesHelper;
+import com.tterrag.registrate.providers.ProviderType;
 import net.minecraft.core.HolderLookup;
-import net.minecraft.core.RegistrySetBuilder;
-import net.minecraft.core.registries.Registries;
+import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
-import net.minecraft.data.loot.LootTableProvider;
-import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
-import net.neoforged.neoforge.common.data.DatapackBuiltinEntriesProvider;
+import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.neoforge.data.event.GatherDataEvent;
-import net.neoforged.neoforge.registries.NeoForgeRegistries;
 
-import java.util.List;
-import java.util.Set;
+import java.util.Map;
 import java.util.concurrent.CompletableFuture;
+import java.util.function.BiConsumer;
 
 public class ChemicaDataGenerators {
 
-    @net.neoforged.bus.api.SubscribeEvent
+    public static void gatherDataHighPriority(GatherDataEvent event) {
+        if (event.getMods().contains(Chemica.MOD_ID))
+            addExtraRegistrateData();
+    }
+
+    @SubscribeEvent
     public static void gatherData(GatherDataEvent event) {
         Chemica.LOGGER.info("[Chemica] Starting data generation...");
+        DataGenerator generator = event.getGenerator();
+        PackOutput output = generator.getPackOutput();
+        CompletableFuture<HolderLookup.Provider> lookupProvider = event.getLookupProvider();
 
-        var generator = event.getGenerator();
-        var packOutput = generator.getPackOutput();
-        var lookupProvider = event.getLookupProvider();
+        ChemicaGeneratedEntriesProvider generatedEntriesProvider = new ChemicaGeneratedEntriesProvider(output, lookupProvider);
+        lookupProvider = generatedEntriesProvider.getRegistryProvider();
+        generator.addProvider(event.includeServer(), generatedEntriesProvider);
+
         var includeServer = event.includeServer();
 
-        generator.addProvider(includeServer, new RegistryDataGenerator(packOutput, lookupProvider));
 
-        // Loot table provider
-        generator.addProvider(includeServer,
-                new LootTableProvider(
-                        packOutput,
-                        Set.of(),
-                        List.of(
-                                new LootTableProvider.SubProviderEntry(
-                                        BlockLootTableProvider::new,
-                                        LootContextParamSets.BLOCK
-                                )
-                        ),
-                        lookupProvider
-                )
-        );
+        generator.addProvider(event.includeServer(), new ChemicaRutileProvider.Item(output, lookupProvider));
+        generator.addProvider(event.includeServer(), new ChemicaRutileProvider.Fluid(output, lookupProvider));
 
         Chemica.LOGGER.info("[Chemica] Data generator registered successfully");
     }
 
-    private static class RegistryDataGenerator extends DatapackBuiltinEntriesProvider {
-        private static final RegistrySetBuilder BUILDER = new RegistrySetBuilder()
-                .add(Registries.CONFIGURED_FEATURE, ChemicaConfiguredFeatures::bootstrap)
-                .add(Registries.PLACED_FEATURE, ChemicaPlacedFeatures::bootstrap)
-                .add(NeoForgeRegistries.Keys.BIOME_MODIFIERS, ChemicaBiomeModifiers::bootstrap);
+    private static void addExtraRegistrateData() {
+        ChemicaRegistrateTags.addGenerators();
 
-        public RegistryDataGenerator(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
-            super(output, registries, BUILDER, Set.of(Chemica.MOD_ID));
+        Chemica.REGISTRATE.addDataGenerator(ProviderType.LANG, provider -> {
+            BiConsumer<String, String> langConsumer = provider::add;
+            provideDefaultLang("interface", langConsumer);
+            provideDefaultLang("tooltips", langConsumer);
+            providePonderLang(langConsumer);
+        });
+    }
+
+    private static void providePonderLang(BiConsumer<String, String> consumer) {
+        //PonderIndex.addPlugin(new TFMGPonderPlugin());
+        //PonderIndex.getLangAccess().provideLang(TFMG.MOD_ID, consumer);
+    }
+
+    private static void provideDefaultLang(String fileName, BiConsumer<String, String> consumer) {
+        String path = "assets/chemica/lang/default/" + fileName + ".json";
+        JsonElement jsonElement = FilesHelper.loadJsonResource(path);
+        if (jsonElement == null) {
+            throw new IllegalStateException(String.format("Could not find default lang file: %s", path));
+        }
+        JsonObject jsonObject = jsonElement.getAsJsonObject();
+        for (Map.Entry<String, JsonElement> entry : jsonObject.entrySet()) {
+            String key = entry.getKey();
+            String value = entry.getValue().getAsString();
+            consumer.accept(key, value);
         }
     }
 }

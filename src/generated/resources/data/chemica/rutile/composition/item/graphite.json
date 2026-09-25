@@ -1,0 +1,21 @@
+{
+  "compositions": [
+    {
+      "elements": [
+        {
+          "amount": 1,
+          "id": "rutile:carbon"
+        }
+      ]
+    }
+  ],
+  "contents": [
+    "chemica:graphite_ingot",
+    "chemica:graphite_sheet",
+    "chemica:graphite_nugget",
+    "chemica:crushed_graphite",
+    "chemica:purified_graphite_flakes",
+    "chemica:electrochemically_exfoliated_graphene",
+    "chemica:deepslate_graphite_ore"
+  ]
+}

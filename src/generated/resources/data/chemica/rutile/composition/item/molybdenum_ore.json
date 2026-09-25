@@ -1,0 +1,20 @@
+{
+  "compositions": [
+    {
+      "elements": [
+        {
+          "amount": 1,
+          "id": "rutile:molybdenum"
+        },
+        {
+          "amount": 1,
+          "id": "rutile:rhenium"
+        }
+      ]
+    }
+  ],
+  "contents": [
+    "chemica:raw_molybdenum",
+    "chemica:deepslate_molybdenum_ore"
+  ]
+}

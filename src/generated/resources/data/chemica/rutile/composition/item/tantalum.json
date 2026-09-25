@@ -1,0 +1,18 @@
+{
+  "compositions": [
+    {
+      "elements": [
+        {
+          "amount": 1,
+          "id": "rutile:tantalum"
+        }
+      ]
+    }
+  ],
+  "contents": [
+    "chemica:tantalum_dust",
+    "chemica:tantalum_ingot",
+    "chemica:tantalum_nugget",
+    "chemica:tantalum_sheet"
+  ]
+}
