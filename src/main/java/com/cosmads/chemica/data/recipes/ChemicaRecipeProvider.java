@@ -2,6 +2,7 @@ package com.cosmads.chemica.data.recipes;
 
 import com.cosmads.chemica.Chemica;
 import com.cosmads.chemica.data.recipes.values.create.ChemicaCompactingRecipeGen;
+import com.cosmads.chemica.data.recipes.values.tfmg.ChemicaDistillationRecipeGen;
 import com.cosmads.chemica.registry.ChemicaFluids;
 import com.drmangotea.tfmg.datagen.recipes.values.create.TFMGCompactingRecipeGen;
 import com.drmangotea.tfmg.registry.TFMGFluids;
@@ -46,6 +47,8 @@ public class ChemicaRecipeProvider extends RecipeProvider {
     public static void registerAllProcessing(DataGenerator gen, PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
 
         GENERATORS.add(new ChemicaCompactingRecipeGen(output, registries));
+
+        GENERATORS.add(new ChemicaDistillationRecipeGen(output, registries));
 
         gen.addProvider(true, new DataProvider() {
 

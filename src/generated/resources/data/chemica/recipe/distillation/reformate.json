@@ -4,21 +4,18 @@
     {
       "type": "neoforge:single",
       "amount": 500,
-      "fluid": "chemica:aromatic_mix"
+      "fluid": "chemica:reformate"
     }
   ],
+  "processing_time": 400,
   "results": [
     {
-      "amount": 150,
-      "id": "chemica:xylene"
+      "amount": 300,
+      "id": "chemica:aromatic_mix"
     },
     {
       "amount": 200,
-      "id": "chemica:toluene"
-    },
-    {
-      "amount": 150,
-      "id": "chemica:benzene"
+      "id": "chemica:light_hydrocarbons"
     }
   ]
 }

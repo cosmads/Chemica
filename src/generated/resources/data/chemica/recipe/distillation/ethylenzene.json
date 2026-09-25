@@ -1,0 +1,29 @@
+{
+  "type": "tfmg:distillation",
+  "ingredients": [
+    {
+      "type": "neoforge:single",
+      "amount": 500,
+      "fluid": "chemica:aromatic_mix"
+    }
+  ],
+  "processing_time": 800,
+  "results": [
+    {
+      "amount": 100,
+      "id": "chemica:xylene"
+    },
+    {
+      "amount": 150,
+      "id": "chemica:toluene"
+    },
+    {
+      "amount": 100,
+      "id": "chemica:ethylbenzene"
+    },
+    {
+      "amount": 150,
+      "id": "chemica:benzene"
+    }
+  ]
+}
