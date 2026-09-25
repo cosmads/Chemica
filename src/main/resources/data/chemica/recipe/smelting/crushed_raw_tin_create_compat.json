@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "experience": 1.0,
+  "cookingtime": 200,
+  "ingredient": {
+    "item": "create:crushed_raw_tin"
+  },
+  "result": {
+    "id": "chemica:tin_ingot"
+  }
+}
