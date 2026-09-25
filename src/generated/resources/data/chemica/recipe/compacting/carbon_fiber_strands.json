@@ -3,15 +3,15 @@
   "heat_requirement": "superheated",
   "ingredients": [
     {
+      "item": "chemica:stabilized_fibers"
+    },
+    {
+      "item": "chemica:stabilized_fibers"
+    },
+    {
       "type": "neoforge:single",
       "amount": 250,
       "fluid": "chemica:argon"
-    },
-    {
-      "item": "chemica:stabilized_fibers"
-    },
-    {
-      "item": "chemica:stabilized_fibers"
     }
   ],
   "results": [

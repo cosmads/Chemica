@@ -1,8 +1,10 @@
 package com.cosmads.chemica.data;
 
 import com.cosmads.chemica.Chemica;
+import com.cosmads.chemica.data.recipes.ChemicaRecipeProvider;
 import com.cosmads.chemica.data.tags.ChemicaRegistrateTags;
 import com.drmangotea.tfmg.datagen.integration.TFMGRutileProvider;
+import com.drmangotea.tfmg.datagen.recipes.TFMGRecipeProvider;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.simibubi.create.foundation.utility.FilesHelper;
@@ -31,15 +33,20 @@ public class ChemicaDataGenerators {
         PackOutput output = generator.getPackOutput();
         CompletableFuture<HolderLookup.Provider> lookupProvider = event.getLookupProvider();
 
-        ChemicaGeneratedEntriesProvider generatedEntriesProvider = new ChemicaGeneratedEntriesProvider(output, lookupProvider);
-        lookupProvider = generatedEntriesProvider.getRegistryProvider();
-        generator.addProvider(event.includeServer(), generatedEntriesProvider);
-
         var includeServer = event.includeServer();
 
+        ChemicaGeneratedEntriesProvider generatedEntriesProvider = new ChemicaGeneratedEntriesProvider(output, lookupProvider);
+        lookupProvider = generatedEntriesProvider.getRegistryProvider();
+        generator.addProvider(includeServer, generatedEntriesProvider);
 
-        generator.addProvider(event.includeServer(), new ChemicaRutileProvider.Item(output, lookupProvider));
-        generator.addProvider(event.includeServer(), new ChemicaRutileProvider.Fluid(output, lookupProvider));
+
+
+        generator.addProvider(includeServer, new ChemicaRutileProvider.Item(output, lookupProvider));
+        generator.addProvider(includeServer, new ChemicaRutileProvider.Fluid(output, lookupProvider));
+
+        if (event.includeServer()) {
+            ChemicaRecipeProvider.registerAllProcessing(generator, output, lookupProvider);
+        }
 
         Chemica.LOGGER.info("[Chemica] Data generator registered successfully");
     }

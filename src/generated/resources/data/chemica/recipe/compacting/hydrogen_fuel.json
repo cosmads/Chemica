@@ -3,12 +3,12 @@
   "heat_requirement": "heated",
   "ingredients": [
     {
+      "item": "chemica:iron_dust"
+    },
+    {
       "type": "neoforge:single",
       "amount": 1000,
       "fluid": "chemica:syngas"
-    },
-    {
-      "item": "chemica:iron_dust"
     }
   ],
   "results": [

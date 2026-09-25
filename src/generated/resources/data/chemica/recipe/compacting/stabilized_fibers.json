@@ -3,15 +3,20 @@
   "heat_requirement": "superheated",
   "ingredients": [
     {
+      "item": "chemica:pan_fibers"
+    },
+    {
+      "item": "chemica:pan_fibers"
+    },
+    {
       "type": "neoforge:single",
       "amount": 250,
-      "fluid": "tfmg:hydrogen"
+      "fluid": "chemica:oxygen"
     }
   ],
   "results": [
     {
-      "amount" : 250,
-      "id": "chemica:liquid_hydrogen"
+      "id": "chemica:stabilized_fibers"
     }
   ]
 }

@@ -5,18 +5,13 @@
     {
       "type": "neoforge:single",
       "amount": 250,
-      "fluid": "chemica:oxygen"
-    },
-    {
-      "item": "chemica:pan_fibers"
-    },
-    {
-      "item": "chemica:pan_fibers"
+      "fluid": "tfmg:hydrogen"
     }
   ],
   "results": [
     {
-      "id": "chemica:stabilized_fibers"
+      "amount": 250,
+      "id": "chemica:liquid_hydrogen"
     }
   ]
 }
