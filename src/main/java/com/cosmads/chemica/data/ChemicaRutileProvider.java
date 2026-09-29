@@ -38,7 +38,7 @@ public class ChemicaRutileProvider {
             addData("constantan", List.of(CONSTANTAN_DUST.asItem()), c -> c.element(RutileElements.Cu).element(RutileElements.Ni));
             addData("electrum", List.of(ELECTRUM_GRIT.asItem()), c -> c.element(RutileElements.Ag).element(RutileElements.Au));
             addData("fluorite", List.of(FLUORITE_DUST.asItem()), c -> c.element(RutileElements.Ca).element(RutileElements.F, 2));
-            addData("phosphorous", List.of(PHOSPHORUS_DUST.asItem(), DEEPSLATE_PHOSPHORUS_ORE.asItem()), c -> c.element(RutileElements.P));
+            addData("phosphorus", List.of(PHOSPHORUS_DUST.asItem(), DEEPSLATE_PHOSPHORUS_ORE.asItem(), PHOSPHORUS_ORE.asItem()), c -> c.element(RutileElements.P));
             addData("quartz", List.of(QUARTZ_DUST.asItem()), c -> c.element(RutileElements.Si).element(RutileElements.O, 2));
             addData("sodium_chloride", List.of(SALT.asItem()), c -> c.element(RutileElements.Na).element(RutileElements.Cl));
             addData("sodium_carbonate", List.of(SODA_ASH.asItem()), c -> c.element(RutileElements.Na, 2).element(RutileElements.C).element(RutileElements.O, 3));
@@ -69,10 +69,12 @@ public class ChemicaRutileProvider {
             addData("steel_based_tough_alloy", List.of(STEEL_BASED_TOUGH_ALLOY.asItem()), c -> c.element(RutileElements.Fe).element(RutileElements.Mo).element(RutileElements.Cr));
 
             //Catalysts
+            addData("cobalt_catalyst", List.of(COBALT_CATALYST.asItem()), c -> c.element(RutileElements.Co).element(RutileElements.Na).element(RutileElements.O, 3).element(RutileElements.H, 2));
             addData("copper_catalyst", List.of(COPPER_CATALYST.asItem()), c -> c.element(RutileElements.Cu).element(RutileElements.S));
             addData("iron_catalyst", List.of(IRON_CATALYST.asItem()), c -> c.element(RutileElements.Fe).element(RutileElements.Ag).element(RutileElements.Na));
             addData("nickel_catalyst", List.of(NICKEL_CATALYST.asItem()), c -> c.element(RutileElements.Ni).element(RutileElements.Al).element(RutileElements.Na).element(RutileElements.O).element(RutileElements.H));
             addData("platinum_catalyst", List.of(PLATINUM_CATALYST.asItem()), c -> c.element(RutileElements.Pt).element(RutileElements.Fe).element(RutileElements.C));
+            addData("vanadium_catalyst", List.of(VANADIUM_CATALYST.asItem()), c -> c.element(RutileElements.Na).element(RutileElements.Cl).setAmount(4).next().element(RutileElements.V).element(RutileElements.H));
 
             //Ores
             addData("fervorite", List.of(FERVORITE.asItem()), c -> c.element(RutileElements.Mg, 2).element(RutileElements.S));

@@ -1,0 +1,26 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "chemica:deepslate_antimony_ore"
+    }
+  ],
+  "processing_time": 350,
+  "results": [
+    {
+      "id": "chemica:crushed_raw_antimony"
+    },
+    {
+      "chance": 0.03,
+      "id": "chemica:arsenic_dust"
+    },
+    {
+      "chance": 0.75,
+      "id": "create:experience_nugget"
+    },
+    {
+      "chance": 0.12,
+      "id": "minecraft:cobbled_deepslate"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "tag": "c:ingots/antimony"
+    }
+  ],
+  "processing_time": 100,
+  "results": [
+    {
+      "id": "chemica:antimony_dust"
+    }
+  ]
+}

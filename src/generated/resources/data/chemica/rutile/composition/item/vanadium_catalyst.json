@@ -1,0 +1,32 @@
+{
+  "compositions": [
+    {
+      "amount": 4,
+      "elements": [
+        {
+          "amount": 1,
+          "id": "rutile:sodium"
+        },
+        {
+          "amount": 1,
+          "id": "rutile:chlorine"
+        }
+      ]
+    },
+    {
+      "elements": [
+        {
+          "amount": 1,
+          "id": "rutile:vanadium"
+        },
+        {
+          "amount": 1,
+          "id": "rutile:hydrogen"
+        }
+      ]
+    }
+  ],
+  "contents": [
+    "chemica:vanadium_catalyst"
+  ]
+}

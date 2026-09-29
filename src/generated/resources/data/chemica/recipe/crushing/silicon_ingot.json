@@ -1,0 +1,14 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "tag": "c:ingots/silicon"
+    }
+  ],
+  "processing_time": 100,
+  "results": [
+    {
+      "id": "chemica:silicon_dust"
+    }
+  ]
+}

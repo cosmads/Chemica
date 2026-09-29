@@ -1,0 +1,14 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "tag": "c:ingots/vanadium"
+    }
+  ],
+  "processing_time": 100,
+  "results": [
+    {
+      "id": "chemica:vanadium_dust"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "chemica:deepslate_wolframite_ore"
+    }
+  ],
+  "processing_time": 450,
+  "results": [
+    {
+      "id": "chemica:raw_tungsten"
+    },
+    {
+      "chance": 0.02,
+      "id": "chemica:arsenic_dust"
+    },
+    {
+      "chance": 0.75,
+      "id": "create:experience_nugget"
+    },
+    {
+      "chance": 0.12,
+      "id": "minecraft:cobbled_deepslate"
+    }
+  ]
+}

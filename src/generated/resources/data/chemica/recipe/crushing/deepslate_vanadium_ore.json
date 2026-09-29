@@ -1,0 +1,26 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "chemica:deepslate_vanadium_ore"
+    }
+  ],
+  "processing_time": 350,
+  "results": [
+    {
+      "id": "chemica:crushed_raw_vanadium"
+    },
+    {
+      "chance": 0.2,
+      "id": "create:crushed_raw_iron"
+    },
+    {
+      "chance": 0.75,
+      "id": "create:experience_nugget"
+    },
+    {
+      "chance": 0.12,
+      "id": "minecraft:cobbled_deepslate"
+    }
+  ]
+}

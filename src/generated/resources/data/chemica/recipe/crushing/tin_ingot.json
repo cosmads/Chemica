@@ -1,0 +1,14 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "tag": "c:ingots/tin"
+    }
+  ],
+  "processing_time": 100,
+  "results": [
+    {
+      "id": "chemica:tin_dust"
+    }
+  ]
+}

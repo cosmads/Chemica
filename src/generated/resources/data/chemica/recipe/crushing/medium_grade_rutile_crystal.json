@@ -1,0 +1,23 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "chemica:medium_grade_rutile_crystal"
+    }
+  ],
+  "processing_time": 100,
+  "results": [
+    {
+      "count": 2,
+      "id": "chemica:rutile_dust"
+    },
+    {
+      "chance": 0.25,
+      "id": "chemica:rutile_dust"
+    },
+    {
+      "chance": 0.2,
+      "id": "create:experience_nugget"
+    }
+  ]
+}

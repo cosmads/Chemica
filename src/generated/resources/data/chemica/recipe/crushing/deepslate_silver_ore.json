@@ -1,0 +1,27 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "chemica:deepslate_silver_ore"
+    }
+  ],
+  "processing_time": 350,
+  "results": [
+    {
+      "count": 3,
+      "id": "create:crushed_raw_silver"
+    },
+    {
+      "chance": 0.03,
+      "id": "chemica:arsenic_dust"
+    },
+    {
+      "chance": 0.75,
+      "id": "create:experience_nugget"
+    },
+    {
+      "chance": 0.12,
+      "id": "minecraft:cobbled_deepslate"
+    }
+  ]
+}

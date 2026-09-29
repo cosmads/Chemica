@@ -1,0 +1,14 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "tag": "c:ingots/cobalt"
+    }
+  ],
+  "processing_time": 100,
+  "results": [
+    {
+      "id": "chemica:cobalt_dust"
+    }
+  ]
+}

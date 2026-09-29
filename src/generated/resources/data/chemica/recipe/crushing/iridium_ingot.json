@@ -1,0 +1,14 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "tag": "c:ingots/iridium"
+    }
+  ],
+  "processing_time": 100,
+  "results": [
+    {
+      "id": "chemica:iridium_dust"
+    }
+  ]
+}
