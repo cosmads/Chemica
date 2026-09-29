@@ -280,7 +280,7 @@ public class ChemicaItems {
 
     public static ItemEntry<Item> ingot(String name, ChemMaterial metal) {
         return item(name, Item::new)
-                .tag(Tags.Items.INGOTS)
+                .tag(Tags.Items.INGOTS, AllTags.AllItemTags.CREATE_INGOTS.tag)
                 .tag(metal.ingots)
                 .register();
     }
