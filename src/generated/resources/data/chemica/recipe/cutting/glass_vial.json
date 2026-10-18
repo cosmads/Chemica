@@ -2,14 +2,14 @@
   "type": "create:cutting",
   "ingredients": [
     {
-      "item": "tfmg:rubber_sheet"
+      "item": "minecraft:glass"
     }
   ],
-  "processingTime": 200,
+  "processing_time": 300,
   "results": [
     {
       "count": 2,
-      "id": "chemica:rubber_strip"
+      "id": "chemica:glass_vial"
     }
   ]
 }

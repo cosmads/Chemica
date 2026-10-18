@@ -5,11 +5,10 @@
       "item": "minecraft:glass"
     }
   ],
-  "processingTime": 300,
+  "processing_time": 300,
   "results": [
     {
-      "count": 4,
-      "id": "chemica:petri_dish"
+      "id": "chemica:graduated_cylinder"
     }
   ]
 }

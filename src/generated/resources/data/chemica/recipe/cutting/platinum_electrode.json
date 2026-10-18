@@ -2,14 +2,14 @@
   "type": "create:cutting",
   "ingredients": [
     {
-      "item": "chemica:cured_epoxy_block"
+      "item": "chemica:platinum_block"
     }
   ],
-  "processingTime": 200,
+  "processing_time": 200,
   "results": [
     {
       "count": 9,
-      "id": "chemica:cured_epoxy_sheet"
+      "id": "chemica:platinum_electrode"
     }
   ]
 }

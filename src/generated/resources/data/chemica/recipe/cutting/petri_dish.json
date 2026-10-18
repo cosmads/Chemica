@@ -5,11 +5,11 @@
       "item": "minecraft:glass"
     }
   ],
-  "processingTime": 300,
+  "processing_time": 300,
   "results": [
     {
-      "count": 2,
-      "id": "chemica:glass_vial"
+      "count": 4,
+      "id": "chemica:petri_dish"
     }
   ]
 }
