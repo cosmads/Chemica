@@ -2,12 +2,12 @@
   "type": "create:pressing",
   "ingredients": [
     {
-      "item": "chemica:tantalum_ingot"
+      "tag": "c:ingots/silver"
     }
   ],
   "results": [
     {
-      "id": "chemica:tantalum_sheet"
+      "id": "chemica:silver_sheet"
     }
   ]
 }

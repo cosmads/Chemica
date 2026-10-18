@@ -2,12 +2,12 @@
   "type": "create:pressing",
   "ingredients": [
     {
-      "item": "chemica:silver_ingot"
+      "tag": "c:ingots/magnesium"
     }
   ],
   "results": [
     {
-      "id": "chemica:silver_sheet"
+      "id": "chemica:magnesium_sheet"
     }
   ]
 }

@@ -2,12 +2,12 @@
   "type": "create:pressing",
   "ingredients": [
     {
-      "item": "chemica:iridium_ingot"
+      "tag": "c:ingots/titanium"
     }
   ],
   "results": [
     {
-      "id": "chemica:iridium_sheet"
+      "id": "chemica:titanium_sheet"
     }
   ]
 }

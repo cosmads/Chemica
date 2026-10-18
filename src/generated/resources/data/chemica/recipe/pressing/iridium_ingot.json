@@ -2,12 +2,12 @@
   "type": "create:pressing",
   "ingredients": [
     {
-      "item": "chemica:magnesium_ingot"
+      "tag": "c:ingots/iridium"
     }
   ],
   "results": [
     {
-      "id": "chemica:magnesium_sheet"
+      "id": "chemica:iridium_sheet"
     }
   ]
 }

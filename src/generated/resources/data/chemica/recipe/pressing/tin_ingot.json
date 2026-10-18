@@ -2,12 +2,12 @@
   "type": "create:pressing",
   "ingredients": [
     {
-      "item": "chemica:graphite_ingot"
+      "tag": "c:ingots/tin"
     }
   ],
   "results": [
     {
-      "id": "chemica:graphite_sheet"
+      "id": "chemica:tin_sheet"
     }
   ]
 }

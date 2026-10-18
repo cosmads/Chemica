@@ -2,12 +2,12 @@
   "type": "create:pressing",
   "ingredients": [
     {
-      "item": "chemica:titanium_ingot"
+      "tag": "c:ingots/graphite"
     }
   ],
   "results": [
     {
-      "id": "chemica:titanium_sheet"
+      "id": "chemica:graphite_sheet"
     }
   ]
 }

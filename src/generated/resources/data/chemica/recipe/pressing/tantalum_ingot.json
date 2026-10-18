@@ -2,12 +2,12 @@
   "type": "create:pressing",
   "ingredients": [
     {
-      "item": "chemica:tin_ingot"
+      "tag": "c:ingots/tantalum"
     }
   ],
   "results": [
     {
-      "id": "chemica:tin_sheet"
+      "id": "chemica:tantalum_sheet"
     }
   ]
 }
