@@ -1,0 +1,18 @@
+{
+  "type": "tfmg:vat_machine_recipe",
+  "allowedVatTypes": [
+    "tfmg:firebrick_lined_vat"
+  ],
+  "ingredients": [
+    { "item": "create:crushed_raw_platinum" },
+    { "type": "neoforge:single", "amount": 150, "fluid": "chemica:nitric_acid" },
+    { "type": "neoforge:single", "amount": 150, "fluid": "chemica:hydrochloric_acid" }
+  ],
+  "machines": ["tfmg:mixing"],
+  "minSize": 1,
+  "processingTime": 300,
+  "results": [
+    { "id": "chemica:platinum_dust", "count": 3 },
+    { "id": "chemica:platinum_dust", "chance": 0.5 }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "type": "tfmg:vat_machine_recipe",
+  "allowedVatTypes": [
+    "tfmg:steel_vat",
+    "tfmg:firebrick_lined_vat"
+  ],
+  "heatLevel": 2,
+  "ingredients": [
+    { "item": "chemica:raw_molybdenum" },
+    { "type": "neoforge:single", "amount": 250, "fluid": "tfmg:sulfuric_acid" }
+  ],
+  "machines": ["tfmg:mixing"],
+  "minSize": 1,
+  "processingTime": 300,
+  "results": [
+    { "id": "chemica:molybdenum_dust", "count": 2 },
+    { "id": "chemica:molybdenum_dust", "chance": 0.5 }
+  ]
+}

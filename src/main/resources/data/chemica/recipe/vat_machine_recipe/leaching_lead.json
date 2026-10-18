@@ -1,0 +1,19 @@
+{
+  "type": "tfmg:vat_machine_recipe",
+  "allowedVatTypes": [
+    "tfmg:steel_vat",
+    "tfmg:firebrick_lined_vat"
+  ],
+  "ingredients": [
+    { "item": "create:crushed_raw_lead" },
+    { "type": "neoforge:single", "amount": 150, "fluid": "tfmg:sulfuric_acid" }
+  ],
+  "machines": ["tfmg:mixing"],
+  "minSize": 1,
+  "pressure": 3,
+  "processingTime": 300,
+  "results": [
+    { "id": "tfmg:lead_nugget", "count": 18 },
+    { "id": "tfmg:lead_nugget", "count": 2, "chance": 0.5 }
+  ]
+}

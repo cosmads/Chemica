@@ -1,0 +1,18 @@
+{
+  "type": "tfmg:vat_machine_recipe",
+  "allowedVatTypes": [
+    "tfmg:firebrick_lined_vat"
+  ],
+  "ingredients": [
+    { "item": "create:crushed_raw_gold" },
+    { "type": "neoforge:single", "amount": 150, "fluid": "chemica:nitric_acid" },
+    { "type": "neoforge:single", "amount": 150, "fluid": "chemica:hydrochloric_acid" }
+  ],
+  "machines": ["tfmg:mixing"],
+  "minSize": 1,
+  "processingTime": 300,
+  "results": [
+    { "id": "chemica:gold_dust", "count": 3 },
+    { "id": "minecraft:gold_nugget", "count": 5, "chance": 0.5 }
+  ]
+}
