@@ -4,13 +4,13 @@
     {
       "type": "neoforge:single",
       "amount": 90,
-      "fluid": "chemica:polyethylene"
+      "fluid": "chemica:epoxy_resin"
     }
   ],
   "processing_time": 100,
   "results": [
     {
-      "id": "chemica:polyethylene_sheet"
+      "id": "chemica:cured_epoxy_sheet"
     }
   ]
 }

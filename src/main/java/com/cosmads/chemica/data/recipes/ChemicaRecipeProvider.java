@@ -4,6 +4,7 @@ import com.cosmads.chemica.Chemica;
 import com.cosmads.chemica.data.recipes.values.create.ChemicaCompactingRecipeGen;
 import com.cosmads.chemica.data.recipes.values.create.ChemicaCrushingRecipeGen;
 import com.cosmads.chemica.data.recipes.values.create.ChemicaCuttingRecipeGen;
+import com.cosmads.chemica.data.recipes.values.tfmg.ChemicaCastingRecipeGen;
 import com.cosmads.chemica.data.recipes.values.tfmg.ChemicaDistillationRecipeGen;
 import com.cosmads.chemica.registry.ChemicaFluids;
 import com.drmangotea.tfmg.datagen.recipes.values.create.TFMGCompactingRecipeGen;
@@ -52,6 +53,7 @@ public class ChemicaRecipeProvider extends RecipeProvider {
         GENERATORS.add(new ChemicaCrushingRecipeGen(output, registries));
         GENERATORS.add(new ChemicaCuttingRecipeGen(output, registries));
 
+        GENERATORS.add(new ChemicaCastingRecipeGen(output, registries));
         GENERATORS.add(new ChemicaDistillationRecipeGen(output, registries));
 
         gen.addProvider(true, new DataProvider() {

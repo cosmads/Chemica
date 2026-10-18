@@ -4,13 +4,13 @@
     {
       "type": "neoforge:single",
       "amount": 90,
-      "fluid": "chemica:molten_nylon"
+      "fluid": "chemica:polyvinyl_chloride"
     }
   ],
   "processing_time": 100,
   "results": [
     {
-      "id": "chemica:nylon_ingot"
+      "id": "chemica:polyvinyl_chloride_sheet"
     }
   ]
 }
