@@ -51,6 +51,7 @@ public class ChemicaRecipeProvider extends RecipeProvider {
         GENERATORS.add(new ChemicaCrushingRecipeGen(output, registries));
         GENERATORS.add(new ChemicaCuttingRecipeGen(output, registries));
         GENERATORS.add(new ChemicaDeployingRecipeGen(output, registries));
+        GENERATORS.add(new ChemicaFillingRecipeGen(output, registries));
         GENERATORS.add(new ChemicaPressingRecipeGen(output, registries));
 
         GENERATORS.add(new ChemicaCastingRecipeGen(output, registries));
