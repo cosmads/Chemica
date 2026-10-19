@@ -2,9 +2,11 @@ package com.cosmads.chemica.data;
 
 import com.cosmads.chemica.Chemica;
 import com.cosmads.chemica.data.recipes.ChemicaRecipeProvider;
+import com.cosmads.chemica.data.recipes.values.create.ChemicaSequencedAssemblyRecipeGen;
 import com.cosmads.chemica.data.tags.ChemicaRegistrateTags;
 import com.drmangotea.tfmg.datagen.integration.TFMGRutileProvider;
 import com.drmangotea.tfmg.datagen.recipes.TFMGRecipeProvider;
+import com.drmangotea.tfmg.datagen.recipes.values.create.TFMGSequencedAssemblyRecipeGen;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.simibubi.create.foundation.utility.FilesHelper;
@@ -44,11 +46,13 @@ public class ChemicaDataGenerators {
         generator.addProvider(includeServer, new ChemicaRutileProvider.Item(output, lookupProvider));
         generator.addProvider(includeServer, new ChemicaRutileProvider.Fluid(output, lookupProvider));
 
-        if (event.includeServer()) {
+        generator.addProvider(includeServer, new ChemicaSequencedAssemblyRecipeGen(output, lookupProvider));
+
+        if (includeServer) {
             ChemicaRecipeProvider.registerAllProcessing(generator, output, lookupProvider);
         }
 
-        Chemica.LOGGER.info("[Chemica] Data generator registered successfully");
+        Chemica.LOGGER.info("[Chemica] Data generation complete!");
     }
 
     private static void addExtraRegistrateData() {

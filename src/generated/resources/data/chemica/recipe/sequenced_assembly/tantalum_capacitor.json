@@ -1,13 +1,12 @@
 {
   "type": "create:sequenced_assembly",
   "ingredient": {
-    "item": "chemica:tantalum_sheet"
+    "tag": "c:plates/tantalum"
   },
-  "loops": 1,
   "results": [
     {
-      "id": "chemica:tantalum_capacitor_item",
-      "count": 4
+      "count": 4,
+      "id": "chemica:tantalum_capacitor_item"
     }
   ],
   "sequence": [

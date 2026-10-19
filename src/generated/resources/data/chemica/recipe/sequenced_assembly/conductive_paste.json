@@ -1,9 +1,8 @@
 {
   "type": "create:sequenced_assembly",
   "ingredient": {
-    "item": "chemica:polyethylene_sheet"
+    "tag": "c:plates/polyethylene"
   },
-  "loops": 1,
   "results": [
     {
       "id": "chemica:conductive_paste"
