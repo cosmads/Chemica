@@ -2,9 +2,9 @@
   "type": "tfmg:hot_blast",
   "ingredients": [
     {
-      "type": "neoforge:single",
+      "type": "neoforge:tag",
       "amount": 100,
-      "fluid": "tfmg:naphtha"
+      "tag": "c:naphtha"
     },
     {
       "type": "neoforge:single",
@@ -12,7 +12,7 @@
       "fluid": "chemica:platinum_catalyst_carrier"
     }
   ],
-  "processingTime": 200,
+  "processing_time": 200,
   "results": [
     {
       "amount": 70,
