@@ -199,26 +199,26 @@ public class ChemicaFluids {
 
     // Gases
     public static final FluidEntry<VirtualFluid>
-            AMMONIA = gas("ammonia", 0x33dcf1cb, ChemicaTags.Fluids.AMMONIA.tag),
-            ARGON = gas("argon", 0x33c66bce, ChemicaTags.Fluids.ARGON.tag),
-            BUTENE = gas("butene", 0x22E6B380, ChemicaTags.Fluids.BUTENE.tag),
-            CARBON_MONOXIDE = gas("carbon_monoxide", 0x11C4C4C4, ChemicaTags.Fluids.CARBON_MONOXIDE.tag),
-            CHLORINE = gas("chlorine", 0x66eff156, ChemicaTags.Fluids.CHLORINE.tag),
-            EPICHLOROHYDRIN = gas("epichlorohydrin", 0x22B3D9B3, ChemicaTags.Fluids.EPICHLOROHYDRIN.tag),
-            ETHANE = gas("ethane", 0x22E0D1B3, ChemicaTags.Fluids.ETHANE.tag),
+            AMMONIA = gas("ammonia", 0xffdcf1cb, ChemicaTags.Fluids.AMMONIA.tag),
+            ARGON = gas("argon", 0xffc66bce, ChemicaTags.Fluids.ARGON.tag),
+            BUTENE = gas("butene", 0xffE6B380, ChemicaTags.Fluids.BUTENE.tag),
+            CARBON_MONOXIDE = gas("carbon_monoxide", 0xffC4C4C4, ChemicaTags.Fluids.CARBON_MONOXIDE.tag),
+            CHLORINE = gas("chlorine", 0xffeff156, ChemicaTags.Fluids.CHLORINE.tag),
+            EPICHLOROHYDRIN = gas("epichlorohydrin", 0xffB3D9B3, ChemicaTags.Fluids.EPICHLOROHYDRIN.tag),
+            ETHANE = gas("ethane", 0xffE0D1B3, ChemicaTags.Fluids.ETHANE.tag),
             FLUORINE = gas("fluorine", 0x55ffd700, ChemicaTags.Fluids.FLUORINE.tag),
-            HELIUM = gas("helium", 0x15F0E6FF, ChemicaTags.Fluids.HELIUM.tag),
-            LIGHT_HYDROCARBONS = gas("light_hydrocarbons", 0x33d1f0fa, ChemicaTags.Fluids.LIGHT_HYDROCARBONS.tag),
-            METHANE = gas("methane", 0x22C2E0D1, ChemicaTags.Fluids.METHANE.tag),
-            NITROGEN = gas("nitrogen", 0x33a6bfcf, ChemicaTags.Fluids.NITROGEN.tag),
-            NITROGEN_DIOXIDE = gas("nitrogen_dioxide", 0x33b2784d, ChemicaTags.Fluids.NITROGEN_DIOXIDE.tag),
-            NITROUS_OXIDE = gas("nitrous_oxide", 0x33FFE6B3, ChemicaTags.Fluids.NITROUS_OXIDE.tag),
-            OXYGEN = gas("oxygen", 0x33e0f0ff, ChemicaTags.Fluids.OXYGEN.tag),
-            REFORMATE = gas("reformate", 0x33b0b77f, ChemicaTags.Fluids.REFORMATE.tag),
-            STEAM = gas("steam", 0x33F0F0F0, ChemicaTags.Fluids.STEAM.tag),
-            SYNGAS = gas("syngas", 0x66efe0a0, ChemicaTags.Fluids.SYNGAS.tag),
-            TUNGSTEN_HEXAFLUORIDE = gas("tungsten_hexafluoride", 0x66D1B3B3, ChemicaTags.Fluids.TUNGSTEN_HEXAFLUORIDE.tag),
-            VINYL_CHLORIDE_MONOMER = gas("vinyl_chloride_monomer", 0x66efe0a0, ChemicaTags.Fluids.VINYL_CHLORIDE_MONOMER.tag);
+            HELIUM = gas("helium", 0xffF0E6FF, ChemicaTags.Fluids.HELIUM.tag),
+            LIGHT_HYDROCARBONS = gas("light_hydrocarbons", 0xffd1f0fa, ChemicaTags.Fluids.LIGHT_HYDROCARBONS.tag),
+            METHANE = gas("methane", 0xffC2E0D1, ChemicaTags.Fluids.METHANE.tag),
+            NITROGEN = gas("nitrogen", 0xffa6bfcf, ChemicaTags.Fluids.NITROGEN.tag),
+            NITROGEN_DIOXIDE = gas("nitrogen_dioxide", 0xffb2784d, ChemicaTags.Fluids.NITROGEN_DIOXIDE.tag),
+            NITROUS_OXIDE = gas("nitrous_oxide", 0xffFFE6B3, ChemicaTags.Fluids.NITROUS_OXIDE.tag),
+            OXYGEN = gas("oxygen", 0xffe0f0ff, ChemicaTags.Fluids.OXYGEN.tag),
+            REFORMATE = gas("reformate", 0xffb0b77f, ChemicaTags.Fluids.REFORMATE.tag),
+            STEAM = gas("steam", 0xffF0F0F0, ChemicaTags.Fluids.STEAM.tag),
+            SYNGAS = gas("syngas", 0xffefe0a0, ChemicaTags.Fluids.SYNGAS.tag),
+            TUNGSTEN_HEXAFLUORIDE = gas("tungsten_hexafluoride", 0xffD1B3B3, ChemicaTags.Fluids.TUNGSTEN_HEXAFLUORIDE.tag),
+            VINYL_CHLORIDE_MONOMER = gas("vinyl_chloride_monomer", 0xffefe0a0, ChemicaTags.Fluids.VINYL_CHLORIDE_MONOMER.tag);
 
     // Fuel fluids
     public static final FluidEntry<BaseFlowingFluid.Flowing>

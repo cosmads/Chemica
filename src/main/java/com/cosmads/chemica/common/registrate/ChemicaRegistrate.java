@@ -2,10 +2,6 @@ package com.cosmads.chemica.common.registrate;
 
 import com.drmangotea.tfmg.base.TFMGRegistrate;
 import com.drmangotea.tfmg.base.fluid.GasFluidType;
-import com.drmangotea.tfmg.content.electricity.connection.cable_type.CableType;
-import com.drmangotea.tfmg.content.electricity.connection.cable_type.CableTypeBuilder;
-import com.drmangotea.tfmg.content.machinery.vat.electrode_holder.electrode.Electrode;
-import com.drmangotea.tfmg.content.machinery.vat.electrode_holder.electrode.ElectrodeBuilder;
 import com.drmangotea.tfmg.registry.TFMGFluids;
 import com.simibubi.create.content.fluids.VirtualFluid;
 import com.simibubi.create.foundation.data.CreateRegistrate;
@@ -14,7 +10,6 @@ import com.simibubi.create.foundation.item.ItemDescription;
 import com.simibubi.create.foundation.item.KineticStats;
 import com.simibubi.create.foundation.item.TooltipModifier;
 import com.tterrag.registrate.builders.FluidBuilder;
-import com.tterrag.registrate.util.nullness.NonNullFunction;
 import com.cosmads.chemica.Chemica;
 import com.cosmads.chemica.common.TransparentTintedFluidType;
 import net.createmod.catnip.lang.FontHelper;
@@ -43,8 +38,8 @@ public class ChemicaRegistrate extends TFMGRegistrate {
                 this,           // parent
                 name,
                 c,
-                Chemica.asResource("block/fluid/base_still"),  // still texture
-                Chemica.asResource("block/fluid/base_flow"),   // flow texture
+                TFMGFluids.getGasTexture(),  // still texture
+                TFMGFluids.getGasTexture(),   // flow texture
                 TransparentTintedFluidType.create(color),      // fluid type
                 VirtualFluid::createSource,                    // source factory
                 VirtualFluid::createFlowing                    // flowing factory
