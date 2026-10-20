@@ -1,0 +1,30 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "tfmg:lead_ore"
+    }
+  ],
+  "processing_time": 400,
+  "results": [
+    {
+      "id": "create:crushed_raw_lead"
+    },
+    {
+      "chance": 0.25,
+      "id": "create:crushed_raw_lead"
+    },
+    {
+      "chance": 0.75,
+      "id": "create:experience_nugget"
+    },
+    {
+      "chance": 0.125,
+      "id": "minecraft:cobblestone"
+    },
+    {
+      "chance": 0.075,
+      "id": "chemica:silver_dust"
+    }
+  ]
+}

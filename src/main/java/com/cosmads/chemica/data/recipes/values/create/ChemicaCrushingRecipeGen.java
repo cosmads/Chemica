@@ -4,16 +4,25 @@ import com.cosmads.chemica.Chemica;
 import com.cosmads.chemica.data.ChemMaterial;
 import com.cosmads.chemica.registry.ChemicaBlocks;
 import com.cosmads.chemica.registry.ChemicaItems;
+import com.drmangotea.tfmg.TFMG;
+import com.drmangotea.tfmg.registry.TFMGBlocks;
 import com.drmangotea.tfmg.registry.TFMGItems;
 import com.simibubi.create.AllItems;
 import com.simibubi.create.AllRecipeTypes;
+import com.simibubi.create.Create;
 import com.simibubi.create.api.data.recipe.CrushingRecipeGen;
+import com.simibubi.create.content.kinetics.crusher.CrushingRecipe;
+import com.simibubi.create.content.processing.recipe.ProcessingRecipe;
+import com.simibubi.create.content.processing.recipe.ProcessingRecipeBuilder;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.ItemLike;
+import net.neoforged.neoforge.common.conditions.FalseCondition;
 
 import java.util.concurrent.CompletableFuture;
+import java.util.function.UnaryOperator;
 
 import static com.drmangotea.tfmg.datagen.recipes.TFMGRecipeProvider.I.experienceNugget;
 
@@ -222,10 +231,137 @@ public class ChemicaCrushingRecipeGen extends CrushingRecipeGen {
             .output(.75f, experienceNugget(), 9)
             .duration(400));
 
+    GeneratedRecipe
+    COPPER_ORE = create(Create.asResource("copper_ore"), b -> b
+            .require(Items.COPPER_ORE)
+            .duration(250)
+            .output(AllItems.CRUSHED_COPPER, 5)
+            .output(0.25f, AllItems.CRUSHED_COPPER)
+            .output(0.75f, AllItems.EXP_NUGGET)
+            .output(0.125f, Items.COBBLESTONE)
+            .output(0.125f, ChemicaItems.ARSENIC_DUST)),
+
+    DEEPSLATE_COPPER_ORE = create(Create.asResource("deepslate_copper_ore"), b -> b
+            .require(Items.DEEPSLATE_COPPER_ORE)
+            .duration(350)
+            .output(AllItems.CRUSHED_COPPER, 7)
+            .output(0.25f, AllItems.CRUSHED_COPPER)
+            .output(0.75f, AllItems.EXP_NUGGET)
+            .output(0.125f, Items.COBBLED_DEEPSLATE)
+            .output(0.125f, ChemicaItems.ARSENIC_DUST)),
+
+    IRON_ORE = create(Create.asResource("iron_ore"), b -> b
+            .require(Items.IRON_ORE)
+            .duration(250)
+            .output(AllItems.CRUSHED_IRON)
+            .output(0.25f, AllItems.CRUSHED_IRON)
+            .output(0.75f, AllItems.EXP_NUGGET)
+            .output(0.125f, Items.COBBLESTONE)
+            .output(0.08f, ChemicaItems.VANADIUM_DUST)),
+
+    DEEPSLATE_IRON_ORE = create(Create.asResource("deepslate_iron_ore"), b -> b
+            .require(Items.DEEPSLATE_IRON_ORE)
+            .duration(350)
+            .output(AllItems.CRUSHED_IRON, 2)
+            .output(0.25f, AllItems.CRUSHED_IRON)
+            .output(0.75f, AllItems.EXP_NUGGET)
+            .output(0.125f, Items.COBBLED_DEEPSLATE)
+            .output(0.08f, ChemicaItems.VANADIUM_DUST)),
+
+    GOLD_ORE = create(Create.asResource("gold_ore"), b -> b
+            .require(Items.GOLD_ORE)
+            .duration(250)
+            .output(AllItems.CRUSHED_GOLD)
+            .output(0.25f, AllItems.CRUSHED_GOLD)
+            .output(0.75f, AllItems.EXP_NUGGET, 2)
+            .output(0.125f, Items.COBBLESTONE)
+            .output(0.125f, ChemicaItems.ARSENIC_DUST)),
+
+    DEEPSLATE_GOLD_ORE = create(Create.asResource("deepslate_gold_ore"), b -> b
+            .require(Items.DEEPSLATE_GOLD_ORE)
+            .duration(350)
+            .output(AllItems.CRUSHED_GOLD, 2)
+            .output(0.25f, AllItems.CRUSHED_GOLD)
+            .output(0.75f, AllItems.EXP_NUGGET, 2)
+            .output(0.125f, Items.COBBLED_DEEPSLATE)
+            .output(0.125f, ChemicaItems.ARSENIC_DUST)),
+
+    EMERALD_ORE = create(Create.asResource("emerald_ore"), b -> b
+            .require(Items.EMERALD_ORE)
+            .duration(350)
+            .output(Items.EMERALD)
+            .output(0.25f, Items.EMERALD)
+            .output(0.75f, AllItems.EXP_NUGGET)
+            .output(0.125f, Items.COBBLESTONE)
+            .output(0.2f, ChemicaItems.CHROMIUM_DUST)),
+
+    DEEPSLATE_EMERALD_ORE = create(Create.asResource("deepslate_emerald_ore"), b -> b
+            .require(Items.DEEPSLATE_EMERALD_ORE)
+            .duration(450)
+            .output(Items.EMERALD, 2)
+            .output(0.25f, Items.EMERALD)
+            .output(0.75f, AllItems.EXP_NUGGET)
+            .output(0.125f, Items.COBBLED_DEEPSLATE)
+            .output(0.2f, ChemicaItems.CHROMIUM_DUST)),
+
+    REDSTONE_ORE = create(Create.asResource("redstone_ore"), b -> b
+            .require(Items.REDSTONE_ORE)
+            .duration(250)
+            .output(Items.REDSTONE, 6)
+            .output(0.5f, Items.REDSTONE)
+            .output(0.75f, AllItems.EXP_NUGGET)
+            .output(0.125f, Items.COBBLESTONE)
+            .output(0.5f, TFMGItems.SULFUR_DUST)),
+
+    DEEPSLATE_REDSTONE_ORE = create(Create.asResource("deepslate_redstone_ore"), b -> b
+            .require(Items.DEEPSLATE_REDSTONE_ORE)
+            .duration(350)
+            .output(Items.REDSTONE, 7)
+            .output(0.5f, Items.REDSTONE)
+            .output(0.75f, AllItems.EXP_NUGGET)
+            .output(0.125f, Items.COBBLED_DEEPSLATE)
+            .output(0.5f, TFMGItems.SULFUR_DUST)),
+
+    LEAD_ORE = create(TFMG.asResource("lead_ore"), b -> b
+            .require(TFMGBlocks.LEAD_ORE)
+            .duration(400)
+            .output(AllItems.CRUSHED_LEAD)
+            .output(0.25f, AllItems.CRUSHED_LEAD)
+            .output(0.75f, experienceNugget())
+            .output(0.125f, Items.COBBLESTONE)
+            .output(0.075f, ChemicaItems.SILVER_DUST)),
+
+    DEEPSLATE_LEAD_ORE = create(TFMG.asResource("deepslate_lead_ore"), b -> b
+            .require(TFMGBlocks.DEEPSLATE_LEAD_ORE)
+            .output(AllItems.CRUSHED_LEAD, 2)
+            .output(0.25f, AllItems.CRUSHED_LEAD)
+            .output(0.75f, experienceNugget())
+            .output(0.12f, Items.COBBLED_DEEPSLATE)
+            .output(0.075f, ChemicaItems.SILVER_DUST)),
+
+    NICKEL_ORE = create(TFMG.asResource("nickel_ore"), b -> b
+            .require(TFMGBlocks.NICKEL_ORE)
+            .output(AllItems.CRUSHED_NICKEL)
+            .output(0.25f, AllItems.CRUSHED_NICKEL)
+            .output(0.75f, experienceNugget())
+            .output(0.12f,Items.COBBLESTONE)
+            .output(0.11f, ChemicaItems.COBALT_DUST)),
+
+    DEEPSLATE_NICKEL_ORE = create(TFMG.asResource("deepslate_nickel_ore"), b -> b
+            .require(TFMGBlocks.DEEPSLATE_NICKEL_ORE)
+            .output(AllItems.CRUSHED_NICKEL, 2)
+            .output(0.25f, AllItems.CRUSHED_NICKEL)
+            .output(0.75f, experienceNugget())
+            .output(0.12f, Items.COBBLED_DEEPSLATE)
+            .output(0.11f, ChemicaItems.COBALT_DUST));
 
 
     public ChemicaCrushingRecipeGen(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
         super(output, registries, Chemica.MOD_ID);
+    }
+
+    private GeneratedRecipe overrideOther(ResourceLocation name) {
+        return create(name, b -> b.withCondition(FalseCondition.INSTANCE));
     }
 
     public GeneratedRecipe crushIngot(ItemLike dust, ChemMaterial material) {
