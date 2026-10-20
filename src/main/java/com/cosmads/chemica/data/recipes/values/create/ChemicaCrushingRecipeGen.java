@@ -232,7 +232,8 @@ public class ChemicaCrushingRecipeGen extends CrushingRecipeGen {
             .duration(400));
 
     GeneratedRecipe
-    COPPER_ORE = create(Create.asResource("copper_ore"), b -> b
+
+    COPPER_ORE = create(Chemica.asResource("copper_ore"), b -> b
             .require(Items.COPPER_ORE)
             .duration(250)
             .output(AllItems.CRUSHED_COPPER, 5)
@@ -241,7 +242,7 @@ public class ChemicaCrushingRecipeGen extends CrushingRecipeGen {
             .output(0.125f, Items.COBBLESTONE)
             .output(0.125f, ChemicaItems.ARSENIC_DUST)),
 
-    DEEPSLATE_COPPER_ORE = create(Create.asResource("deepslate_copper_ore"), b -> b
+    DEEPSLATE_COPPER_ORE = create(Chemica.asResource("deepslate_copper_ore"), b -> b
             .require(Items.DEEPSLATE_COPPER_ORE)
             .duration(350)
             .output(AllItems.CRUSHED_COPPER, 7)
@@ -250,7 +251,7 @@ public class ChemicaCrushingRecipeGen extends CrushingRecipeGen {
             .output(0.125f, Items.COBBLED_DEEPSLATE)
             .output(0.125f, ChemicaItems.ARSENIC_DUST)),
 
-    IRON_ORE = create(Create.asResource("iron_ore"), b -> b
+    IRON_ORE = create(Chemica.asResource("iron_ore"), b -> b
             .require(Items.IRON_ORE)
             .duration(250)
             .output(AllItems.CRUSHED_IRON)
@@ -259,7 +260,7 @@ public class ChemicaCrushingRecipeGen extends CrushingRecipeGen {
             .output(0.125f, Items.COBBLESTONE)
             .output(0.08f, ChemicaItems.VANADIUM_DUST)),
 
-    DEEPSLATE_IRON_ORE = create(Create.asResource("deepslate_iron_ore"), b -> b
+    DEEPSLATE_IRON_ORE = create(Chemica.asResource("deepslate_iron_ore"), b -> b
             .require(Items.DEEPSLATE_IRON_ORE)
             .duration(350)
             .output(AllItems.CRUSHED_IRON, 2)
@@ -268,7 +269,7 @@ public class ChemicaCrushingRecipeGen extends CrushingRecipeGen {
             .output(0.125f, Items.COBBLED_DEEPSLATE)
             .output(0.08f, ChemicaItems.VANADIUM_DUST)),
 
-    GOLD_ORE = create(Create.asResource("gold_ore"), b -> b
+    GOLD_ORE = create(Chemica.asResource("gold_ore"), b -> b
             .require(Items.GOLD_ORE)
             .duration(250)
             .output(AllItems.CRUSHED_GOLD)
@@ -277,7 +278,7 @@ public class ChemicaCrushingRecipeGen extends CrushingRecipeGen {
             .output(0.125f, Items.COBBLESTONE)
             .output(0.125f, ChemicaItems.ARSENIC_DUST)),
 
-    DEEPSLATE_GOLD_ORE = create(Create.asResource("deepslate_gold_ore"), b -> b
+    DEEPSLATE_GOLD_ORE = create(Chemica.asResource("deepslate_gold_ore"), b -> b
             .require(Items.DEEPSLATE_GOLD_ORE)
             .duration(350)
             .output(AllItems.CRUSHED_GOLD, 2)
@@ -286,7 +287,7 @@ public class ChemicaCrushingRecipeGen extends CrushingRecipeGen {
             .output(0.125f, Items.COBBLED_DEEPSLATE)
             .output(0.125f, ChemicaItems.ARSENIC_DUST)),
 
-    EMERALD_ORE = create(Create.asResource("emerald_ore"), b -> b
+    EMERALD_ORE = create(Chemica.asResource("emerald_ore"), b -> b
             .require(Items.EMERALD_ORE)
             .duration(350)
             .output(Items.EMERALD)
@@ -295,7 +296,7 @@ public class ChemicaCrushingRecipeGen extends CrushingRecipeGen {
             .output(0.125f, Items.COBBLESTONE)
             .output(0.2f, ChemicaItems.CHROMIUM_DUST)),
 
-    DEEPSLATE_EMERALD_ORE = create(Create.asResource("deepslate_emerald_ore"), b -> b
+    DEEPSLATE_EMERALD_ORE = create(Chemica.asResource("deepslate_emerald_ore"), b -> b
             .require(Items.DEEPSLATE_EMERALD_ORE)
             .duration(450)
             .output(Items.EMERALD, 2)
@@ -304,7 +305,7 @@ public class ChemicaCrushingRecipeGen extends CrushingRecipeGen {
             .output(0.125f, Items.COBBLED_DEEPSLATE)
             .output(0.2f, ChemicaItems.CHROMIUM_DUST)),
 
-    REDSTONE_ORE = create(Create.asResource("redstone_ore"), b -> b
+    REDSTONE_ORE = create(Chemica.asResource("redstone_ore"), b -> b
             .require(Items.REDSTONE_ORE)
             .duration(250)
             .output(Items.REDSTONE, 6)
@@ -313,7 +314,7 @@ public class ChemicaCrushingRecipeGen extends CrushingRecipeGen {
             .output(0.125f, Items.COBBLESTONE)
             .output(0.5f, TFMGItems.SULFUR_DUST)),
 
-    DEEPSLATE_REDSTONE_ORE = create(Create.asResource("deepslate_redstone_ore"), b -> b
+    DEEPSLATE_REDSTONE_ORE = create(Chemica.asResource("deepslate_redstone_ore"), b -> b
             .require(Items.DEEPSLATE_REDSTONE_ORE)
             .duration(350)
             .output(Items.REDSTONE, 7)
@@ -354,6 +355,19 @@ public class ChemicaCrushingRecipeGen extends CrushingRecipeGen {
             .output(0.75f, experienceNugget())
             .output(0.12f, Items.COBBLED_DEEPSLATE)
             .output(0.11f, ChemicaItems.COBALT_DUST));
+
+    //Overriding recipes
+    GeneratedRecipe
+            C_COPPER_ORE = overrideOther(Create.asResource("copper_ore")),
+            C_IRON_ORE = overrideOther(Create.asResource("iron_ore")),
+            C_GOLD_ORE = overrideOther(Create.asResource("gold_ore")),
+            C_EMERALD_ORE = overrideOther(Create.asResource("emerald_ore")),
+            C_REDSTONE_ORE = overrideOther(Create.asResource("redstone_ore")),
+            C_DEEP_COPPER_ORE = overrideOther(Create.asResource("deepslate_copper_ore")),
+            C_DEEP_IRON_ORE = overrideOther(Create.asResource("deepslate_iron_ore")),
+            C_DEEP_GOLD_ORE = overrideOther(Create.asResource("deepslate_gold_ore")),
+            C_DEEP_EMERALD_ORE = overrideOther(Create.asResource("deepslate_emerald_ore")),
+            C_DEEP_REDSTONE_ORE = overrideOther(Create.asResource("deepslate_redstone_ore"));
 
 
     public ChemicaCrushingRecipeGen(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {

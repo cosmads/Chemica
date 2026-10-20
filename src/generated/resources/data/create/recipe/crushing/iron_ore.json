@@ -1,30 +1,10 @@
 {
-  "type": "create:crushing",
-  "ingredients": [
+  "neoforge:conditions": [
     {
-      "item": "minecraft:iron_ore"
+      "type": "neoforge:false"
     }
   ],
-  "processing_time": 250,
-  "results": [
-    {
-      "id": "create:crushed_raw_iron"
-    },
-    {
-      "chance": 0.25,
-      "id": "create:crushed_raw_iron"
-    },
-    {
-      "chance": 0.75,
-      "id": "create:experience_nugget"
-    },
-    {
-      "chance": 0.125,
-      "id": "minecraft:cobblestone"
-    },
-    {
-      "chance": 0.08,
-      "id": "chemica:vanadium_dust"
-    }
-  ]
+  "type": "create:crushing",
+  "ingredients": [],
+  "results": []
 }

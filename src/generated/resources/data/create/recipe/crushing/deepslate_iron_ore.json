@@ -1,31 +1,10 @@
 {
-  "type": "create:crushing",
-  "ingredients": [
+  "neoforge:conditions": [
     {
-      "item": "minecraft:deepslate_iron_ore"
+      "type": "neoforge:false"
     }
   ],
-  "processing_time": 350,
-  "results": [
-    {
-      "count": 2,
-      "id": "create:crushed_raw_iron"
-    },
-    {
-      "chance": 0.25,
-      "id": "create:crushed_raw_iron"
-    },
-    {
-      "chance": 0.75,
-      "id": "create:experience_nugget"
-    },
-    {
-      "chance": 0.125,
-      "id": "minecraft:cobbled_deepslate"
-    },
-    {
-      "chance": 0.08,
-      "id": "chemica:vanadium_dust"
-    }
-  ]
+  "type": "create:crushing",
+  "ingredients": [],
+  "results": []
 }
