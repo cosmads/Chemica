@@ -16,7 +16,7 @@ public class ChemicaHotBlastRecipeGen extends HotBlastRecipeGen {
     GeneratedRecipe
     NAPHTHA = create("naphtha", b -> b
             .require(TFMGTags.Fluids.NAPHTHA.tag, 100)
-            .require(ChemicaFluids.PLATINUM_CATALYST_CARRIER.getSource(), 5)
+            .require(ChemicaTags.Fluids.PLATINUM_CATALYST_CARRIER.tag, 5)
             .duration(200)
             .output(ChemicaFluids.REFORMATE.get(), 70)
             .output(TFMGFluids.HYDROGEN.get(), 30)),

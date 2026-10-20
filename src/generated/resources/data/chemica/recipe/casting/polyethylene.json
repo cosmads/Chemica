@@ -2,9 +2,9 @@
   "type": "tfmg:casting",
   "ingredients": [
     {
-      "type": "neoforge:single",
+      "type": "neoforge:tag",
       "amount": 90,
-      "fluid": "chemica:polyethylene"
+      "tag": "c:polyethylene"
     }
   ],
   "processing_time": 100,

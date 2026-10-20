@@ -6,9 +6,9 @@
       "item": "chemica:iron_dust"
     },
     {
-      "type": "neoforge:single",
+      "type": "neoforge:tag",
       "amount": 1000,
-      "fluid": "chemica:syngas"
+      "tag": "c:syngas"
     }
   ],
   "results": [

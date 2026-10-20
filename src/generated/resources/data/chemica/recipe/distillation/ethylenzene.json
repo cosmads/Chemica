@@ -2,9 +2,9 @@
   "type": "tfmg:distillation",
   "ingredients": [
     {
-      "type": "neoforge:single",
+      "type": "neoforge:tag",
       "amount": 500,
-      "fluid": "chemica:aromatic_mix"
+      "tag": "c:aromatic_mix"
     }
   ],
   "processing_time": 800,

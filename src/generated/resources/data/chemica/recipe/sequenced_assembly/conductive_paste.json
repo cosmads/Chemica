@@ -42,9 +42,9 @@
           "item": "chemica:unfinished_conductive_paste"
         },
         {
-          "type": "neoforge:single",
+          "type": "neoforge:tag",
           "amount": 1000,
-          "fluid": "chemica:solder_solution"
+          "tag": "c:solder_solution"
         }
       ],
       "results": [

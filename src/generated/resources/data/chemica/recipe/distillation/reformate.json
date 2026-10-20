@@ -2,9 +2,9 @@
   "type": "tfmg:distillation",
   "ingredients": [
     {
-      "type": "neoforge:single",
+      "type": "neoforge:tag",
       "amount": 500,
-      "fluid": "chemica:reformate"
+      "tag": "c:reformate"
     }
   ],
   "processing_time": 400,

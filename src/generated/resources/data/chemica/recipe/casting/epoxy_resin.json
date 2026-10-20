@@ -2,9 +2,9 @@
   "type": "tfmg:casting",
   "ingredients": [
     {
-      "type": "neoforge:single",
+      "type": "neoforge:tag",
       "amount": 90,
-      "fluid": "chemica:epoxy_resin"
+      "tag": "c:epoxy_resin"
     }
   ],
   "processing_time": 100,

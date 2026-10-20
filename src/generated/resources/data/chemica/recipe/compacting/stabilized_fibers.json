@@ -9,9 +9,9 @@
       "item": "chemica:pan_fibers"
     },
     {
-      "type": "neoforge:single",
+      "type": "neoforge:tag",
       "amount": 250,
-      "fluid": "chemica:oxygen"
+      "tag": "c:oxygen"
     }
   ],
   "results": [

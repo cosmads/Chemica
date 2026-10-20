@@ -2,9 +2,9 @@
   "type": "tfmg:casting",
   "ingredients": [
     {
-      "type": "neoforge:single",
+      "type": "neoforge:tag",
       "amount": 90,
-      "fluid": "chemica:polyvinyl_chloride"
+      "tag": "c:polyvinyl_chloride"
     }
   ],
   "processing_time": 100,

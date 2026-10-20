@@ -2,9 +2,9 @@
   "type": "tfmg:distillation",
   "ingredients": [
     {
-      "type": "neoforge:single",
+      "type": "neoforge:tag",
       "amount": 1000,
-      "fluid": "minecraft:water"
+      "tag": "c:water"
     }
   ],
   "processing_time": 200,

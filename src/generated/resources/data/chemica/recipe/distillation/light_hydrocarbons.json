@@ -2,9 +2,9 @@
   "type": "tfmg:distillation",
   "ingredients": [
     {
-      "type": "neoforge:single",
+      "type": "neoforge:tag",
       "amount": 500,
-      "fluid": "chemica:light_hydrocarbons"
+      "tag": "c:light_hydrocarbons"
     }
   ],
   "processing_time": 400,

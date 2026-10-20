@@ -9,9 +9,9 @@
       "item": "chemica:stabilized_fibers"
     },
     {
-      "type": "neoforge:single",
+      "type": "neoforge:tag",
       "amount": 250,
-      "fluid": "chemica:argon"
+      "tag": "c:argon"
     }
   ],
   "results": [

@@ -2,6 +2,7 @@ package com.cosmads.chemica.data.recipes.values.create;
 
 import com.cosmads.chemica.Chemica;
 import com.cosmads.chemica.data.ChemMaterial;
+import com.cosmads.chemica.data.tags.ChemicaTags;
 import com.cosmads.chemica.registry.ChemicaFluids;
 import com.cosmads.chemica.registry.ChemicaItems;
 import com.drmangotea.tfmg.registry.TFMGBlocks;
@@ -27,7 +28,7 @@ public class ChemicaSequencedAssemblyRecipeGen extends SequencedAssemblyRecipeGe
             .loops(1)
             .addStep(CuttingRecipe::new, rb -> rb)
             .addStep(PressingRecipe::new, rb -> rb)
-            .addStep(FillingRecipe::new, rb -> rb.require(ChemicaFluids.SOLDER_SOLUTION.getSource(), 1000))),
+            .addStep(FillingRecipe::new, rb -> rb.require(ChemicaTags.Fluids.SOLDER_SOLUTION.tag, 1000))),
 
     ADVANCED_CIRCUIT_BOARD = create("advanced_circuit_board", b -> b.require(ChemicaItems.ETCHED_EPOXY_CIRCUIT_BOARD)
             .transitionTo(ChemicaItems.UNFINISHED_ADVANCED_CIRCUIT_BOARD)

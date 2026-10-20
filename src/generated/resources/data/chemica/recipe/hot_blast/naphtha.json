@@ -7,9 +7,9 @@
       "tag": "c:naphtha"
     },
     {
-      "type": "neoforge:single",
+      "type": "neoforge:tag",
       "amount": 5,
-      "fluid": "chemica:platinum_catalyst_carrier"
+      "tag": "c:platinum_catalyst_carrier"
     }
   ],
   "processing_time": 200,

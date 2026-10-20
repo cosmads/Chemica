@@ -2,9 +2,9 @@
   "type": "tfmg:casting",
   "ingredients": [
     {
-      "type": "neoforge:single",
+      "type": "neoforge:tag",
       "amount": 90,
-      "fluid": "chemica:molten_nylon"
+      "tag": "c:molten_nylon"
     }
   ],
   "processing_time": 100,

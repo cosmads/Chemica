@@ -2,9 +2,9 @@
   "type": "create:compacting",
   "ingredients": [
     {
-      "type": "neoforge:single",
+      "type": "neoforge:tag",
       "amount": 100,
-      "fluid": "chemica:caustic_soda"
+      "tag": "c:caustic_soda"
     }
   ],
   "results": [
