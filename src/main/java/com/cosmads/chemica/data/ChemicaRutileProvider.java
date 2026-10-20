@@ -157,8 +157,6 @@ public class ChemicaRutileProvider {
                     .element(RutileElements.W).element(RutileElements.F, 6));
             addData("syngas", SYNGAS.get().getSource(), c -> c
                     .element(RutileElements.H, 2).element(RutileElements.C).element(RutileElements.O));
-            addData("propene", PROPENE.get().getSource(), c -> c
-                    .element(RutileElements.C, 3).element(RutileElements.H, 6));
             addData("ammonia", AMMONIA.get().getSource(), c -> c
                     .element(RutileElements.N).element(RutileElements.H, 3));
             addData("ethanol", ETHANOL.get().getSource(), c -> c

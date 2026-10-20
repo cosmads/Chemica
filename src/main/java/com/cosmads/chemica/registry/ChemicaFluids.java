@@ -214,7 +214,6 @@ public class ChemicaFluids {
             NITROGEN_DIOXIDE = gas("nitrogen_dioxide", 0x33b2784d, ChemicaTags.Fluids.NITROGEN_DIOXIDE.tag),
             NITROUS_OXIDE = gas("nitrous_oxide", 0x33FFE6B3, ChemicaTags.Fluids.NITROUS_OXIDE.tag),
             OXYGEN = gas("oxygen", 0x33e0f0ff, ChemicaTags.Fluids.OXYGEN.tag),
-            PROPENE = gas("propene", 0x22E6CC99, ChemicaTags.Fluids.PROPENE.tag),
             REFORMATE = gas("reformate", 0x33b0b77f, ChemicaTags.Fluids.REFORMATE.tag),
             STEAM = gas("steam", 0x33F0F0F0, ChemicaTags.Fluids.STEAM.tag),
             SYNGAS = gas("syngas", 0x66efe0a0, ChemicaTags.Fluids.SYNGAS.tag),

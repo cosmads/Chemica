@@ -306,7 +306,7 @@ public class ChemicaRecipeProvider extends RecipeProvider {
             return ChemicaFluids.OXYGEN.getSource();
         }
         public static Fluid propene() {
-            return ChemicaFluids.PROPENE.getSource();
+            return TFMGFluids.PROPYLENE.getSource();
         }
         public static Fluid reformate() {
             return ChemicaFluids.REFORMATE.getSource();
