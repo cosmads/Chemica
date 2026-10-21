@@ -3,10 +3,10 @@
   "heat_requirement": "superheated",
   "ingredients": [
     {
-      "item": "chemica:tungsten_dust"
+      "tag": "c:dusts/tungsten"
     },
     {
-      "item": "chemica:coal_dust"
+      "tag": "c:dusts/coal"
     }
   ],
   "results": [

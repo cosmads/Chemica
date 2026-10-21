@@ -2,7 +2,7 @@
   "type": "create:cutting",
   "ingredients": [
     {
-      "item": "tfmg:rubber_sheet"
+      "tag": "c:ingots/rubber"
     }
   ],
   "processing_time": 200,

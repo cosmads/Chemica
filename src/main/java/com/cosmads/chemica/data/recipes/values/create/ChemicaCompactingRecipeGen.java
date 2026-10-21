@@ -1,6 +1,7 @@
 package com.cosmads.chemica.data.recipes.values.create;
 
 import com.cosmads.chemica.Chemica;
+import com.cosmads.chemica.data.ChemMaterial;
 import com.cosmads.chemica.data.tags.ChemicaTags;
 import com.cosmads.chemica.registry.ChemicaItems;
 import com.drmangotea.tfmg.datagen.recipes.TFMGRecipeProvider;
@@ -33,12 +34,12 @@ public class ChemicaCompactingRecipeGen extends CompactingRecipeGen {
             .require(ChemicaTags.Fluids.CAUSTIC_SODA.tag, 100)
             .output(ChemicaItems.CAUSTIC_SODA_DUST)
     ), CHROMIUM_DUST = create(Chemica.asResource("chromium_ingot"), b -> b
-            .require(ChemicaItems.CHROMIUM_DUST)
+            .require(ChemMaterial.CHROMIUM.dusts)
             .output(ChemicaItems.CHROMIUM_INGOT)
             .requiresHeat(HeatCondition.HEATED)
     ), HYDROGEN_FUEL = create(Chemica.asResource("hydrogen_fuel"), b -> b
             .require(ChemicaTags.Fluids.SYNGAS.tag, 1000)
-            .require(ChemicaItems.IRON_DUST)
+            .require(ChemMaterial.IRON.dusts)
             .output(hydrogenFuel(), 800)
             .output(Fluids.WATER, 200)
             .requiresHeat(HeatCondition.HEATED)
@@ -47,7 +48,7 @@ public class ChemicaCompactingRecipeGen extends CompactingRecipeGen {
             .output(liquidHydrogen(), 250)
             .requiresHeat(HeatCondition.SUPERHEATED)
     ), MOLTEN_NYLON = create(Chemica.asResource("molten_nylon"), b -> b
-            .require(ChemicaItems.NYLON_SALT)
+            .require(ChemMaterial.NYLON_SALT.dusts)
             .output(moltenNylon(), 100)
             .requiresHeat(HeatCondition.SUPERHEATED)
     ), PAN_FIBERS = create(Chemica.asResource("pan_fibers"), b -> b
@@ -63,8 +64,8 @@ public class ChemicaCompactingRecipeGen extends CompactingRecipeGen {
             .output(ChemicaItems.STABILIZED_FIBERS)
             .requiresHeat(HeatCondition.SUPERHEATED)
     ), TUNGSTEN_CARBIDE_DUST = create(Chemica.asResource("tungsten_carbide_dust"), b -> b
-            .require(ChemicaItems.TUNGSTEN_DUST)
-            .require(ChemicaItems.COAL_DUST)
+            .require(ChemMaterial.TUNGSTEN.dusts)
+            .require(ChemMaterial.COAL.dusts)
             .output(ChemicaItems.TUNGSTEN_CARBIDE_DUST)
             .requiresHeat(HeatCondition.SUPERHEATED)
     )

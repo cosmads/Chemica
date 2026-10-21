@@ -3,7 +3,7 @@
   "heat_requirement": "heated",
   "ingredients": [
     {
-      "item": "chemica:chromium_dust"
+      "tag": "c:dusts/chromium"
     }
   ],
   "results": [

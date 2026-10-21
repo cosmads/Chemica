@@ -3,7 +3,7 @@
   "heat_requirement": "superheated",
   "ingredients": [
     {
-      "item": "chemica:nylon_salt"
+      "tag": "c:dusts/nylon_salt"
     }
   ],
   "results": [
