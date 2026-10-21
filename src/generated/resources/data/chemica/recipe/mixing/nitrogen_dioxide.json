@@ -1,0 +1,21 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "type": "neoforge:tag",
+      "amount": 1000,
+      "tag": "c:ammonia"
+    },
+    {
+      "type": "neoforge:tag",
+      "amount": 500,
+      "tag": "c:platinum_catalyst_carrier"
+    }
+  ],
+  "results": [
+    {
+      "amount": 500,
+      "id": "chemica:nitrogen_dioxide"
+    }
+  ]
+}

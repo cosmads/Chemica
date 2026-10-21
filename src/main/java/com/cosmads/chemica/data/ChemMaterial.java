@@ -19,6 +19,7 @@ public enum ChemMaterial {
     NICKEL,
     ZINC,
     CONSTANTAN(false),
+    NETHERITE(false),
 
     // Chemica Metals
     ANTIMONY,
@@ -49,6 +50,7 @@ public enum ChemMaterial {
     CHARCOAL(false),
     COAL,
     QUARTZ,
+    SULFUR,
 
     // Chemica Misc
     AMMONIUM_PERSULFATE(false),
@@ -62,14 +64,14 @@ public enum ChemMaterial {
     SODA_ASH,
     SODIUM_BISULFATE,
     SODIUM_PERSULFATE,
-    CARBON_FIBER,
-    EPOXY_RESIN,
+    CARBON_FIBER(false),
+    EPOXY_RESIN(false),
     GRAPHENE,
-    POLYETHYLENE,
-    PTFE,
-    PVC,
-    NYLON,
-    NYLON_SALT,
+    POLYETHYLENE(false),
+    PTFE(false),
+    PVC(false),
+    NYLON(false),
+    NYLON_SALT(false),
 
     ;
 

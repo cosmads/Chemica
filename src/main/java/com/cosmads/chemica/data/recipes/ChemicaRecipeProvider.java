@@ -6,7 +6,6 @@ import com.cosmads.chemica.data.recipes.values.tfmg.ChemicaCastingRecipeGen;
 import com.cosmads.chemica.data.recipes.values.tfmg.ChemicaDistillationRecipeGen;
 import com.cosmads.chemica.data.recipes.values.tfmg.ChemicaHotBlastRecipeGen;
 import com.cosmads.chemica.registry.ChemicaFluids;
-import com.drmangotea.tfmg.datagen.recipes.values.create.TFMGCompactingRecipeGen;
 import com.drmangotea.tfmg.registry.TFMGFluids;
 import com.drmangotea.tfmg.registry.TFMGItems;
 import com.simibubi.create.api.data.recipe.ProcessingRecipeGen;
@@ -53,6 +52,7 @@ public class ChemicaRecipeProvider extends RecipeProvider {
         GENERATORS.add(new ChemicaCuttingRecipeGen(output, registries));
         GENERATORS.add(new ChemicaDeployingRecipeGen(output, registries));
         GENERATORS.add(new ChemicaFillingRecipeGen(output, registries));
+        GENERATORS.add(new ChemicaMixingRecipeGen(output, registries));
         GENERATORS.add(new ChemicaPressingRecipeGen(output, registries));
         GENERATORS.add(new ChemicaWashingRecipeGen(output, registries));
 
@@ -126,7 +126,7 @@ public class ChemicaRecipeProvider extends RecipeProvider {
             return ChemicaFluids.ACETONE.getSource();
         }
         public static Fluid acetonitrile() {
-            return ChemicaFluids.ACETONITRILE.getSource();
+            return ChemicaFluids.ACRYLONITRILE.getSource();
         }
         public static Fluid adipicAcidSolution() {
             return ChemicaFluids.ADIPIC_ACID_SOLUTION.getSource();

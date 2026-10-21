@@ -1,0 +1,25 @@
+{
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "tag": "c:dusts/coal"
+    },
+    {
+      "type": "neoforge:single",
+      "amount": 200,
+      "fluid": "tfmg:carbon_dioxide"
+    },
+    {
+      "type": "neoforge:single",
+      "amount": 300,
+      "fluid": "tfmg:hydrogen"
+    }
+  ],
+  "results": [
+    {
+      "amount": 500,
+      "id": "chemica:syngas"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "tfmg:nitrate_dust"
+    },
+    {
+      "item": "tfmg:nitrate_dust"
+    },
+    {
+      "type": "neoforge:tag",
+      "amount": 750,
+      "tag": "c:diesel"
+    },
+    {
+      "type": "neoforge:tag",
+      "amount": 250,
+      "tag": "c:kerosene"
+    }
+  ],
+  "results": [
+    {
+      "amount": 1000,
+      "id": "chemica:high_cetane_diesel"
+    }
+  ]
+}

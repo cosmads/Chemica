@@ -1,0 +1,26 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "tag": "c:foods/dough"
+    },
+    {
+      "type": "neoforge:tag",
+      "amount": 1000,
+      "tag": "c:water"
+    }
+  ],
+  "results": [
+    {
+      "count": 4,
+      "id": "chemica:yeast"
+    },
+    {
+      "chance": 0.4,
+      "id": "chemica:yeast"
+    }
+  ]
+}

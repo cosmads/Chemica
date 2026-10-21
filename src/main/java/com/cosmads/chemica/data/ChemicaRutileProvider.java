@@ -1,7 +1,6 @@
 package com.cosmads.chemica.data;
 
 import com.cosmads.chemica.Chemica;
-import com.drmangotea.tfmg.registry.TFMGFluids;
 import com.simibubi.create.AllItems;
 import dev.metallurgists.rutile.api.data.provider.composition.FluidCompositionProvider;
 import dev.metallurgists.rutile.api.data.provider.composition.ItemCompositionProvider;
@@ -119,7 +118,7 @@ public class ChemicaRutileProvider {
                     .element(RutileElements.C).element(RutileElements.H, 3)
                     .setAmount(2).next()
                     .element(RutileElements.C).element(RutileElements.O));
-            addData("acrylonitrile", ACETONITRILE.get().getSource(), c -> c
+            addData("acrylonitrile", ACRYLONITRILE.get().getSource(), c -> c
                     .element(RutileElements.C, 3).element(RutileElements.H, 3).element(RutileElements.N));
             addData("adipic_acid_solution", ADIPIC_ACID_SOLUTION.get().getSource(), c -> c
                     .element(RutileElements.C, 6).element(RutileElements.H, 10).element(RutileElements.O, 4));

@@ -136,7 +136,7 @@ public class ChemicaFluids {
     // Regular Fluids
     public static final FluidEntry<BaseFlowingFluid.Flowing>
             ACETONE = fluid("acetone", 0x80d0d0d0, 600, 790, ChemicaTags.Fluids.ACETONE.tag),
-            ACETONITRILE = fluid("acrylonitrile", 0x80c8d7f0, 400, 810, ChemicaTags.Fluids.ACETONITRILE.tag),
+            ACRYLONITRILE = fluid("acrylonitrile", 0x80c8d7f0, 400, 810, ChemicaTags.Fluids.ACRYLONITRILE.tag),
             ADIPIC_ACID_SOLUTION = fluid("adipic_acid_solution", 0x80e0e0c8, 1200, 1100, ChemicaTags.Fluids.ADIPIC_ACID_SOLUTION.tag),
             AMINE_CATALYST = fluid("amine_catalyst", 0x80716b61, 1200, 950, ChemicaTags.Fluids.AMINE_CATALYST.tag),
             AROMATIC_MIX = fluid("aromatic_mix", 0x8055475f, 800, 870, ChemicaTags.Fluids.AROMATIC_MIX.tag),

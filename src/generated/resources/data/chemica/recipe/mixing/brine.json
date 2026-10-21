@@ -1,0 +1,22 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "tag": "c:dusts/salt"
+    },
+    {
+      "tag": "c:dusts/salt"
+    },
+    {
+      "type": "neoforge:tag",
+      "amount": 250,
+      "tag": "c:water"
+    }
+  ],
+  "results": [
+    {
+      "amount": 250,
+      "id": "chemica:brine"
+    }
+  ]
+}

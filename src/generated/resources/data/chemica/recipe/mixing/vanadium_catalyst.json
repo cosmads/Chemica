@@ -1,0 +1,31 @@
+{
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "tag": "c:dusts/salt"
+    },
+    {
+      "tag": "c:dusts/salt"
+    },
+    {
+      "tag": "c:dusts/salt"
+    },
+    {
+      "tag": "c:dusts/salt"
+    },
+    {
+      "tag": "c:dusts/vanadium"
+    },
+    {
+      "type": "neoforge:tag",
+      "amount": 500,
+      "tag": "c:water"
+    }
+  ],
+  "results": [
+    {
+      "id": "chemica:vanadium_catalyst"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "chemica:crushed_graphite"
+    },
+    {
+      "type": "neoforge:tag",
+      "amount": 1000,
+      "tag": "c:water"
+    }
+  ],
+  "results": [
+    {
+      "id": "chemica:purified_graphite_flakes"
+    },
+    {
+      "chance": 0.2,
+      "id": "chemica:purified_graphite_flakes"
+    },
+    {
+      "amount": 1000,
+      "id": "minecraft:water"
+    }
+  ]
+}

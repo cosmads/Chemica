@@ -2,7 +2,6 @@ package com.cosmads.chemica.data.tags;
 
 import com.cosmads.chemica.Chemica;
 import com.cosmads.chemica.common.ChemicaLang;
-import com.drmangotea.tfmg.registry.TFMGTags;
 import net.createmod.catnip.lang.Lang;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
@@ -14,7 +13,6 @@ import net.minecraft.world.level.material.Fluid;
 import org.jetbrains.annotations.Nullable;
 
 import static com.cosmads.chemica.data.tags.ChemicaTags.NameSpace.COMMON;
-import static com.cosmads.chemica.data.tags.ChemicaTags.NameSpace.MOD;
 
 public class ChemicaTags {
 
@@ -79,7 +77,7 @@ public class ChemicaTags {
         HYDROGEN_FUEL(COMMON),
 
         ACETONE(COMMON),
-        ACETONITRILE(COMMON),
+        ACRYLONITRILE(COMMON),
         ADIPIC_ACID_SOLUTION(COMMON),
         AMINE_CATALYST(COMMON),
         AROMATIC_MIX(COMMON),

@@ -1,0 +1,20 @@
+{
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "tag": "chemica:catalysts/platinum"
+    },
+    {
+      "type": "neoforge:tag",
+      "amount": 100,
+      "tag": "c:ethanol"
+    }
+  ],
+  "results": [
+    {
+      "amount": 100,
+      "id": "chemica:platinum_catalyst_carrier"
+    }
+  ]
+}

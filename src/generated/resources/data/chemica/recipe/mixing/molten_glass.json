@@ -1,0 +1,18 @@
+{
+  "type": "create:mixing",
+  "heat_requirement": "superheated",
+  "ingredients": [
+    {
+      "tag": "c:sands/colorless"
+    },
+    {
+      "tag": "c:dusts/soda_ash"
+    }
+  ],
+  "results": [
+    {
+      "amount": 100,
+      "id": "chemica:molten_glass"
+    }
+  ]
+}
