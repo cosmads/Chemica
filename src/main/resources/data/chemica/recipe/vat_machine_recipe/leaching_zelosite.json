@@ -1,0 +1,18 @@
+{
+  "type": "tfmg:vat_machine_recipe",
+  "allowedVatTypes": [
+    "tfmg:firebrick_lined_vat"
+  ],
+  "ingredients": [
+    { "item": "chemica:zelosite" },
+    { "type": "neoforge:single", "amount": 250, "fluid": "chemica:hydrofluoric_acid" }
+  ],
+  "machines": ["tfmg:mixing"],
+  "minSize": 1,
+  "processingTime": 300,
+  "results": [
+    { "id": "chemica:iridium_dust", "chance": 0.8 },
+    { "id": "chemica:tantalum_nugget", "chance": 0.3 },
+    { "id": "minecraft:netherite_scrap", "chance": 0.05 }
+  ]
+}

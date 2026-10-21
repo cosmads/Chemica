@@ -1,5 +1,6 @@
 <div align="center">
-  <img src="https://cdn.modrinth.com/data/E6GusVzz/9591f40147323c74b8f03ebde968978361048eee_96.webp">
+<br>
+  <img src="https://cdn.modrinth.com/data/E6GusVzz/0aa8ab2d2dbf456be12b5a195178e3816595035c_96.webp">
   <h1>Chemica</h1>
   <a href="https://www.curseforge.com/minecraft/mc-mods/chemica"><picture><source srcset="https://img.shields.io/badge/CurseForge-202830?style=for-the-badge&logo=curseforge" media="(prefers-color-scheme: dark)"><img src="https://img.shields.io/badge/CurseForge-white?style=for-the-badge&logo=curseforge" alt="CurseForge"></picture></a>
   <a href="https://modrinth.com/mod/chemica"><picture><source srcset="https://img.shields.io/badge/Modrinth-202830?style=for-the-badge&logo=modrinth" media="(prefers-color-scheme: dark)"><img src="https://img.shields.io/badge/Modrinth-white?style=for-the-badge&logo=modrinth" alt="Modrinth"></picture></a>

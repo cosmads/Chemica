@@ -1,0 +1,19 @@
+{
+  "type": "tfmg:vat_machine_recipe",
+  "allowedVatTypes": [
+    "tfmg:cast_iron_vat",
+    "tfmg:steel_vat",
+    "tfmg:firebrick_lined_vat"
+  ],
+  "ingredients": [
+    { "item": "create:crimsite" },
+    { "type": "neoforge:single", "amount": 150, "fluid": "tfmg:sulfuric_acid" }
+  ],
+  "machines": ["tfmg:mixing"],
+  "minSize": 1,
+  "processingTime": 300,
+  "results": [
+    { "id": "chemica:iron_dust", "count": 3 },
+    { "id": "create:crushed_raw_iron", "chance": 0.1 }
+  ]
+}
