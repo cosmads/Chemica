@@ -2,10 +2,10 @@
   "type": "create:mixing",
   "ingredients": [
     {
-      "item": "tfmg:silicon_ingot"
+      "tag": "c:ingots/silicon"
     },
     {
-      "item": "chemica:antimony_dust"
+      "tag": "c:dusts/antimony"
     }
   ],
   "results": [

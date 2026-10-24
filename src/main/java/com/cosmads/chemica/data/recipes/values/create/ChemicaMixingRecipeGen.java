@@ -5,6 +5,7 @@ import com.cosmads.chemica.data.ChemMaterial;
 import com.cosmads.chemica.data.tags.ChemicaTags;
 import com.cosmads.chemica.registry.ChemicaFluids;
 import com.cosmads.chemica.registry.ChemicaItems;
+import com.drmangotea.tfmg.TFMG;
 import com.drmangotea.tfmg.registry.TFMGFluids;
 import com.drmangotea.tfmg.registry.TFMGItems;
 import com.drmangotea.tfmg.registry.TFMGTags;
@@ -228,9 +229,24 @@ public class ChemicaMixingRecipeGen extends MixingRecipeGen {
             .require(Items.SUGAR)
             .require(Tags.Items.FOODS_DOUGH)
             .output(ChemicaItems.YEAST, 4)
-            .output(0.4f, ChemicaItems.YEAST))
+            .output(0.4f, ChemicaItems.YEAST)),
+
+    N_SEMICONDUCTOR = create("n_semiconductor", b -> b
+            .require(ChemMaterial.SILICON.ingots)
+            .require(ChemMaterial.ANTIMONY.dusts)
+            .output(TFMGItems.N_SEMICONDUCTOR)),
+
+    P_SEMICONDUCTOR = create("p_semiconductor", b -> b
+            .require(ChemMaterial.SILICON.ingots)
+            .require(ChemMaterial.IRIDIUM.dusts)
+            .output(TFMGItems.P_SEMICONDUCTOR))
 
             ;
+
+    //Overriding recipes
+    GeneratedRecipe
+        TFMG_P_SEMI = overrideOther(TFMG.asResource("p_semiconductor")),
+        TFMG_N_SEMI = overrideOther(TFMG.asResource("n_semiconductor"));
 
     public ChemicaMixingRecipeGen(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
         super(output, registries, Chemica.MOD_ID);

@@ -2,6 +2,7 @@ package com.cosmads.chemica.data.tags;
 
 import com.cosmads.chemica.Chemica;
 import com.cosmads.chemica.common.registrate.ChemicaRegistrate;
+import com.cosmads.chemica.data.ChemMaterial;
 import com.cosmads.chemica.registry.ChemicaItems;
 import com.drmangotea.tfmg.registry.TFMGTags;
 import com.simibubi.create.foundation.data.TagGen;
@@ -31,6 +32,9 @@ public class ChemicaRegistrateTags {
 
         prov.tag(TFMGTags.Items.ENGINE_TURBINE.tag)
                 .add(ChemicaItems.HYDROGEN_TURBINE_BLADE.get());
+
+        prov.tag(TFMGTags.Items.FLUX.tag)
+                .addTag(ChemMaterial.COAL.dusts);
     }
 
     private static void genBlockTags(RegistrateTagsProvider<Block> provIn) {

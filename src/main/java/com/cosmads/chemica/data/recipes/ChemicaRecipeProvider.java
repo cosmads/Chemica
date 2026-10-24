@@ -5,6 +5,7 @@ import com.cosmads.chemica.data.recipes.values.create.*;
 import com.cosmads.chemica.data.recipes.values.tfmg.ChemicaCastingRecipeGen;
 import com.cosmads.chemica.data.recipes.values.tfmg.ChemicaDistillationRecipeGen;
 import com.cosmads.chemica.data.recipes.values.tfmg.ChemicaHotBlastRecipeGen;
+import com.cosmads.chemica.data.recipes.values.tfmg.ChemicaIndustrialBlastingRecipeGen;
 import com.cosmads.chemica.registry.ChemicaFluids;
 import com.drmangotea.tfmg.registry.TFMGFluids;
 import com.drmangotea.tfmg.registry.TFMGItems;
@@ -45,6 +46,7 @@ public class ChemicaRecipeProvider extends RecipeProvider {
         Chemica.LOGGER.info("{} registered {} recipe{}", getName(), all.size(), all.size() == 1 ? "" : "s");
     }
 
+    //TODO: Blasting & Vat
     public static void registerAllProcessing(DataGenerator gen, PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
 
         GENERATORS.add(new ChemicaCompactingRecipeGen(output, registries));
@@ -59,6 +61,7 @@ public class ChemicaRecipeProvider extends RecipeProvider {
         GENERATORS.add(new ChemicaCastingRecipeGen(output, registries));
         GENERATORS.add(new ChemicaDistillationRecipeGen(output, registries));
         GENERATORS.add(new ChemicaHotBlastRecipeGen(output, registries));
+        GENERATORS.add(new ChemicaIndustrialBlastingRecipeGen(output, registries));
 
         gen.addProvider(true, new DataProvider() {
 

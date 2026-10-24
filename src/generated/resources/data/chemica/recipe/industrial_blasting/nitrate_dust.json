@@ -2,13 +2,13 @@
   "type": "tfmg:industrial_blasting",
   "ingredients": [
     {
-      "item": "tfmg:nitrate_dust"
+      "tag": "c:dusts/saltpeter"
     },
     {
-      "item": "chemica:coal_dust"
+      "tag": "c:dusts/coal"
     }
   ],
-  "processingTime": 20,
+  "processing_time": 20,
   "results": [
     {
       "amount": 100,
