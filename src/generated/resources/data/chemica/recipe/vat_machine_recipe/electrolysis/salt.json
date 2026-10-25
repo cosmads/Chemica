@@ -1,36 +1,31 @@
 {
   "type": "tfmg:vat_machine_recipe",
-  "allowedVatTypes": [
-  	"tfmg:cast_iron_vat",
-    "tfmg:steel_vat",
-    "tfmg:firebrick_lined_vat"
-  ],
-  "heat_requirement": "heated",
+  "heat_level": 2,
   "ingredients": [
     {
-      "type": "neoforge:single",
+      "tag": "c:dusts/salt"
+    },
+    {
+      "tag": "c:dusts/salt"
+    },
+    {
+      "tag": "c:dusts/salt"
+    },
+    {
+      "tag": "c:dusts/salt"
+    },
+    {
+      "type": "neoforge:tag",
       "amount": 1000,
-      "fluid": "minecraft:water"
-    },
-    {
-        "item": "chemica:salt"
-    },
-    {
-        "item": "chemica:salt"
-    },
-    {
-        "item": "chemica:salt"
-    },
-    {
-        "item": "chemica:salt"
+      "tag": "c:water"
     }
   ],
   "machines": [
     "tfmg:electrode",
     "tfmg:electrode"
   ],
-  "minSize": 1,
-  "processingTime": 100,
+  "min_size": 1,
+  "processing_time": 100,
   "results": [
     {
       "id": "chemica:sodium_ingot"

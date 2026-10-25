@@ -2,10 +2,7 @@ package com.cosmads.chemica.data.recipes;
 
 import com.cosmads.chemica.Chemica;
 import com.cosmads.chemica.data.recipes.values.create.*;
-import com.cosmads.chemica.data.recipes.values.tfmg.ChemicaCastingRecipeGen;
-import com.cosmads.chemica.data.recipes.values.tfmg.ChemicaDistillationRecipeGen;
-import com.cosmads.chemica.data.recipes.values.tfmg.ChemicaHotBlastRecipeGen;
-import com.cosmads.chemica.data.recipes.values.tfmg.ChemicaIndustrialBlastingRecipeGen;
+import com.cosmads.chemica.data.recipes.values.tfmg.*;
 import com.cosmads.chemica.registry.ChemicaFluids;
 import com.drmangotea.tfmg.registry.TFMGFluids;
 import com.drmangotea.tfmg.registry.TFMGItems;
@@ -62,6 +59,7 @@ public class ChemicaRecipeProvider extends RecipeProvider {
         GENERATORS.add(new ChemicaDistillationRecipeGen(output, registries));
         GENERATORS.add(new ChemicaHotBlastRecipeGen(output, registries));
         GENERATORS.add(new ChemicaIndustrialBlastingRecipeGen(output, registries));
+        GENERATORS.add(new ChemicaVatRecipeGen(output, registries));
 
         gen.addProvider(true, new DataProvider() {
 

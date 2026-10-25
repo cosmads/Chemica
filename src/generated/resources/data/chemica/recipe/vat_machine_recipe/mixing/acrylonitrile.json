@@ -1,0 +1,32 @@
+{
+  "type": "tfmg:vat_machine_recipe",
+  "ingredients": [
+    {
+      "tag": "chemica:catalysts/vanadium"
+    },
+    {
+      "type": "neoforge:single",
+      "amount": 1000,
+      "fluid": "tfmg:ethylene"
+    },
+    {
+      "type": "neoforge:tag",
+      "amount": 500,
+      "tag": "c:ammonia"
+    }
+  ],
+  "machines": [
+    "tfmg:mixing"
+  ],
+  "min_size": 1,
+  "processing_time": 200,
+  "results": [
+    {
+      "id": "chemica:vanadium_catalyst"
+    },
+    {
+      "amount": 500,
+      "id": "chemica:acrylonitrile"
+    }
+  ]
+}

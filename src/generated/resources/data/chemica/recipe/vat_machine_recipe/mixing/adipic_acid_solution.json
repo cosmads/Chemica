@@ -1,0 +1,26 @@
+{
+  "type": "tfmg:vat_machine_recipe",
+  "ingredients": [
+    {
+      "type": "neoforge:tag",
+      "amount": 1000,
+      "tag": "c:cyclohexanol"
+    },
+    {
+      "type": "neoforge:tag",
+      "amount": 1000,
+      "tag": "c:nitric_acid"
+    }
+  ],
+  "machines": [
+    "tfmg:mixing"
+  ],
+  "min_size": 1,
+  "processing_time": 300,
+  "results": [
+    {
+      "amount": 1000,
+      "id": "chemica:adipic_acid_solution"
+    }
+  ]
+}

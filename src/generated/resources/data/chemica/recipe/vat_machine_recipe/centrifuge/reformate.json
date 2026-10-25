@@ -1,22 +1,17 @@
 {
   "type": "tfmg:vat_machine_recipe",
-  "allowedVatTypes": [
-  	"tfmg:cast_iron_vat",
-    "tfmg:steel_vat",
-    "tfmg:firebrick_lined_vat"
-  ],
-  "heat_requirement": "heated",
+  "heat_level": 2,
   "ingredients": [
     {
-      "type": "neoforge:single",
+      "type": "neoforge:tag",
       "amount": 500,
-      "fluid": "chemica:reformate"
+      "tag": "c:reformate"
     }
   ],
   "machines": [
     "tfmg:centrifuge"
   ],
-  "minSize": 1,
+  "min_size": 1,
   "results": [
     {
       "amount": 300,

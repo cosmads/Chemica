@@ -1,36 +1,36 @@
 {
   "type": "tfmg:vat_machine_recipe",
-  "allowedVatTypes": [
-    "tfmg:steel_vat",
-    "tfmg:firebrick_lined_vat"
+  "allowed_vat_types": [
+    "tfmg:fireproof",
+    "tfmg:steel"
   ],
   "ingredients": [
     {
-      "type": "neoforge:single",
+      "type": "neoforge:tag",
       "amount": 1000,
-      "fluid": "chemica:epichlorohydrin"
+      "tag": "c:epichlorohydrin"
     },
     {
-      "type": "neoforge:single",
+      "type": "neoforge:tag",
       "amount": 250,
-      "fluid": "chemica:caustic_soda"
+      "tag": "c:caustic_soda"
     },
     {
-      "type": "neoforge:single",
+      "type": "neoforge:tag",
       "amount": 250,
-      "fluid": "chemica:phenol"
+      "tag": "c:phenol"
     },
     {
-      "type": "neoforge:single",
+      "type": "neoforge:tag",
       "amount": 250,
-      "fluid": "chemica:acetone"
+      "tag": "c:acetone"
     }
   ],
   "machines": [
     "tfmg:mixing"
   ],
-  "minSize": 3,
-  "processingTime": 300,
+  "min_size": 3,
+  "processing_time": 300,
   "results": [
     {
       "amount": 1000,

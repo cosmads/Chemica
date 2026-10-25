@@ -1,0 +1,36 @@
+{
+  "type": "tfmg:vat_machine_recipe",
+  "allowed_vat_types": [
+    "tfmg:fireproof",
+    "tfmg:steel"
+  ],
+  "ingredients": [
+    {
+      "tag": "c:dusts/saltpeter"
+    },
+    {
+      "tag": "c:dusts/saltpeter"
+    },
+    {
+      "type": "neoforge:tag",
+      "amount": 250,
+      "tag": "c:diesel"
+    },
+    {
+      "type": "neoforge:tag",
+      "amount": 250,
+      "tag": "c:kerosene"
+    }
+  ],
+  "machines": [
+    "tfmg:mixing"
+  ],
+  "min_size": 2,
+  "processing_time": 200,
+  "results": [
+    {
+      "amount": 1000,
+      "id": "chemica:high_cetane_diesel"
+    }
+  ]
+}

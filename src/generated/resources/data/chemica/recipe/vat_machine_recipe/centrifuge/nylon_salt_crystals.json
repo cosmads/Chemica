@@ -1,19 +1,14 @@
 {
   "type": "tfmg:vat_machine_recipe",
-  "allowedVatTypes": [
-  	"tfmg:cast_iron_vat",
-    "tfmg:steel_vat",
-    "tfmg:firebrick_lined_vat"
-  ],
   "ingredients": [
     {
-      "item": "chemica:nylon_salt_crystals"
+      "tag": "chemica:crystals/nylon_salt"
     }
   ],
   "machines": [
     "tfmg:centrifuge"
   ],
-  "minSize": 1,
+  "min_size": 1,
   "results": [
     {
       "count": 2,

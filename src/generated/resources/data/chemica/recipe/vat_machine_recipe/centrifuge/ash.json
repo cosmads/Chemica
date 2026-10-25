@@ -1,19 +1,14 @@
 {
   "type": "tfmg:vat_machine_recipe",
-  "allowedVatTypes": [
-  	"tfmg:cast_iron_vat",
-    "tfmg:steel_vat",
-    "tfmg:firebrick_lined_vat"
-  ],
   "ingredients": [
     {
-      "item": "chemica:ash"
+      "tag": "c:dusts/ash"
     }
   ],
   "machines": [
     "tfmg:centrifuge"
   ],
-  "minSize": 1,
+  "min_size": 1,
   "results": [
     {
       "chance": 0.2,

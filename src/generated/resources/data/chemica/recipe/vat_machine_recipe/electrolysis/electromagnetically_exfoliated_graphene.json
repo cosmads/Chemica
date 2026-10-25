@@ -1,23 +1,23 @@
 {
   "type": "tfmg:vat_machine_recipe",
   "allowed_vat_types": [
-    "tfmg:steel_vat",
-    "tfmg:firebrick_lined_vat"
+    "tfmg:fireproof",
+    "tfmg:steel"
   ],
-  "heat_requirement": "superheated",
+  "heat_level": 4,
   "ingredients": [
     {
       "item": "chemica:purified_graphite_flakes"
     },
     {
-      "type": "neoforge:single",
-      "fluid": "minecraft:water",
-      "amount": 250
+      "type": "neoforge:tag",
+      "amount": 250,
+      "tag": "c:water"
     },
     {
-      "type": "neoforge:single",
-      "fluid": "chemica:oxygen",
-      "amount": 250
+      "type": "neoforge:tag",
+      "amount": 250,
+      "tag": "c:oxygen"
     }
   ],
   "machines": [

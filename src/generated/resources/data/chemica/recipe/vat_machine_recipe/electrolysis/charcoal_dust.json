@@ -1,0 +1,24 @@
+{
+  "type": "tfmg:vat_machine_recipe",
+  "heat_level": 2,
+  "ingredients": [
+    {
+      "tag": "c:dusts/charcoal"
+    }
+  ],
+  "machines": [
+    "tfmg:electrode",
+    "tfmg:electrode"
+  ],
+  "min_size": 1,
+  "processing_time": 100,
+  "results": [
+    {
+      "id": "chemica:coal_dust"
+    },
+    {
+      "amount": 150,
+      "id": "tfmg:carbon_dioxide"
+    }
+  ]
+}

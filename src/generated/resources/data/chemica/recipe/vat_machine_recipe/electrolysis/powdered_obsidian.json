@@ -1,20 +1,20 @@
 {
   "type": "tfmg:vat_machine_recipe",
-  "allowedVatTypes": [
-    "tfmg:steel_vat",
-    "tfmg:firebrick_lined_vat"
+  "allowed_vat_types": [
+    "tfmg:fireproof",
+    "tfmg:steel"
   ],
-  "heat_requirement": "heated",
+  "heat_level": 2,
   "ingredients": [
     {
-      "item": "create:powdered_obsidian"
+      "tag": "c:dusts/obsidian"
     }
   ],
   "machines": [
     "chemica:platinum_electrode",
     "chemica:platinum_electrode"
   ],
-  "minSize": 1,
+  "min_size": 1,
   "processing_time": 400,
   "results": [
     {
