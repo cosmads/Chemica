@@ -229,8 +229,62 @@ public class ChemicaVatRecipeGen extends VatRecipeGen {
             .require(TFMGFluids.HYDROGEN.getSource(), 500)
             .require(ChemicaTags.Fluids.CHLORINE.tag, 500)
             .heatLevel(2)
-            .output(ChemicaFluids.HYDROCHLORIC_ACID.get().getSource(), 1000))
+            .output(ChemicaFluids.HYDROCHLORIC_ACID.get().getSource(), 1000)),
 
+    MIX_NITRIC_ACID = mixing("nitric_acid", b -> b
+            .require(Tags.Fluids.WATER, 1000)
+            .require(ChemicaTags.Fluids.NITROGEN_DIOXIDE.tag, 1000)
+            .output(ChemicaFluids.NITRIC_ACID.get().getSource(), 1000)),
+
+    MIX_NITROGEN_DIOXIDE = mixing("nitrogen_dioxide", b -> b
+            .require(ChemicaTags.Fluids.AMMONIA.tag, 1000)
+            .require(ChemicaTags.Fluids.PLATINUM_CATALYST_CARRIER.tag, 500)
+            .duration(300)
+            .output(ChemicaFluids.NITROGEN_DIOXIDE.get().getSource(), 750)),
+
+    MIX_NITROGLYCERIN = mixing("nitroglycerin", b -> b
+            .require(ChemicaTags.Fluids.NITRIC_ACID.tag, 500)
+            .require(ChemicaTags.Fluids.GLYCERIN.tag, 250)
+            .require(TFMGFluids.SULFURIC_ACID.getSource(), 250)
+            .duration(300)
+            .output(ChemicaFluids.NITROGLYCERIN.get().getSource(), 900)
+            .output(TFMGFluids.SULFURIC_ACID.get().getSource(), 100)),
+
+    MIX_NYLON_SALT_CRYSTALS = mixing("nylon_salt_crystals", b -> b
+            .require(ChemicaTags.Fluids.HEXAMETHYLENEDIAMINE_SOLUTION.tag, 500)
+            .require(ChemicaTags.Fluids.ADIPIC_ACID_SOLUTION.tag, 500)
+            .duration(300)
+            .output(ChemicaItems.NYLON_SALT_CRYSTALS, 4)),
+
+    MIX_PAN_PRECURSOR = mixing("pan_precursor", b -> b
+            .require(ChemMaterial.COBALT.catalysts)
+            .require(ChemicaTags.Fluids.ACRYLONITRILE.tag, 1000)
+            .duration(400)
+            .output(ChemicaFluids.PAN_PRECURSOR.get().getSource(), 1000)),
+
+    MIX_PHOSPHORIC_ACID = mixing("phosphoric_acid", b -> b
+            .require(Tags.Fluids.WATER, 600)
+            .require(ChemicaTags.Fluids.OXYGEN.tag, 1000)
+            .require(ChemMaterial.PHOSPHORUS.dusts)
+            .duration(300)
+            .output(ChemicaFluids.PHOSPHORIC_ACID.get().getSource(), 1000)),
+
+    MIX_TUNGSTEN_HEXAFLUORIDE = create("mixing/tungsten_hexafluoride", b -> b
+            .allowTypes(List.of(TFMGVatTypes.FIREPROOF.get(), TFMGVatTypes.STEEL.get()))
+            .mixing()
+            .require(ChemicaTags.Fluids.FLUORINE.tag, 1000)
+            .require(ChemicaTags.Fluids.HYDROFLUORIC_ACID.tag, 500)
+            .require(ChemMaterial.TUNGSTEN.dusts)
+            .minSize(2)
+            .duration(300)
+            .output(ChemicaFluids.TUNGSTEN_HEXAFLUORIDE.get().getSource(), 1000)
+            .output(TFMGFluids.HOT_AIR.get(), 250)),
+
+    MIX_VINYL_CHLORIDE_MONOMER = mixing("vinyl_chloride_monomer", b -> b
+            .require(TFMGFluids.ETHYLENE.get(), 500)
+            .require(ChemicaTags.Fluids.CHLORINE.tag, 750)
+            .duration(300)
+            .output(ChemicaFluids.VINYL_CHLORIDE_MONOMER.get().getSource(), 1000))
 
             ;
 

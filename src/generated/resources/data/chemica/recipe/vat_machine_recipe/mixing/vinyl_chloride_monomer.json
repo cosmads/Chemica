@@ -1,10 +1,5 @@
 {
   "type": "tfmg:vat_machine_recipe",
-  "allowedVatTypes": [
-  	"tfmg:cast_iron_vat",
-    "tfmg:steel_vat",
-    "tfmg:firebrick_lined_vat"
-  ],
   "ingredients": [
     {
       "type": "neoforge:single",
@@ -12,16 +7,16 @@
       "fluid": "tfmg:ethylene"
     },
     {
-      "type": "neoforge:single",
+      "type": "neoforge:tag",
       "amount": 750,
-      "fluid": "chemica:chlorine"
+      "tag": "c:chlorine"
     }
   ],
   "machines": [
     "tfmg:mixing"
   ],
-  "minSize": 1,
-  "processingTime": 300,
+  "min_size": 1,
+  "processing_time": 300,
   "results": [
     {
       "amount": 1000,

@@ -1,20 +1,15 @@
 {
   "type": "tfmg:vat_machine_recipe",
-  "allowedVatTypes": [
-    "tfmg:cast_iron_vat",
-    "tfmg:steel_vat",
-    "tfmg:firebrick_lined_vat"
-  ],
   "ingredients": [
     {
-      "type": "neoforge:single",
+      "type": "neoforge:tag",
       "amount": 500,
-      "fluid": "chemica:nitric_acid"
+      "tag": "c:nitric_acid"
     },
     {
-      "type": "neoforge:single",
+      "type": "neoforge:tag",
       "amount": 250,
-      "fluid": "chemica:glycerin"
+      "tag": "c:glycerin"
     },
     {
       "type": "neoforge:single",
@@ -25,8 +20,8 @@
   "machines": [
     "tfmg:mixing"
   ],
-  "minSize": 1,
-  "processingTime": 300,
+  "min_size": 1,
+  "processing_time": 300,
   "results": [
     {
       "amount": 900,

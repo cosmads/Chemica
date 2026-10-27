@@ -1,0 +1,29 @@
+{
+  "type": "tfmg:vat_machine_recipe",
+  "ingredients": [
+    {
+      "tag": "c:dusts/phosphorus"
+    },
+    {
+      "type": "neoforge:tag",
+      "amount": 600,
+      "tag": "c:water"
+    },
+    {
+      "type": "neoforge:tag",
+      "amount": 1000,
+      "tag": "c:oxygen"
+    }
+  ],
+  "machines": [
+    "tfmg:mixing"
+  ],
+  "min_size": 1,
+  "processing_time": 300,
+  "results": [
+    {
+      "amount": 1000,
+      "id": "chemica:phosphoric_acid"
+    }
+  ]
+}
